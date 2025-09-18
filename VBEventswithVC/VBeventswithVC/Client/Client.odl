@@ -1,0 +1,71 @@
+// Client.odl : type library source for Client.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (Client.tlb).
+
+[ uuid(26850CBB-3DE4-46D5-BFF0-0BC25E13E8E7), version(1.0) ]
+library Client
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CClientDoc
+	
+	[ uuid(97103165-58AC-479F-8579-3F59769AE25B) ]
+	dispinterface IClient
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CClientDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CClientDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CClientDoc
+	
+	[ uuid(B05F63A3-F883-4762-AE42-5DCC17626626) ]
+	coclass Client
+	{
+		[default] dispinterface IClient;
+	};
+
+
+	//  Primary dispatch interface for MFCSink
+	
+	[ uuid(5DD593E8-3242-4FE1-8986-D34F90560855) ]
+	dispinterface IMFCSink
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(MFCSink)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(MFCSink)
+			[id(1)] void evtNotify();
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for MFCSink
+
+	[ uuid(FC95D007-FE0C-4B22-8B98-8BF59B749D2B) ]
+	coclass MFCSink
+	{
+		[default] dispinterface IMFCSink;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

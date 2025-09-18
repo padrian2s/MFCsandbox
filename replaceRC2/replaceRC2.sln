@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "replaceRC2", "replaceRC2.csproj", "{D7851ECF-7F87-4D21-9005-F984AC13E0D6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D7851ECF-7F87-4D21-9005-F984AC13E0D6}.Debug.ActiveCfg = Debug|.NET
+		{D7851ECF-7F87-4D21-9005-F984AC13E0D6}.Debug.Build.0 = Debug|.NET
+		{D7851ECF-7F87-4D21-9005-F984AC13E0D6}.Release.ActiveCfg = Release|.NET
+		{D7851ECF-7F87-4D21-9005-F984AC13E0D6}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

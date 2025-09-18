@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExpCheckTest", "ExpCheckTest.vcproj", "{EC06A152-77FA-4D4D-AADA-B886E51E9897}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EC06A152-77FA-4D4D-AADA-B886E51E9897}.Debug.ActiveCfg = Debug|Win32
+		{EC06A152-77FA-4D4D-AADA-B886E51E9897}.Debug.Build.0 = Debug|Win32
+		{EC06A152-77FA-4D4D-AADA-B886E51E9897}.Release.ActiveCfg = Release|Win32
+		{EC06A152-77FA-4D4D-AADA-B886E51E9897}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

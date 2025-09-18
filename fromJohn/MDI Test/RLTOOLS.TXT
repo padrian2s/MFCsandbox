@@ -1,0 +1,23 @@
+
+RLTools.zip
+
+    This file contains Version 1.88 of RLTools, 32-bit Edition.
+
+    This edition runs only on a Windows NT system but will handle any Win32
+    executable-format (.EXE, .DLL, etc.) or resource (.RES) source file.
+
+    The localizable resources are extracted directly from the source file
+    and presented to the user for translation.  There is a command-line
+    tool called RLMan, a one-pass tool called RLQuiked, and a long-term
+    project set of tools - RLAdmin and RLEdit.  Also included is the
+    complete on-line Help, tool documentation and a tutorial document.
+
+    RLTools is not supported but improvements are made frquently and made
+    available upon request. Send the request to the person from whom you
+    received this version of RLTools.
+
+    To install RLTools, copy RLTools.zip to the directory in which you wish
+    the tool set to be installed, un-zip the file, and remove the RLTools.ZIP
+    file. Make sure this directory is added to your system's PATH because
+    when the tool dlgedit.exe is called by the other tools, they assume it
+    is in a directory in your PATH.

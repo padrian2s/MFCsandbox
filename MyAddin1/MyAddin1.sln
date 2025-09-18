@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAddin1", "MyAddin1.csproj", "{A70CF5CC-32C0-4DA0-B352-B5ED2EB975C4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MyAddin1Setup", "MyAddin1Setup\MyAddin1Setup.vdproj", "{4F927151-3FE1-493A-879A-BE4159A28F43}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A70CF5CC-32C0-4DA0-B352-B5ED2EB975C4}.Debug.ActiveCfg = Debug|.NET
+		{A70CF5CC-32C0-4DA0-B352-B5ED2EB975C4}.Debug.Build.0 = Debug|.NET
+		{A70CF5CC-32C0-4DA0-B352-B5ED2EB975C4}.Release.ActiveCfg = Release|.NET
+		{A70CF5CC-32C0-4DA0-B352-B5ED2EB975C4}.Release.Build.0 = Release|.NET
+		{4F927151-3FE1-493A-879A-BE4159A28F43}.Debug.ActiveCfg = Debug
+		{4F927151-3FE1-493A-879A-BE4159A28F43}.Release.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PDFCreator", "PDFCreator.vcproj", "{BEF93605-7985-47DF-9F10-4033B7A13C9B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BEF93605-7985-47DF-9F10-4033B7A13C9B}.Debug.ActiveCfg = Debug|Win32
+		{BEF93605-7985-47DF-9F10-4033B7A13C9B}.Debug.Build.0 = Debug|Win32
+		{BEF93605-7985-47DF-9F10-4033B7A13C9B}.Release.ActiveCfg = Release|Win32
+		{BEF93605-7985-47DF-9F10-4033B7A13C9B}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

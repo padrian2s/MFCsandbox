@@ -1,0 +1,55 @@
+// test.odl : type library source for test.exe
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (test.tlb).
+
+[ uuid(C04AADF0-2A82-11CF-84F5-00AA00C006CF), version(1.0), lcid(0x09) ]
+library Test
+{
+	importlib("stdole32.tlb");
+	
+	//  Primary dispatch interface for CTestDoc
+
+/*  //  Replace this dispinterface with a interface
+	[ uuid(C04AADF1-2A82-11CF-84F5-00AA00C006CF) ]
+	dispinterface ITest
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CTestDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CTestDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+*/
+    
+   [ 
+     uuid(C04AADF1-2A82-11CF-84F5-00AA00C006CF),
+     oleautomation,
+     dual 
+   ]
+   interface ITest : IDispatch
+   {
+     [id(1), propput] HRESULT TestProperty([in]short nNewValue);
+     [id(1), propget] HRESULT TestProperty([out, retval] short *retval);
+     [id(2)] HRESULT TestMethod([in] short n, [out,retval] short *retval);
+   };
+
+
+	//  Class information for CTestDoc
+
+	[ uuid(943B3F80-CD85-11CE-815A-00AA0060D733) ]
+	coclass CTestDoc
+	{
+		//[default] dispinterface ITest; // Replace this dispinterface with an interface
+		[default] interface ITest;
+	};
+
+	//{{AFX_APPEND_ODL}}
+};

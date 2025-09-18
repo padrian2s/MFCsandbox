@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: test - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/test.res" /d "_DEBUG" /d "_AFXDLL" "\\Overdose\D\Aplic\MDI Test\My MDI test\test.rc"" 
+Creating temporary file "C:\TEMP\RSP23.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/test.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"\\Overdose\D\Aplic\MDI Test\My MDI test\ColorEdit.cpp"
+"\\Overdose\D\Aplic\MDI Test\My MDI test\ColorLabel.cpp"
+"\\Overdose\D\Aplic\MDI Test\My MDI test\MainFrm.cpp"
+"\\Overdose\D\Aplic\MDI Test\My MDI test\OneDoc.cpp"
+"\\Overdose\D\Aplic\MDI Test\My MDI test\OneForm.cpp"
+"\\Overdose\D\Aplic\MDI Test\My MDI test\OneFrame.cpp"
+"\\Overdose\D\Aplic\MDI Test\My MDI test\test.cpp"
+"\\Overdose\D\Aplic\MDI Test\My MDI test\TwoDoc.cpp"
+"\\Overdose\D\Aplic\MDI Test\My MDI test\TwoForm.cpp"
+"\\Overdose\D\Aplic\MDI Test\My MDI test\TwoFrame.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP23.tmp" 
+Creating temporary file "C:\TEMP\RSP24.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/test.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"\\Overdose\D\Aplic\MDI Test\My MDI test\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP24.tmp" 
+Creating temporary file "C:\TEMP\RSP25.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/test.pdb" /debug /machine:I386 /out:"Debug/test.exe" /pdbtype:sept 
+".\Debug\ColorEdit.obj"
+".\Debug\ColorLabel.obj"
+".\Debug\MainFrm.obj"
+".\Debug\OneDoc.obj"
+".\Debug\OneForm.obj"
+".\Debug\OneFrame.obj"
+".\Debug\StdAfx.obj"
+".\Debug\test.obj"
+".\Debug\TwoDoc.obj"
+".\Debug\TwoForm.obj"
+".\Debug\TwoFrame.obj"
+".\Debug\test.res"
+]
+Creating command line "link.exe @C:\TEMP\RSP25.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ColorEdit.cpp
+ColorLabel.cpp
+MainFrm.cpp
+OneDoc.cpp
+OneForm.cpp
+OneFrame.cpp
+test.cpp
+TwoDoc.cpp
+TwoForm.cpp
+TwoFrame.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\TEMP\RSP27.tmp" with contents
+[
+/nologo /o"Debug/test.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\ColorEdit.sbr"
+".\Debug\ColorLabel.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\OneDoc.sbr"
+".\Debug\OneForm.sbr"
+".\Debug\OneFrame.sbr"
+".\Debug\test.sbr"
+".\Debug\TwoDoc.sbr"
+".\Debug\TwoForm.sbr"
+".\Debug\TwoFrame.sbr"]
+Creating command line "bscmake.exe @C:\TEMP\RSP27.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+test.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

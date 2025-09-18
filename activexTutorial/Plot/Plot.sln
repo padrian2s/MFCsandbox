@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Plot", "Plot.vcproj", "{83BB4009-88E6-4A13-8FC5-8037FEC28399}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{83BB4009-88E6-4A13-8FC5-8037FEC28399}.Debug.ActiveCfg = Debug|Win32
+		{83BB4009-88E6-4A13-8FC5-8037FEC28399}.Debug.Build.0 = Debug|Win32
+		{83BB4009-88E6-4A13-8FC5-8037FEC28399}.Release.ActiveCfg = Release|Win32
+		{83BB4009-88E6-4A13-8FC5-8037FEC28399}.Release.Build.0 = Release|Win32
+		{83BB4009-88E6-4A13-8FC5-8037FEC28399}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{83BB4009-88E6-4A13-8FC5-8037FEC28399}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{83BB4009-88E6-4A13-8FC5-8037FEC28399}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{83BB4009-88E6-4A13-8FC5-8037FEC28399}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

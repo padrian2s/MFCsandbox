@@ -1,0 +1,54 @@
+// Control.idl : IDL source for Control.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Control.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(23FDAB0E-506F-4B8E-B3C2-1C50EF71055B),
+		dual,
+		helpstring("IEventControl Interface"),
+		pointer_default(unique)
+	]
+	interface IEventControl : IDispatch
+	{
+		[id(1), helpstring("method TestMethod")] HRESULT TestMethod();
+	};
+
+[
+	uuid(847E9C38-FD1F-4637-9181-BC5CB8A3AABB),
+	version(1.0),
+	helpstring("Control 1.0 Type Library")
+]
+library CONTROLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(C29AFB4B-0F35-48F4-ABA7-49EE56563441),
+		helpstring("_IEventControlEvents Interface")
+	]
+	dispinterface _IEventControlEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("method TestEvent")] HRESULT TestEvent();
+	};
+
+	[
+		uuid(7CE7C2B3-122D-4343-8C18-F154DF04916B),
+		helpstring("EventControl Class")
+	]
+	coclass EventControl
+	{
+		[default] interface IEventControl;
+		[default, source] dispinterface _IEventControlEvents;
+	};
+};

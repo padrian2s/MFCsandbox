@@ -1,0 +1,113 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: test_help, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\MFCsandbox\test_help\Debug\BAT000001.bat" with contents
+[
+@echo off
+echo // Generated Help Map file.  Used by test_help.HHP. > "hlp\HTMLDefines.h"
+echo. > "hlp\HTMLDefines.h"
+echo // Commands (ID_* and IDM_*) >> "hlp\HTMLDefines.h"
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 "Resource.h" >> "hlp\HTMLDefines.h"
+echo. >> "hlp\HTMLDefines.h"
+echo // Prompts (IDP_*) >> "hlp\HTMLDefines.h"
+makehm /h IDP_,HIDP_,0x30000 "Resource.h" >> "hlp\HTMLDefines.h"
+echo. >> "hlp\HTMLDefines.h"
+echo // Resources (IDR_*) >> "hlp\HTMLDefines.h"
+makehm /h IDR_,HIDR_,0x20000 "Resource.h" >> "hlp\HTMLDefines.h"
+echo. >> "hlp\HTMLDefines.h"
+echo // Dialogs (IDD_*) >> "hlp\HTMLDefines.h"
+makehm /h IDD_,HIDD_,0x20000 "Resource.h" >> "hlp\HTMLDefines.h"
+echo. >> "hlp\HTMLDefines.h"
+echo // Frame Controls (IDW_*) >> "hlp\HTMLDefines.h"
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 "Resource.h" >> "hlp\HTMLDefines.h"
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Generating map file for help compiler..."
+exit 1
+:VCEnd
+]
+Creating command line "c:\MFCsandbox\test_help\Debug\BAT000001.bat"
+Creating temporary file "c:\MFCsandbox\test_help\Debug\BAT000002.bat" with contents
+[
+@echo off
+start /wait hhc "hlp\test_help.hhp"
+if not exist "hlp\test_help.chm" goto :HelpError
+copy "hlp\test_help.chm" "Debug\test_help.chm"
+goto :HelpDone
+:HelpError
+echo hlp\test_help.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Making help file..."
+exit 1
+:VCEnd
+]
+Creating command line "c:\MFCsandbox\test_help\Debug\BAT000002.bat"
+Creating temporary file "c:\MFCsandbox\test_help\Debug\RSP000003.rsp" with contents
+[
+/Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_AFXDLL" /Gm /EHsc /RTC1 /MDd /Zc:wchar_t /Yu"stdafx.h" /Fp"Debug/test_help.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+.\test_helpView.cpp
+.\test_helpDoc.cpp
+.\ChildFrm.cpp
+.\MainFrm.cpp
+.\test_help.cpp
+]
+Creating command line "cl.exe @c:\MFCsandbox\test_help\Debug\RSP000003.rsp /nologo"
+Creating temporary file "c:\MFCsandbox\test_help\Debug\RSP000004.rsp" with contents
+[
+/Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "_MBCS" /D "_AFXDLL" /Gm /EHsc /RTC1 /MDd /Zc:wchar_t /Yc"stdafx.h" /Fp"Debug/test_help.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+.\stdafx.cpp
+]
+Creating command line "cl.exe @c:\MFCsandbox\test_help\Debug\RSP000004.rsp /nologo"
+Creating command line "rc.exe /d "_DEBUG" /d "_AFXDLL" /l 0x409 /I "Debug" /fo"Debug/test_help.res" .\test_help.rc"
+Creating temporary file "c:\MFCsandbox\test_help\Debug\RSP000005.rsp" with contents
+[
+/OUT:"Debug/test_help.exe" /INCREMENTAL /NOLOGO /DEBUG /PDB:"Debug/test_help.pdb" /SUBSYSTEM:WINDOWS /MACHINE:X86
+.\debug\test_help.obj
+.\debug\stdafx.obj
+.\debug\MainFrm.obj
+.\debug\ChildFrm.obj
+.\debug\test_helpDoc.obj
+.\debug\test_helpView.obj
+.\debug\test_help.res
+]
+Creating command line "link.exe @c:\MFCsandbox\test_help\Debug\RSP000005.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Generating map file for help compiler...
+Making help file...
+        1 file(s) copied.
+Compiling...
+stdafx.cpp
+Compiling...
+test_helpView.cpp
+test_helpDoc.cpp
+ChildFrm.cpp
+MainFrm.cpp
+test_help.cpp
+Generating Code...
+Compiling resources...
+Linking...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\MFCsandbox\test_help\Debug\BuildLog.htm"
+test_help - 0 error(s), 0 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

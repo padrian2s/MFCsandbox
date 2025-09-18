@@ -1,0 +1,26 @@
+HKCR
+{
+	Server.SimpleServer.1 = s 'SimpleServer Class'
+	{
+		CLSID = s '{E1808271-6D24-49CC-BC2D-54C1D31AA237}'
+	}
+	Server.SimpleServer = s 'SimpleServer Class'
+	{
+		CLSID = s '{E1808271-6D24-49CC-BC2D-54C1D31AA237}'
+		CurVer = s 'Server.SimpleServer.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E1808271-6D24-49CC-BC2D-54C1D31AA237} = s 'SimpleServer Class'
+		{
+			ProgID = s 'Server.SimpleServer.1'
+			VersionIndependentProgID = s 'Server.SimpleServer'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{FFEE8594-E028-4546-B6D3-43961B7C985D}'
+		}
+	}
+}

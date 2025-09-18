@@ -1,0 +1,949 @@
+// Generated .IDL file (by the OLE/COM Object Viewer)
+// 
+// typelib filename: PDFCreator.exe
+
+[
+  uuid(1CE9DC08-9FBC-45C6-8A7C-4FE1E208A613),
+  version(4.1),
+  custom(50867B00-BB69-11D0-A8FF-00A0C9110059, 9782)
+
+]
+library PDFCreator
+{
+    // TLib :     // TLib : OLE Automation : {00020430-0000-0000-C000-000000000046}
+    importlib("STDOLE2.TLB");
+    // TLib : Visual Basic For Applications : {000204EF-0000-0000-C000-000000000046}
+    importlib("MSVBVM60.DLL");
+
+    // Forward declare all types defined in this typelib
+    interface _clsPDFCreatorOptions;
+    interface _clsPDFCreatorError;
+    interface _clsPDFCreatorInfoSpoolFile;
+    interface _clsPDFCreator;
+    dispinterface __clsPDFCreator;
+
+    [
+      odl,
+      uuid(EDD16D7E-7339-4C43-BA18-F00077165FFE),
+      version(1.1),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _clsPDFCreatorOptions : IDispatch {
+        [id(0x4003011b), propget]
+        HRESULT AdditionalGhostscriptParameters([out, retval] BSTR* AdditionalGhostscriptParameters);
+        [id(0x4003011b), propput]
+        HRESULT AdditionalGhostscriptParameters([in] BSTR AdditionalGhostscriptParameters);
+        [id(0x4003011c), propget]
+        HRESULT AdditionalGhostscriptSearchpath([out, retval] BSTR* AdditionalGhostscriptSearchpath);
+        [id(0x4003011c), propput]
+        HRESULT AdditionalGhostscriptSearchpath([in] BSTR AdditionalGhostscriptSearchpath);
+        [id(0x4003011d), propget]
+        HRESULT AddWindowsFontpath([out, retval] long* AddWindowsFontpath);
+        [id(0x4003011d), propput]
+        HRESULT AddWindowsFontpath([in] long AddWindowsFontpath);
+        [id(0x4003011e), propget]
+        HRESULT AutosaveDirectory([out, retval] BSTR* AutosaveDirectory);
+        [id(0x4003011e), propput]
+        HRESULT AutosaveDirectory([in] BSTR AutosaveDirectory);
+        [id(0x4003011f), propget]
+        HRESULT AutosaveFilename([out, retval] BSTR* AutosaveFilename);
+        [id(0x4003011f), propput]
+        HRESULT AutosaveFilename([in] BSTR AutosaveFilename);
+        [id(0x40030120), propget]
+        HRESULT AutosaveFormat([out, retval] long* AutosaveFormat);
+        [id(0x40030120), propput]
+        HRESULT AutosaveFormat([in] long AutosaveFormat);
+        [id(0x40030121), propget]
+        HRESULT AutosaveStartStandardProgram([out, retval] long* AutosaveStartStandardProgram);
+        [id(0x40030121), propput]
+        HRESULT AutosaveStartStandardProgram([in] long AutosaveStartStandardProgram);
+        [id(0x40030122), propget]
+        HRESULT BitmapResolution([out, retval] long* BitmapResolution);
+        [id(0x40030122), propput]
+        HRESULT BitmapResolution([in] long BitmapResolution);
+        [id(0x40030123), propget]
+        HRESULT BMPColorscount([out, retval] long* BMPColorscount);
+        [id(0x40030123), propput]
+        HRESULT BMPColorscount([in] long BMPColorscount);
+        [id(0x40030124), propget]
+        HRESULT ClientComputerResolveIPAddress([out, retval] long* ClientComputerResolveIPAddress);
+        [id(0x40030124), propput]
+        HRESULT ClientComputerResolveIPAddress([in] long ClientComputerResolveIPAddress);
+        [id(0x40030125), propget]
+        HRESULT DeviceHeightPoints([out, retval] double* DeviceHeightPoints);
+        [id(0x40030125), propput]
+        HRESULT DeviceHeightPoints([in] double DeviceHeightPoints);
+        [id(0x40030126), propget]
+        HRESULT DeviceWidthPoints([out, retval] double* DeviceWidthPoints);
+        [id(0x40030126), propput]
+        HRESULT DeviceWidthPoints([in] double DeviceWidthPoints);
+        [id(0x40030127), propget]
+        HRESULT DirectoryGhostscriptBinaries([out, retval] BSTR* DirectoryGhostscriptBinaries);
+        [id(0x40030127), propput]
+        HRESULT DirectoryGhostscriptBinaries([in] BSTR DirectoryGhostscriptBinaries);
+        [id(0x40030128), propget]
+        HRESULT DirectoryGhostscriptFonts([out, retval] BSTR* DirectoryGhostscriptFonts);
+        [id(0x40030128), propput]
+        HRESULT DirectoryGhostscriptFonts([in] BSTR DirectoryGhostscriptFonts);
+        [id(0x40030129), propget]
+        HRESULT DirectoryGhostscriptLibraries([out, retval] BSTR* DirectoryGhostscriptLibraries);
+        [id(0x40030129), propput]
+        HRESULT DirectoryGhostscriptLibraries([in] BSTR DirectoryGhostscriptLibraries);
+        [id(0x4003012a), propget]
+        HRESULT DirectoryGhostscriptResource([out, retval] BSTR* DirectoryGhostscriptResource);
+        [id(0x4003012a), propput]
+        HRESULT DirectoryGhostscriptResource([in] BSTR DirectoryGhostscriptResource);
+        [id(0x4003012b), propget]
+        HRESULT DisableEmail([out, retval] long* DisableEmail);
+        [id(0x4003012b), propput]
+        HRESULT DisableEmail([in] long DisableEmail);
+        [id(0x4003012c), propget]
+        HRESULT DontUseDocumentSettings([out, retval] long* DontUseDocumentSettings);
+        [id(0x4003012c), propput]
+        HRESULT DontUseDocumentSettings([in] long DontUseDocumentSettings);
+        [id(0x4003012d), propget]
+        HRESULT EPSLanguageLevel([out, retval] long* EPSLanguageLevel);
+        [id(0x4003012d), propput]
+        HRESULT EPSLanguageLevel([in] long EPSLanguageLevel);
+        [id(0x4003012e), propget]
+        HRESULT FilenameSubstitutions([out, retval] BSTR* FilenameSubstitutions);
+        [id(0x4003012e), propput]
+        HRESULT FilenameSubstitutions([in] BSTR FilenameSubstitutions);
+        [id(0x4003012f), propget]
+        HRESULT FilenameSubstitutionsOnlyInTitle([out, retval] long* FilenameSubstitutionsOnlyInTitle);
+        [id(0x4003012f), propput]
+        HRESULT FilenameSubstitutionsOnlyInTitle([in] long FilenameSubstitutionsOnlyInTitle);
+        [id(0x40030130), propget]
+        HRESULT JPEGColorscount([out, retval] long* JPEGColorscount);
+        [id(0x40030130), propput]
+        HRESULT JPEGColorscount([in] long JPEGColorscount);
+        [id(0x40030131), propget]
+        HRESULT JPEGQuality([out, retval] long* JPEGQuality);
+        [id(0x40030131), propput]
+        HRESULT JPEGQuality([in] long JPEGQuality);
+        [id(0x40030132), propget]
+        HRESULT Language([out, retval] BSTR* Language);
+        [id(0x40030132), propput]
+        HRESULT Language([in] BSTR Language);
+        [id(0x40030133), propget]
+        HRESULT LastSaveDirectory([out, retval] BSTR* LastSaveDirectory);
+        [id(0x40030133), propput]
+        HRESULT LastSaveDirectory([in] BSTR LastSaveDirectory);
+        [id(0x40030134), propget]
+        HRESULT Logging([out, retval] long* Logging);
+        [id(0x40030134), propput]
+        HRESULT Logging([in] long Logging);
+        [id(0x40030135), propget]
+        HRESULT LogLines([out, retval] long* LogLines);
+        [id(0x40030135), propput]
+        HRESULT LogLines([in] long LogLines);
+        [id(0x40030136), propget]
+        HRESULT NoConfirmMessageSwitchingDefaultprinter([out, retval] long* NoConfirmMessageSwitchingDefaultprinter);
+        [id(0x40030136), propput]
+        HRESULT NoConfirmMessageSwitchingDefaultprinter([in] long NoConfirmMessageSwitchingDefaultprinter);
+        [id(0x40030137), propget]
+        HRESULT NoProcessingAtStartup([out, retval] long* NoProcessingAtStartup);
+        [id(0x40030137), propput]
+        HRESULT NoProcessingAtStartup([in] long NoProcessingAtStartup);
+        [id(0x40030138), propget]
+        HRESULT NoPSCheck([out, retval] long* NoPSCheck);
+        [id(0x40030138), propput]
+        HRESULT NoPSCheck([in] long NoPSCheck);
+        [id(0x40030139), propget]
+        HRESULT OnePagePerFile([out, retval] long* OnePagePerFile);
+        [id(0x40030139), propput]
+        HRESULT OnePagePerFile([in] long OnePagePerFile);
+        [id(0x4003013a), propget]
+        HRESULT OptionsDesign([out, retval] long* OptionsDesign);
+        [id(0x4003013a), propput]
+        HRESULT OptionsDesign([in] long OptionsDesign);
+        [id(0x4003013b), propget]
+        HRESULT OptionsEnabled([out, retval] long* OptionsEnabled);
+        [id(0x4003013b), propput]
+        HRESULT OptionsEnabled([in] long OptionsEnabled);
+        [id(0x4003013c), propget]
+        HRESULT OptionsVisible([out, retval] long* OptionsVisible);
+        [id(0x4003013c), propput]
+        HRESULT OptionsVisible([in] long OptionsVisible);
+        [id(0x4003013d), propget]
+        HRESULT Papersize([out, retval] BSTR* Papersize);
+        [id(0x4003013d), propput]
+        HRESULT Papersize([in] BSTR Papersize);
+        [id(0x4003013e), propget]
+        HRESULT PCXColorscount([out, retval] long* PCXColorscount);
+        [id(0x4003013e), propput]
+        HRESULT PCXColorscount([in] long PCXColorscount);
+        [id(0x4003013f), propget]
+        HRESULT PDFAllowAssembly([out, retval] long* PDFAllowAssembly);
+        [id(0x4003013f), propput]
+        HRESULT PDFAllowAssembly([in] long PDFAllowAssembly);
+        [id(0x40030140), propget]
+        HRESULT PDFAllowDegradedPrinting([out, retval] long* PDFAllowDegradedPrinting);
+        [id(0x40030140), propput]
+        HRESULT PDFAllowDegradedPrinting([in] long PDFAllowDegradedPrinting);
+        [id(0x40030141), propget]
+        HRESULT PDFAllowFillIn([out, retval] long* PDFAllowFillIn);
+        [id(0x40030141), propput]
+        HRESULT PDFAllowFillIn([in] long PDFAllowFillIn);
+        [id(0x40030142), propget]
+        HRESULT PDFAllowScreenReaders([out, retval] long* PDFAllowScreenReaders);
+        [id(0x40030142), propput]
+        HRESULT PDFAllowScreenReaders([in] long PDFAllowScreenReaders);
+        [id(0x40030143), propget]
+        HRESULT PDFColorsCMYKToRGB([out, retval] long* PDFColorsCMYKToRGB);
+        [id(0x40030143), propput]
+        HRESULT PDFColorsCMYKToRGB([in] long PDFColorsCMYKToRGB);
+        [id(0x40030144), propget]
+        HRESULT PDFColorsColorModel([out, retval] long* PDFColorsColorModel);
+        [id(0x40030144), propput]
+        HRESULT PDFColorsColorModel([in] long PDFColorsColorModel);
+        [id(0x40030145), propget]
+        HRESULT PDFColorsPreserveHalftone([out, retval] long* PDFColorsPreserveHalftone);
+        [id(0x40030145), propput]
+        HRESULT PDFColorsPreserveHalftone([in] long PDFColorsPreserveHalftone);
+        [id(0x40030146), propget]
+        HRESULT PDFColorsPreserveOverprint([out, retval] long* PDFColorsPreserveOverprint);
+        [id(0x40030146), propput]
+        HRESULT PDFColorsPreserveOverprint([in] long PDFColorsPreserveOverprint);
+        [id(0x40030147), propget]
+        HRESULT PDFColorsPreserveTransfer([out, retval] long* PDFColorsPreserveTransfer);
+        [id(0x40030147), propput]
+        HRESULT PDFColorsPreserveTransfer([in] long PDFColorsPreserveTransfer);
+        [id(0x40030148), propget]
+        HRESULT PDFCompressionColorCompression([out, retval] long* PDFCompressionColorCompression);
+        [id(0x40030148), propput]
+        HRESULT PDFCompressionColorCompression([in] long PDFCompressionColorCompression);
+        [id(0x40030149), propget]
+        HRESULT PDFCompressionColorCompressionChoice([out, retval] long* PDFCompressionColorCompressionChoice);
+        [id(0x40030149), propput]
+        HRESULT PDFCompressionColorCompressionChoice([in] long PDFCompressionColorCompressionChoice);
+        [id(0x4003014a), propget]
+        HRESULT PDFCompressionColorCompressionJPEGHighFactor([out, retval] double* PDFCompressionColorCompressionJPEGHighFactor);
+        [id(0x4003014a), propput]
+        HRESULT PDFCompressionColorCompressionJPEGHighFactor([in] double PDFCompressionColorCompressionJPEGHighFactor);
+        [id(0x4003014b), propget]
+        HRESULT PDFCompressionColorCompressionJPEGLowFactor([out, retval] double* PDFCompressionColorCompressionJPEGLowFactor);
+        [id(0x4003014b), propput]
+        HRESULT PDFCompressionColorCompressionJPEGLowFactor([in] double PDFCompressionColorCompressionJPEGLowFactor);
+        [id(0x4003014c), propget]
+        HRESULT PDFCompressionColorCompressionJPEGMaximumFactor([out, retval] double* PDFCompressionColorCompressionJPEGMaximumFactor);
+        [id(0x4003014c), propput]
+        HRESULT PDFCompressionColorCompressionJPEGMaximumFactor([in] double PDFCompressionColorCompressionJPEGMaximumFactor);
+        [id(0x4003014d), propget]
+        HRESULT PDFCompressionColorCompressionJPEGMediumFactor([out, retval] double* PDFCompressionColorCompressionJPEGMediumFactor);
+        [id(0x4003014d), propput]
+        HRESULT PDFCompressionColorCompressionJPEGMediumFactor([in] double PDFCompressionColorCompressionJPEGMediumFactor);
+        [id(0x4003014e), propget]
+        HRESULT PDFCompressionColorCompressionJPEGMinimumFactor([out, retval] double* PDFCompressionColorCompressionJPEGMinimumFactor);
+        [id(0x4003014e), propput]
+        HRESULT PDFCompressionColorCompressionJPEGMinimumFactor([in] double PDFCompressionColorCompressionJPEGMinimumFactor);
+        [id(0x4003014f), propget]
+        HRESULT PDFCompressionColorResample([out, retval] long* PDFCompressionColorResample);
+        [id(0x4003014f), propput]
+        HRESULT PDFCompressionColorResample([in] long PDFCompressionColorResample);
+        [id(0x40030150), propget]
+        HRESULT PDFCompressionColorResampleChoice([out, retval] long* PDFCompressionColorResampleChoice);
+        [id(0x40030150), propput]
+        HRESULT PDFCompressionColorResampleChoice([in] long PDFCompressionColorResampleChoice);
+        [id(0x40030151), propget]
+        HRESULT PDFCompressionColorResolution([out, retval] long* PDFCompressionColorResolution);
+        [id(0x40030151), propput]
+        HRESULT PDFCompressionColorResolution([in] long PDFCompressionColorResolution);
+        [id(0x40030152), propget]
+        HRESULT PDFCompressionGreyCompression([out, retval] long* PDFCompressionGreyCompression);
+        [id(0x40030152), propput]
+        HRESULT PDFCompressionGreyCompression([in] long PDFCompressionGreyCompression);
+        [id(0x40030153), propget]
+        HRESULT PDFCompressionGreyCompressionChoice([out, retval] long* PDFCompressionGreyCompressionChoice);
+        [id(0x40030153), propput]
+        HRESULT PDFCompressionGreyCompressionChoice([in] long PDFCompressionGreyCompressionChoice);
+        [id(0x40030154), propget]
+        HRESULT PDFCompressionGreyCompressionJPEGHighFactor([out, retval] double* PDFCompressionGreyCompressionJPEGHighFactor);
+        [id(0x40030154), propput]
+        HRESULT PDFCompressionGreyCompressionJPEGHighFactor([in] double PDFCompressionGreyCompressionJPEGHighFactor);
+        [id(0x40030155), propget]
+        HRESULT PDFCompressionGreyCompressionJPEGLowFactor([out, retval] double* PDFCompressionGreyCompressionJPEGLowFactor);
+        [id(0x40030155), propput]
+        HRESULT PDFCompressionGreyCompressionJPEGLowFactor([in] double PDFCompressionGreyCompressionJPEGLowFactor);
+        [id(0x40030156), propget]
+        HRESULT PDFCompressionGreyCompressionJPEGMaximumFactor([out, retval] double* PDFCompressionGreyCompressionJPEGMaximumFactor);
+        [id(0x40030156), propput]
+        HRESULT PDFCompressionGreyCompressionJPEGMaximumFactor([in] double PDFCompressionGreyCompressionJPEGMaximumFactor);
+        [id(0x40030157), propget]
+        HRESULT PDFCompressionGreyCompressionJPEGMediumFactor([out, retval] double* PDFCompressionGreyCompressionJPEGMediumFactor);
+        [id(0x40030157), propput]
+        HRESULT PDFCompressionGreyCompressionJPEGMediumFactor([in] double PDFCompressionGreyCompressionJPEGMediumFactor);
+        [id(0x40030158), propget]
+        HRESULT PDFCompressionGreyCompressionJPEGMinimumFactor([out, retval] double* PDFCompressionGreyCompressionJPEGMinimumFactor);
+        [id(0x40030158), propput]
+        HRESULT PDFCompressionGreyCompressionJPEGMinimumFactor([in] double PDFCompressionGreyCompressionJPEGMinimumFactor);
+        [id(0x40030159), propget]
+        HRESULT PDFCompressionGreyResample([out, retval] long* PDFCompressionGreyResample);
+        [id(0x40030159), propput]
+        HRESULT PDFCompressionGreyResample([in] long PDFCompressionGreyResample);
+        [id(0x4003015a), propget]
+        HRESULT PDFCompressionGreyResampleChoice([out, retval] long* PDFCompressionGreyResampleChoice);
+        [id(0x4003015a), propput]
+        HRESULT PDFCompressionGreyResampleChoice([in] long PDFCompressionGreyResampleChoice);
+        [id(0x4003015b), propget]
+        HRESULT PDFCompressionGreyResolution([out, retval] long* PDFCompressionGreyResolution);
+        [id(0x4003015b), propput]
+        HRESULT PDFCompressionGreyResolution([in] long PDFCompressionGreyResolution);
+        [id(0x4003015c), propget]
+        HRESULT PDFCompressionMonoCompression([out, retval] long* PDFCompressionMonoCompression);
+        [id(0x4003015c), propput]
+        HRESULT PDFCompressionMonoCompression([in] long PDFCompressionMonoCompression);
+        [id(0x4003015d), propget]
+        HRESULT PDFCompressionMonoCompressionChoice([out, retval] long* PDFCompressionMonoCompressionChoice);
+        [id(0x4003015d), propput]
+        HRESULT PDFCompressionMonoCompressionChoice([in] long PDFCompressionMonoCompressionChoice);
+        [id(0x4003015e), propget]
+        HRESULT PDFCompressionMonoResample([out, retval] long* PDFCompressionMonoResample);
+        [id(0x4003015e), propput]
+        HRESULT PDFCompressionMonoResample([in] long PDFCompressionMonoResample);
+        [id(0x4003015f), propget]
+        HRESULT PDFCompressionMonoResampleChoice([out, retval] long* PDFCompressionMonoResampleChoice);
+        [id(0x4003015f), propput]
+        HRESULT PDFCompressionMonoResampleChoice([in] long PDFCompressionMonoResampleChoice);
+        [id(0x40030160), propget]
+        HRESULT PDFCompressionMonoResolution([out, retval] long* PDFCompressionMonoResolution);
+        [id(0x40030160), propput]
+        HRESULT PDFCompressionMonoResolution([in] long PDFCompressionMonoResolution);
+        [id(0x40030161), propget]
+        HRESULT PDFCompressionTextCompression([out, retval] long* PDFCompressionTextCompression);
+        [id(0x40030161), propput]
+        HRESULT PDFCompressionTextCompression([in] long PDFCompressionTextCompression);
+        [id(0x40030162), propget]
+        HRESULT PDFDisallowCopy([out, retval] long* PDFDisallowCopy);
+        [id(0x40030162), propput]
+        HRESULT PDFDisallowCopy([in] long PDFDisallowCopy);
+        [id(0x40030163), propget]
+        HRESULT PDFDisallowModifyAnnotations([out, retval] long* PDFDisallowModifyAnnotations);
+        [id(0x40030163), propput]
+        HRESULT PDFDisallowModifyAnnotations([in] long PDFDisallowModifyAnnotations);
+        [id(0x40030164), propget]
+        HRESULT PDFDisallowModifyContents([out, retval] long* PDFDisallowModifyContents);
+        [id(0x40030164), propput]
+        HRESULT PDFDisallowModifyContents([in] long PDFDisallowModifyContents);
+        [id(0x40030165), propget]
+        HRESULT PDFDisallowPrinting([out, retval] long* PDFDisallowPrinting);
+        [id(0x40030165), propput]
+        HRESULT PDFDisallowPrinting([in] long PDFDisallowPrinting);
+        [id(0x40030166), propget]
+        HRESULT PDFEncryptor([out, retval] long* PDFEncryptor);
+        [id(0x40030166), propput]
+        HRESULT PDFEncryptor([in] long PDFEncryptor);
+        [id(0x40030167), propget]
+        HRESULT PDFFontsEmbedAll([out, retval] long* PDFFontsEmbedAll);
+        [id(0x40030167), propput]
+        HRESULT PDFFontsEmbedAll([in] long PDFFontsEmbedAll);
+        [id(0x40030168), propget]
+        HRESULT PDFFontsSubSetFonts([out, retval] long* PDFFontsSubSetFonts);
+        [id(0x40030168), propput]
+        HRESULT PDFFontsSubSetFonts([in] long PDFFontsSubSetFonts);
+        [id(0x40030169), propget]
+        HRESULT PDFFontsSubSetFontsPercent([out, retval] long* PDFFontsSubSetFontsPercent);
+        [id(0x40030169), propput]
+        HRESULT PDFFontsSubSetFontsPercent([in] long PDFFontsSubSetFontsPercent);
+        [id(0x4003016a), propget]
+        HRESULT PDFGeneralASCII85([out, retval] long* PDFGeneralASCII85);
+        [id(0x4003016a), propput]
+        HRESULT PDFGeneralASCII85([in] long PDFGeneralASCII85);
+        [id(0x4003016b), propget]
+        HRESULT PDFGeneralAutorotate([out, retval] long* PDFGeneralAutorotate);
+        [id(0x4003016b), propput]
+        HRESULT PDFGeneralAutorotate([in] long PDFGeneralAutorotate);
+        [id(0x4003016c), propget]
+        HRESULT PDFGeneralCompatibility([out, retval] long* PDFGeneralCompatibility);
+        [id(0x4003016c), propput]
+        HRESULT PDFGeneralCompatibility([in] long PDFGeneralCompatibility);
+        [id(0x4003016d), propget]
+        HRESULT PDFGeneralOverprint([out, retval] long* PDFGeneralOverprint);
+        [id(0x4003016d), propput]
+        HRESULT PDFGeneralOverprint([in] long PDFGeneralOverprint);
+        [id(0x4003016e), propget]
+        HRESULT PDFGeneralResolution([out, retval] long* PDFGeneralResolution);
+        [id(0x4003016e), propput]
+        HRESULT PDFGeneralResolution([in] long PDFGeneralResolution);
+        [id(0x4003016f), propget]
+        HRESULT PDFHighEncryption([out, retval] long* PDFHighEncryption);
+        [id(0x4003016f), propput]
+        HRESULT PDFHighEncryption([in] long PDFHighEncryption);
+        [id(0x40030170), propget]
+        HRESULT PDFLowEncryption([out, retval] long* PDFLowEncryption);
+        [id(0x40030170), propput]
+        HRESULT PDFLowEncryption([in] long PDFLowEncryption);
+        [id(0x40030171), propget]
+        HRESULT PDFOptimize([out, retval] long* PDFOptimize);
+        [id(0x40030171), propput]
+        HRESULT PDFOptimize([in] long PDFOptimize);
+        [id(0x40030172), propget]
+        HRESULT PDFOwnerPass([out, retval] long* PDFOwnerPass);
+        [id(0x40030172), propput]
+        HRESULT PDFOwnerPass([in] long PDFOwnerPass);
+        [id(0x40030173), propget]
+        HRESULT PDFOwnerPasswordString([out, retval] BSTR* PDFOwnerPasswordString);
+        [id(0x40030173), propput]
+        HRESULT PDFOwnerPasswordString([in] BSTR PDFOwnerPasswordString);
+        [id(0x40030174), propget]
+        HRESULT PDFUserPass([out, retval] long* PDFUserPass);
+        [id(0x40030174), propput]
+        HRESULT PDFUserPass([in] long PDFUserPass);
+        [id(0x40030175), propget]
+        HRESULT PDFUserPasswordString([out, retval] BSTR* PDFUserPasswordString);
+        [id(0x40030175), propput]
+        HRESULT PDFUserPasswordString([in] BSTR PDFUserPasswordString);
+        [id(0x40030176), propget]
+        HRESULT PDFUseSecurity([out, retval] long* PDFUseSecurity);
+        [id(0x40030176), propput]
+        HRESULT PDFUseSecurity([in] long PDFUseSecurity);
+        [id(0x40030177), propget]
+        HRESULT PNGColorscount([out, retval] long* PNGColorscount);
+        [id(0x40030177), propput]
+        HRESULT PNGColorscount([in] long PNGColorscount);
+        [id(0x40030178), propget]
+        HRESULT PrintAfterSaving([out, retval] long* PrintAfterSaving);
+        [id(0x40030178), propput]
+        HRESULT PrintAfterSaving([in] long PrintAfterSaving);
+        [id(0x40030179), propget]
+        HRESULT PrintAfterSavingDuplex([out, retval] long* PrintAfterSavingDuplex);
+        [id(0x40030179), propput]
+        HRESULT PrintAfterSavingDuplex([in] long PrintAfterSavingDuplex);
+        [id(0x4003017a), propget]
+        HRESULT PrintAfterSavingNoCancel([out, retval] long* PrintAfterSavingNoCancel);
+        [id(0x4003017a), propput]
+        HRESULT PrintAfterSavingNoCancel([in] long PrintAfterSavingNoCancel);
+        [id(0x4003017b), propget]
+        HRESULT PrintAfterSavingPrinter([out, retval] BSTR* PrintAfterSavingPrinter);
+        [id(0x4003017b), propput]
+        HRESULT PrintAfterSavingPrinter([in] BSTR PrintAfterSavingPrinter);
+        [id(0x4003017c), propget]
+        HRESULT PrintAfterSavingQueryUser([out, retval] long* PrintAfterSavingQueryUser);
+        [id(0x4003017c), propput]
+        HRESULT PrintAfterSavingQueryUser([in] long PrintAfterSavingQueryUser);
+        [id(0x4003017d), propget]
+        HRESULT PrintAfterSavingTumble([out, retval] long* PrintAfterSavingTumble);
+        [id(0x4003017d), propput]
+        HRESULT PrintAfterSavingTumble([in] long PrintAfterSavingTumble);
+        [id(0x4003017e), propget]
+        HRESULT PrinterStop([out, retval] long* PrinterStop);
+        [id(0x4003017e), propput]
+        HRESULT PrinterStop([in] long PrinterStop);
+        [id(0x4003017f), propget]
+        HRESULT PrinterTemppath([out, retval] BSTR* PrinterTemppath);
+        [id(0x4003017f), propput]
+        HRESULT PrinterTemppath([in] BSTR PrinterTemppath);
+        [id(0x40030180), propget]
+        HRESULT ProcessPriority([out, retval] long* ProcessPriority);
+        [id(0x40030180), propput]
+        HRESULT ProcessPriority([in] long ProcessPriority);
+        [id(0x40030181), propget]
+        HRESULT ProgramFont([out, retval] BSTR* ProgramFont);
+        [id(0x40030181), propput]
+        HRESULT ProgramFont([in] BSTR ProgramFont);
+        [id(0x40030182), propget]
+        HRESULT ProgramFontCharset([out, retval] long* ProgramFontCharset);
+        [id(0x40030182), propput]
+        HRESULT ProgramFontCharset([in] long ProgramFontCharset);
+        [id(0x40030183), propget]
+        HRESULT ProgramFontSize([out, retval] long* ProgramFontSize);
+        [id(0x40030183), propput]
+        HRESULT ProgramFontSize([in] long ProgramFontSize);
+        [id(0x40030184), propget]
+        HRESULT PSLanguageLevel([out, retval] long* PSLanguageLevel);
+        [id(0x40030184), propput]
+        HRESULT PSLanguageLevel([in] long PSLanguageLevel);
+        [id(0x40030185), propget]
+        HRESULT RemoveAllKnownFileExtensions([out, retval] long* RemoveAllKnownFileExtensions);
+        [id(0x40030185), propput]
+        HRESULT RemoveAllKnownFileExtensions([in] long RemoveAllKnownFileExtensions);
+        [id(0x40030186), propget]
+        HRESULT RemoveSpaces([out, retval] long* RemoveSpaces);
+        [id(0x40030186), propput]
+        HRESULT RemoveSpaces([in] long RemoveSpaces);
+        [id(0x40030187), propget]
+        HRESULT RunProgramAfterSaving([out, retval] long* RunProgramAfterSaving);
+        [id(0x40030187), propput]
+        HRESULT RunProgramAfterSaving([in] long RunProgramAfterSaving);
+        [id(0x40030188), propget]
+        HRESULT RunProgramAfterSavingProgramname([out, retval] BSTR* RunProgramAfterSavingProgramname);
+        [id(0x40030188), propput]
+        HRESULT RunProgramAfterSavingProgramname([in] BSTR RunProgramAfterSavingProgramname);
+        [id(0x40030189), propget]
+        HRESULT RunProgramAfterSavingProgramParameters([out, retval] BSTR* RunProgramAfterSavingProgramParameters);
+        [id(0x40030189), propput]
+        HRESULT RunProgramAfterSavingProgramParameters([in] BSTR RunProgramAfterSavingProgramParameters);
+        [id(0x4003018a), propget]
+        HRESULT RunProgramAfterSavingWaitUntilReady([out, retval] long* RunProgramAfterSavingWaitUntilReady);
+        [id(0x4003018a), propput]
+        HRESULT RunProgramAfterSavingWaitUntilReady([in] long RunProgramAfterSavingWaitUntilReady);
+        [id(0x4003018b), propget]
+        HRESULT RunProgramAfterSavingWindowstyle([out, retval] long* RunProgramAfterSavingWindowstyle);
+        [id(0x4003018b), propput]
+        HRESULT RunProgramAfterSavingWindowstyle([in] long RunProgramAfterSavingWindowstyle);
+        [id(0x4003018c), propget]
+        HRESULT RunProgramBeforeSaving([out, retval] long* RunProgramBeforeSaving);
+        [id(0x4003018c), propput]
+        HRESULT RunProgramBeforeSaving([in] long RunProgramBeforeSaving);
+        [id(0x4003018d), propget]
+        HRESULT RunProgramBeforeSavingProgramname([out, retval] BSTR* RunProgramBeforeSavingProgramname);
+        [id(0x4003018d), propput]
+        HRESULT RunProgramBeforeSavingProgramname([in] BSTR RunProgramBeforeSavingProgramname);
+        [id(0x4003018e), propget]
+        HRESULT RunProgramBeforeSavingProgramParameters([out, retval] BSTR* RunProgramBeforeSavingProgramParameters);
+        [id(0x4003018e), propput]
+        HRESULT RunProgramBeforeSavingProgramParameters([in] BSTR RunProgramBeforeSavingProgramParameters);
+        [id(0x4003018f), propget]
+        HRESULT RunProgramBeforeSavingWindowstyle([out, retval] long* RunProgramBeforeSavingWindowstyle);
+        [id(0x4003018f), propput]
+        HRESULT RunProgramBeforeSavingWindowstyle([in] long RunProgramBeforeSavingWindowstyle);
+        [id(0x40030190), propget]
+        HRESULT SaveFilename([out, retval] BSTR* SaveFilename);
+        [id(0x40030190), propput]
+        HRESULT SaveFilename([in] BSTR SaveFilename);
+        [id(0x40030191), propget]
+        HRESULT SendEmailAfterAutoSaving([out, retval] long* SendEmailAfterAutoSaving);
+        [id(0x40030191), propput]
+        HRESULT SendEmailAfterAutoSaving([in] long SendEmailAfterAutoSaving);
+        [id(0x40030192), propget]
+        HRESULT SendMailMethod([out, retval] long* SendMailMethod);
+        [id(0x40030192), propput]
+        HRESULT SendMailMethod([in] long SendMailMethod);
+        [id(0x40030193), propget]
+        HRESULT ShowAnimation([out, retval] long* ShowAnimation);
+        [id(0x40030193), propput]
+        HRESULT ShowAnimation([in] long ShowAnimation);
+        [id(0x40030194), propget]
+        HRESULT StampFontColor([out, retval] BSTR* StampFontColor);
+        [id(0x40030194), propput]
+        HRESULT StampFontColor([in] BSTR StampFontColor);
+        [id(0x40030195), propget]
+        HRESULT StampFontname([out, retval] BSTR* StampFontname);
+        [id(0x40030195), propput]
+        HRESULT StampFontname([in] BSTR StampFontname);
+        [id(0x40030196), propget]
+        HRESULT StampFontsize([out, retval] long* StampFontsize);
+        [id(0x40030196), propput]
+        HRESULT StampFontsize([in] long StampFontsize);
+        [id(0x40030197), propget]
+        HRESULT StampOutlineFontthickness([out, retval] long* StampOutlineFontthickness);
+        [id(0x40030197), propput]
+        HRESULT StampOutlineFontthickness([in] long StampOutlineFontthickness);
+        [id(0x40030198), propget]
+        HRESULT StampString([out, retval] BSTR* StampString);
+        [id(0x40030198), propput]
+        HRESULT StampString([in] BSTR StampString);
+        [id(0x40030199), propget]
+        HRESULT StampUseOutlineFont([out, retval] long* StampUseOutlineFont);
+        [id(0x40030199), propput]
+        HRESULT StampUseOutlineFont([in] long StampUseOutlineFont);
+        [id(0x4003019a), propget]
+        HRESULT StandardAuthor([out, retval] BSTR* StandardAuthor);
+        [id(0x4003019a), propput]
+        HRESULT StandardAuthor([in] BSTR StandardAuthor);
+        [id(0x4003019b), propget]
+        HRESULT StandardCreationdate([out, retval] BSTR* StandardCreationdate);
+        [id(0x4003019b), propput]
+        HRESULT StandardCreationdate([in] BSTR StandardCreationdate);
+        [id(0x4003019c), propget]
+        HRESULT StandardDateformat([out, retval] BSTR* StandardDateformat);
+        [id(0x4003019c), propput]
+        HRESULT StandardDateformat([in] BSTR StandardDateformat);
+        [id(0x4003019d), propget]
+        HRESULT StandardKeywords([out, retval] BSTR* StandardKeywords);
+        [id(0x4003019d), propput]
+        HRESULT StandardKeywords([in] BSTR StandardKeywords);
+        [id(0x4003019e), propget]
+        HRESULT StandardMailDomain([out, retval] BSTR* StandardMailDomain);
+        [id(0x4003019e), propput]
+        HRESULT StandardMailDomain([in] BSTR StandardMailDomain);
+        [id(0x4003019f), propget]
+        HRESULT StandardModifydate([out, retval] BSTR* StandardModifydate);
+        [id(0x4003019f), propput]
+        HRESULT StandardModifydate([in] BSTR StandardModifydate);
+        [id(0x400301a0), propget]
+        HRESULT StandardSaveformat([out, retval] long* StandardSaveformat);
+        [id(0x400301a0), propput]
+        HRESULT StandardSaveformat([in] long StandardSaveformat);
+        [id(0x400301a1), propget]
+        HRESULT StandardSubject([out, retval] BSTR* StandardSubject);
+        [id(0x400301a1), propput]
+        HRESULT StandardSubject([in] BSTR StandardSubject);
+        [id(0x400301a2), propget]
+        HRESULT StandardTitle([out, retval] BSTR* StandardTitle);
+        [id(0x400301a2), propput]
+        HRESULT StandardTitle([in] BSTR StandardTitle);
+        [id(0x400301a3), propget]
+        HRESULT StartStandardProgram([out, retval] long* StartStandardProgram);
+        [id(0x400301a3), propput]
+        HRESULT StartStandardProgram([in] long StartStandardProgram);
+        [id(0x400301a4), propget]
+        HRESULT TIFFColorscount([out, retval] long* TIFFColorscount);
+        [id(0x400301a4), propput]
+        HRESULT TIFFColorscount([in] long TIFFColorscount);
+        [id(0x400301a5), propget]
+        HRESULT Toolbars([out, retval] long* Toolbars);
+        [id(0x400301a5), propput]
+        HRESULT Toolbars([in] long Toolbars);
+        [id(0x400301a6), propget]
+        HRESULT UseAutosave([out, retval] long* UseAutosave);
+        [id(0x400301a6), propput]
+        HRESULT UseAutosave([in] long UseAutosave);
+        [id(0x400301a7), propget]
+        HRESULT UseAutosaveDirectory([out, retval] long* UseAutosaveDirectory);
+        [id(0x400301a7), propput]
+        HRESULT UseAutosaveDirectory([in] long UseAutosaveDirectory);
+        [id(0x400301a8), propget]
+        HRESULT UseCreationDateNow([out, retval] long* UseCreationDateNow);
+        [id(0x400301a8), propput]
+        HRESULT UseCreationDateNow([in] long UseCreationDateNow);
+        [id(0x400301a9), propget]
+        HRESULT UseStandardAuthor([out, retval] long* UseStandardAuthor);
+        [id(0x400301a9), propput]
+        HRESULT UseStandardAuthor([in] long UseStandardAuthor);
+        [id(0x400301aa), propget]
+        HRESULT UseCustomPaperSize([out, retval] BSTR* UseCustomPaperSize);
+        [id(0x400301aa), propput]
+        HRESULT UseCustomPaperSize([in] BSTR UseCustomPaperSize);
+        [id(0x400301ab), propget]
+        HRESULT UseFixPapersize([out, retval] long* UseFixPapersize);
+        [id(0x400301ab), propput]
+        HRESULT UseFixPapersize([in] long UseFixPapersize);
+    };
+
+    [
+      uuid(F8F15298-30FD-427C-BDFA-55E9AB615632),
+      version(1.1)
+    ]
+    coclass clsPDFCreatorOptions {
+        [default] interface _clsPDFCreatorOptions;
+    };
+
+    typedef [uuid(9120D87C-6038-404B-8CC5-6B90A45C2E01), version(1.0), public]
+    _clsPDFCreatorOptions clsPDFCreatorOptions___v0;
+
+    [
+      odl,
+      uuid(63BE3BC3-2B1D-4456-BFC7-900099F94AA2),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _clsPDFCreatorError : IDispatch {
+        [id(0x40030002), propget]
+        HRESULT Number([out, retval] long* Number);
+        [id(0x40030002), propput]
+        HRESULT Number([in] long Number);
+        [id(0x40030003), propget]
+        HRESULT Description([out, retval] BSTR* Description);
+        [id(0x40030003), propput]
+        HRESULT Description([in] BSTR Description);
+    };
+
+    [
+      uuid(082391C9-8188-4364-B4FD-66A1524B2097),
+      version(1.0)
+    ]
+    coclass clsPDFCreatorError {
+        [default] interface _clsPDFCreatorError;
+    };
+
+    [
+      odl,
+      uuid(2E2E2568-AA5B-4535-8291-C8930D1760C1),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _clsPDFCreatorInfoSpoolFile : IDispatch {
+        [id(0x40030000), propget]
+        HRESULT REDMON_PORT([out, retval] BSTR* REDMON_PORT);
+        [id(0x40030000), propput]
+        HRESULT REDMON_PORT([in] BSTR REDMON_PORT);
+        [id(0x40030001), propget]
+        HRESULT REDMON_JOB([out, retval] BSTR* REDMON_JOB);
+        [id(0x40030001), propput]
+        HRESULT REDMON_JOB([in] BSTR REDMON_JOB);
+        [id(0x40030002), propget]
+        HRESULT REDMON_PRINTER([out, retval] BSTR* REDMON_PRINTER);
+        [id(0x40030002), propput]
+        HRESULT REDMON_PRINTER([in] BSTR REDMON_PRINTER);
+        [id(0x40030003), propget]
+        HRESULT REDMON_MACHINE([out, retval] BSTR* REDMON_MACHINE);
+        [id(0x40030003), propput]
+        HRESULT REDMON_MACHINE([in] BSTR REDMON_MACHINE);
+        [id(0x40030004), propget]
+        HRESULT REDMON_USER([out, retval] BSTR* REDMON_USER);
+        [id(0x40030004), propput]
+        HRESULT REDMON_USER([in] BSTR REDMON_USER);
+        [id(0x40030005), propget]
+        HRESULT REDMON_DOCNAME([out, retval] BSTR* REDMON_DOCNAME);
+        [id(0x40030005), propput]
+        HRESULT REDMON_DOCNAME([in] BSTR REDMON_DOCNAME);
+        [id(0x40030006), propget]
+        HRESULT REDMON_FILENAME([out, retval] BSTR* REDMON_FILENAME);
+        [id(0x40030006), propput]
+        HRESULT REDMON_FILENAME([in] BSTR REDMON_FILENAME);
+        [id(0x40030007), propget]
+        HRESULT REDMON_SESSIONID([out, retval] BSTR* REDMON_SESSIONID);
+        [id(0x40030007), propput]
+        HRESULT REDMON_SESSIONID([in] BSTR REDMON_SESSIONID);
+        [id(0x40030008), propget]
+        HRESULT SpoolFilename([out, retval] BSTR* SpoolFilename);
+        [id(0x40030008), propput]
+        HRESULT SpoolFilename([in] BSTR SpoolFilename);
+        [id(0x40030009), propget]
+        HRESULT SpoolerAccount([out, retval] BSTR* SpoolerAccount);
+        [id(0x40030009), propput]
+        HRESULT SpoolerAccount([in] BSTR SpoolerAccount);
+        [id(0x4003000a), propget]
+        HRESULT Computer([out, retval] BSTR* Computer);
+        [id(0x4003000a), propput]
+        HRESULT Computer([in] BSTR Computer);
+        [id(0x4003000b), propget]
+        HRESULT Created([out, retval] BSTR* Created);
+        [id(0x4003000b), propput]
+        HRESULT Created([in] BSTR Created);
+    };
+
+    [
+      uuid(85BA86C8-F6FA-4731-BD3A-AD0E6E655BDD),
+      version(1.0)
+    ]
+    coclass clsPDFCreatorInfoSpoolFile {
+        [default] interface _clsPDFCreatorInfoSpoolFile;
+    };
+
+    [
+      odl,
+      uuid(5A2893D6-F5EF-4E30-9960-3418C58C17A4),
+      version(1.1),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _clsPDFCreator : IDispatch {
+        [id(0x68030067), propget]
+        HRESULT cError([out, retval] _clsPDFCreatorError** );
+        [id(0x68030066), propget]
+        HRESULT cErrorDetail(
+                        [in] BSTR PropertyName, 
+                        [out, retval] VARIANT* );
+        [id(0x60030069)]
+        HRESULT cErrorClear();
+        [id(0x68030065), propget]
+        HRESULT cOutputFilename([out, retval] BSTR* );
+        [id(0x68030064), propget]
+        HRESULT cPDFCreatorApplicationPath([out, retval] BSTR* );
+        [id(0x68030063), propget]
+        HRESULT cIsLogfileDialogDisplayed([out, retval] VARIANT_BOOL* );
+        [id(0x68030062), propget]
+        HRESULT cIsOptionsDialogDisplayed([out, retval] VARIANT_BOOL* );
+        [id(0x68030061), propget]
+        HRESULT cProgramRelease(
+                        [in, optional, defaultvalue(-1)] VARIANT_BOOL WithBeta, 
+                        [out, retval] BSTR* );
+        [id(0x68030060), propget]
+        HRESULT cProgramIsRunning([out, retval] VARIANT_BOOL* );
+        [id(0x6803005f), propget]
+        HRESULT cWindowsVersion([out, retval] BSTR* );
+        [id(0x6803005e), propget]
+        HRESULT cVisible([out, retval] VARIANT_BOOL* );
+        [id(0x6803005e), propput]
+        HRESULT cVisible([in] VARIANT_BOOL );
+        [id(0x6803005d), propget]
+        HRESULT cInstalledAsServer([out, retval] VARIANT_BOOL* );
+        [id(0x6803005c), propget]
+        HRESULT cPrinterStop([out, retval] VARIANT_BOOL* );
+        [id(0x6803005c), propput]
+        HRESULT cPrinterStop([in] VARIANT_BOOL );
+        [id(0x6803005b), propget]
+        HRESULT cOptionsNames([out, retval] _Collection** );
+        [id(0x6803005a), propget]
+        HRESULT cOption(
+                        [in] BSTR PropertyName, 
+                        [out, retval] VARIANT* );
+        [id(0x6803005a), propput]
+        HRESULT cOption(
+                        [in] BSTR PropertyName, 
+                        [in] VARIANT );
+        [id(0x68030059), propget]
+        HRESULT cOptions([out, retval] _clsPDFCreatorOptions** );
+        [id(0x68030059), propputref]
+        HRESULT cOptions([in] _clsPDFCreatorOptions* );
+        [id(0x68030058), propget]
+        HRESULT cStandardOption(
+                        [in] BSTR PropertyName, 
+                        [out, retval] VARIANT* );
+        [id(0x68030057), propget]
+        HRESULT cStandardOptions([out, retval] _clsPDFCreatorOptions** );
+        [id(0x68030056), propget]
+        HRESULT cPrintjobInfos(
+                        [in] BSTR PrintjobFilename, 
+                        [out, retval] _clsPDFCreatorInfoSpoolFile** );
+        [id(0x68030055), propget]
+        HRESULT cPrintjobInfo(
+                        [in] BSTR PrintjobFilename, 
+                        [in] BSTR PropertyName, 
+                        [out, retval] BSTR* );
+        [id(0x68030054), propget]
+        HRESULT cCountOfPrintjobs([out, retval] long* );
+        [id(0x68030053), propget]
+        HRESULT cPrintjobFilename(
+                        [in] long JobNumber, 
+                        [out, retval] BSTR* );
+        [id(0x68030052), propget]
+        HRESULT cDefaultPrinter([out, retval] BSTR* );
+        [id(0x68030052), propput]
+        HRESULT cDefaultPrinter([in] BSTR );
+        [id(0x68030051), propget]
+        HRESULT cWindowState([out, retval] long* );
+        [id(0x68030051), propput]
+        HRESULT cWindowState([in] long );
+        [id(0x68030050), propget]
+        HRESULT cIsConverted([out, retval] VARIANT_BOOL* );
+        [id(0x68030050), propput]
+        HRESULT cIsConverted([in] VARIANT_BOOL );
+        [id(0x6003006a)]
+        HRESULT cDeletePrintjob([in] long JobNumber);
+        [id(0x6003006b)]
+        HRESULT cMovePrintjobBottom([in] long JobNumber);
+        [id(0x6003006c)]
+        HRESULT cMovePrintjobTop([in] long JobNumber);
+        [id(0x6003006d)]
+        HRESULT cMovePrintjobUp([in] long JobNumber);
+        [id(0x6003006e)]
+        HRESULT cMovePrintjobDown([in] long JobNumber);
+        [id(0x6003006f)]
+        HRESULT cClose([out, retval] VARIANT_BOOL* );
+        [id(0x60030070)]
+        HRESULT cCloseRunningSession([out, retval] VARIANT_BOOL* );
+        [id(0x60030071)]
+        HRESULT cStart(
+                        [in, optional] BSTR Params, 
+                        [in, optional, defaultvalue(0)] VARIANT_BOOL ForceInitialize, 
+                        [out, retval] VARIANT_BOOL* );
+        [id(0x60030072)]
+        HRESULT cClearCache();
+        [id(0x60030073)]
+        HRESULT cClearLogfile();
+        [id(0x60030074)]
+        HRESULT cConvertPostscriptfile(
+                        [in] BSTR InputFilename, 
+                        [in] BSTR OutputFilename);
+        [id(0x60030075)]
+        HRESULT cTestEvent([in] BSTR EventName);
+        [id(0x60030076)]
+        HRESULT cShowLogfileDialog([in] VARIANT_BOOL Value);
+        [id(0x60030077)]
+        HRESULT cShowOptionsDialog([in] VARIANT_BOOL Value);
+        [id(0x60030078)]
+        HRESULT cSendMail(
+                        [in] BSTR OutputFilename, 
+                        [in] BSTR Recipients);
+        [id(0x60030079)]
+        HRESULT cIsPrintable(
+                        [in] BSTR Filename, 
+                        [out, retval] VARIANT_BOOL* );
+        [id(0x6003007a)]
+        HRESULT cCombineAll();
+        [id(0x6003007b)]
+        HRESULT cGetPDFCreatorPrinters([out, retval] _Collection** );
+        [id(0x6003007c)]
+        HRESULT cGetLogfile([out, retval] BSTR* );
+        [id(0x6003007d)]
+        HRESULT cWriteToLogfile([in] BSTR LogStr);
+        [id(0x6003007e)]
+        HRESULT cPrintFile([in] BSTR Filename);
+        [id(0x6003007f)]
+        HRESULT cPrintPDFCreatorTestpage();
+        [id(0x60030080)]
+        HRESULT cPrintPrinterTestpage([in, optional] BSTR Printername);
+        [id(0x60030081)]
+        HRESULT cReadOptions([out, retval] _clsPDFCreatorOptions** );
+        [id(0x60030082)]
+        HRESULT cSaveOptions([in, optional] VARIANT Options1);
+        [id(0x60030083)]
+        HRESULT cReadOptionsFromFile(
+                        [in] BSTR INIFilename, 
+                        [out, retval] _clsPDFCreatorOptions** );
+        [id(0x60030084)]
+        HRESULT cSaveOptionsToFile(
+                        [in] BSTR INIFilename, 
+                        [in, optional] VARIANT Options1);
+        [id(0x68030085), propget]
+        HRESULT cPostscriptInfo(
+                        [in] BSTR PostscriptFilename, 
+                        [in] BSTR PropertyName, 
+                        [out, retval] BSTR* );
+        [id(0x60030088)]
+        HRESULT cAddPrintjob([in] BSTR PostscriptFilename);
+    };
+
+    [
+      uuid(3A619AE4-50EC-46C8-B19E-BE8F50DD2F22),
+      version(1.1)
+    ]
+    coclass clsPDFCreator {
+        [default] interface _clsPDFCreator;
+        [default, source] dispinterface __clsPDFCreator;
+    };
+
+    typedef [uuid(26E21F8A-58DF-426E-9E6E-75FBE217F886), version(1.0), public]
+    _clsPDFCreator clsPDFCreator___v0;
+
+    [
+      uuid(FD7E6F0F-EEF8-4667-818A-D4A23ECD649F),
+      version(1.1),
+      hidden,
+      nonextensible
+    ]
+    dispinterface __clsPDFCreator {
+        properties:
+        methods:
+            [id(0x00000001)]
+            void eReady();
+            [id(0x00000002)]
+            void eError();
+    };
+	//  Primary dispatch interface for MFCSink
+		
+	[ uuid(88583FA3-A39F-428E-B9D0-6F15ED2B0848) ]
+	dispinterface IMFCSink
+	{
+		properties:
+		methods:
+	};
+
+	//  Class information for MFCSink
+
+	[ uuid(CD7C3A49-D045-4049-AAB9-96AECAE1FE14) ]
+	coclass MFCSink
+	{
+		[default] dispinterface IMFCSink;
+	};
+	//  Primary dispatch interface for PDFSink
+		
+	[ uuid(F2F65D76-E4BF-4D1C-B1DD-6C2738664FFA) ]
+	dispinterface IPDFSink
+	{
+		properties:
+		methods:
+	};
+
+	//  Class information for PDFSink
+
+	[ uuid(0780FC23-9914-4A4E-AA97-9FE17D3A2831) ]
+	coclass PDFSink
+	{
+		[default] dispinterface IPDFSink;
+	};
+};

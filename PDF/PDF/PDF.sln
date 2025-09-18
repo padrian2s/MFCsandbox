@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PDF", "PDF.vcproj", "{64F4F61D-7172-49A4-992D-4F7B58270880}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{64F4F61D-7172-49A4-992D-4F7B58270880}.Debug.ActiveCfg = Debug|Win32
+		{64F4F61D-7172-49A4-992D-4F7B58270880}.Debug.Build.0 = Debug|Win32
+		{64F4F61D-7172-49A4-992D-4F7B58270880}.Release.ActiveCfg = Release|Win32
+		{64F4F61D-7172-49A4-992D-4F7B58270880}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

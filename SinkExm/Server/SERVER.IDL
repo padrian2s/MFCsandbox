@@ -1,0 +1,50 @@
+// Server.idl : IDL source for Server.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Server.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(6A182417-79A8-4B05-A5F2-A7F6A50C0C34),
+		dual,
+		helpstring("ISimpleServer Interface"),
+		pointer_default(unique)
+	]
+	interface ISimpleServer : IDispatch
+	{
+		[id(1), helpstring("method NeedEvent")] HRESULT NeedEvent();
+	};
+
+[
+	uuid(FFEE8594-E028-4546-B6D3-43961B7C985D),
+	version(1.0),
+	helpstring("Server 1.0 Type Library")
+]
+library SERVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(3DE1372D-B010-439E-97A2-7DF5733667E6),
+		helpstring("_ISimpleServerEvents Interface")
+	]
+	dispinterface _ISimpleServerEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("method NeededEvent")] HRESULT NeededEvent();
+	};
+	[
+		uuid(E1808271-6D24-49CC-BC2D-54C1D31AA237),
+		helpstring("SimpleServer Class")
+	]
+	coclass SimpleServer
+	{
+		[default] interface ISimpleServer;
+		[default, source] dispinterface _ISimpleServerEvents;
+	};
+};

@@ -1,0 +1,72 @@
+[$Id: README,v 1.1 2007/10/07 15:07:43 tom Exp tom $]
+
+ABOUT TROWSER
+=============
+
+Trowser is a browser for large line-oriented text files (e.g. debug traces)
+implemented in Tcl/Tk.  It's meant as an alternative to "less". Compared
+to less, trowser adds color highlighting, a persistent search history,
+graphical bookmarking, separate search result (i.e. filter) windows and
+flexible skipping of input from pipes to STDIN.  Trowser has a graphical
+interface, but is designed to allow browsing via the keyboard at least
+to the same extent as less. Key bindings and the cursor positioning
+concept are derived from vim.
+
+Note: in this context "line-oriented" denotes that each line of text is
+considered a data unit.  Color highlighting (including search matches)
+will always apply the highlight to the complete text line.
+
+For more details and options please refer to the manual page.
+
+
+INSTALL
+=======
+
+Currently trowser does not have scripts to support automatic installation.
+Manual installation is very simple though: To install trowser into /usr/bin
+and the manual page into /usr/share/man perform the following steps in
+your shell:
+
+$ cp trowser.tcl /usr/bin/trowser
+$ cp trowser.1 /usr/share/man/man1/trowser.1
+
+If trowser fails to start or aborts with an interpreter error, you should
+check if Tcl/Tk is installed and has the required version:
+
+$ echo 'puts $tcl_patchLevel' | tclsh
+$ echo 'puts $tcl_patchLevel;exit' | wish8.4
+
+Both commands will print the version number. The version should be 8.4.0
+or later for both.  (As of writing this, trowser is tested against 8.4.14)
+If you don't have "wish8.4" try just "wish". If that exists and has version
+8.4.x, change the third line in trowser.tcl accordingly.
+
+
+AUTHOR
+======
+
+This program was written between April and October 2007 by Tom Zoerner.
+
+The official homepage is http://www.nefkom.net/tomzo/prj/trowser/
+
+To report bugs please send an email to tomzo@sourceforge.net
+
+
+COPYRIGHT
+=========
+
+Copyright (C) 2007 Th. "Tom" Zoerner. All rights reserved.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+

@@ -1,0 +1,62 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: Threads, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\MFCsandbox\threads_and_mfc_demo\Release\RSP000004.rsp" with contents
+[
+/O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /MD /Yc"stdafx.h" /Fp".\Release/Threads.pch" /Fo".\Release/" /Fd".\Release/" /W3 /c /TP
+.\StdAfx.cpp
+]
+Creating command line "cl.exe @c:\MFCsandbox\threads_and_mfc_demo\Release\RSP000004.rsp /nologo"
+Creating temporary file "c:\MFCsandbox\threads_and_mfc_demo\Release\RSP000005.rsp" with contents
+[
+/O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /MD /Yu"stdafx.h" /Fp".\Release/Threads.pch" /Fo".\Release/" /Fd".\Release/" /W3 /c /TP
+.\ThreadsDlg.cpp
+.\Threads.cpp
+.\texttospeech.cpp
+.\LoopSlider.cpp
+]
+Creating command line "cl.exe @c:\MFCsandbox\threads_and_mfc_demo\Release\RSP000005.rsp /nologo"
+Creating command line "rc.exe /d "NDEBUG" /d "_AFXDLL" /l 0x406 /fo".\Release/Threads.res" .\Threads.rc"
+Creating temporary file "c:\MFCsandbox\threads_and_mfc_demo\Release\RSP000006.rsp" with contents
+[
+/OUT:".\Release/Threads.exe" /INCREMENTAL:NO /NOLOGO /PDB:".\Release/Threads.pdb" /SUBSYSTEM:WINDOWS /MACHINE:X86
+.\release\LoopSlider.obj
+.\release\StdAfx.obj
+.\release\texttospeech.obj
+.\release\Threads.obj
+.\release\Threads.res
+.\release\ThreadsDlg.obj
+]
+Creating command line "link.exe @c:\MFCsandbox\threads_and_mfc_demo\Release\RSP000006.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+StdAfx.cpp
+ WINVER not defined. Defaulting to 0x0501 (Windows XP and Windows .NET Server)
+Compiling...
+ThreadsDlg.cpp
+Threads.cpp
+Threads.cpp(75) : warning C4996: 'CWinApp::Enable3dControls' was declared deprecated
+        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\atlmfc\include\afxwin.h(4369) : see declaration of 'CWinApp::Enable3dControls'
+texttospeech.cpp
+LoopSlider.cpp
+Generating Code...
+Compiling resources...
+Linking...
+LINK : warning LNK4089: all references to 'OLEAUT32.dll' discarded by /OPT:REF
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\MFCsandbox\threads_and_mfc_demo\Release\BuildLog.htm"
+Threads - 0 error(s), 2 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

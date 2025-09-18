@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{1BA1FE80-8ACB-4671-B0BE-F54BB3F08A9E} = s 'ATLSink'
+		'ATLSink.EXE'
+		{
+			val AppID = s {1BA1FE80-8ACB-4671-B0BE-F54BB3F08A9E}
+		}
+	}
+}

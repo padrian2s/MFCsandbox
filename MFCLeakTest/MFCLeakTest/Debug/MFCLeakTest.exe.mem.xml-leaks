@@ -1,0 +1,28 @@
+<MEMREPORT date="03/29/07" time="09:49:43" >
+<LEAK requestID="130" size="100">
+<STACKENTRY decl="MyAllocHook" decl_offset="+1313" srcfile="c:\mfcsandbox\mfcleaktest\mfcleaktest\stackwalker.cpp" line="1409" line_offset="+0" module="MFCLeakTest" base="00400000" />
+<STACKENTRY decl="_heap_alloc_dbg" decl_offset="+166" srcfile="f:\vs70builds\6030\vc\crtbld\crt\src\dbgheap.c" line="359" line_offset="+30" module="MSVCR71D" base="10200000" />
+<STACKENTRY decl="_nh_malloc_dbg" decl_offset="+73" srcfile="f:\vs70builds\6030\vc\crtbld\crt\src\dbgheap.c" line="260" line_offset="+21" module="MSVCR71D" base="10200000" />
+<STACKENTRY decl="malloc" decl_offset="+25" srcfile="f:\vs70builds\6030\vc\crtbld\crt\src\dbgheap.c" line="139" line_offset="+21" module="MSVCR71D" base="10200000" />
+<STACKENTRY decl="CMFCLeakTestApp::CMFCLeakTestApp" decl_offset="+64" srcfile="c:\mfcsandbox\mfcleaktest\mfcleaktest\mfcleaktest.cpp" line="55" line_offset="+10" module="MFCLeakTest" base="00400000" />
+<STACKENTRY decl="$E4" decl_offset="+40" srcfile="c:\mfcsandbox\mfcleaktest\mfcleaktest\mfcleaktest.cpp" line="61" line_offset="+40" module="MFCLeakTest" base="00400000" />
+<STACKENTRY decl="_initterm" decl_offset="+24" srcfile="f:\vs70builds\6030\vc\crtbld\crt\src\crt0dat.c" line="600" line_offset="+0" module="MSVCR71D" base="10200000" />
+<STACKENTRY decl="WinMainCRTStartup" decl_offset="+282" srcfile="f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c" line="336" line_offset="+15" module="MFCLeakTest" base="00400000" />
+<STACKENTRY decl="RegisterWaitForInputIdle" decl_offset="+73" srcfile="" module="kernel32" base="7c800000" />
+
+
+</LEAK>
+<LEAK requestID="1431800" size="120">
+<STACKENTRY decl="CMallocSpy::PostAlloc" decl_offset="+144" srcfile="c:\mfcsandbox\mfcleaktest\mfcleaktest\stackwalker.cpp" line="154" line_offset="+0" module="MFCLeakTest" base="00400000" />
+<STACKENTRY decl="CoRevokeMallocSpy" decl_offset="+198" srcfile="" module="ole32" base="774e0000" />
+<STACKENTRY decl="CoTaskMemAlloc" decl_offset="+19" srcfile="" module="ole32" base="774e0000" />
+<STACKENTRY decl="CMainFrame::CMainFrame" decl_offset="+122" srcfile="c:\mfcsandbox\mfcleaktest\mfcleaktest\mainfrm.cpp" line="41" line_offset="+10" module="MFCLeakTest" base="00400000" />
+<STACKENTRY decl="CMFCLeakTestApp::InitInstance" decl_offset="+334" srcfile="c:\mfcsandbox\mfcleaktest\mfcleaktest\mfcleaktest.cpp" line="99" line_offset="+57" module="MFCLeakTest" base="00400000" />
+<STACKENTRY decl="AfxWinMain" decl_offset="+119" srcfile="f:\vs70builds\6030\vc\mfcatl\ship\atlmfc\src\mfc\winmain.cpp" line="39" line_offset="+11" module="MFC71D" base="7c140000" />
+<STACKENTRY decl="WinMain" decl_offset="+24" srcfile="f:\vs70builds\6030\vc\mfcatl\ship\atlmfc\src\mfc\appmodul.cpp" line="25" line_offset="+0" module="MFCLeakTest" base="00400000" />
+<STACKENTRY decl="WinMainCRTStartup" decl_offset="+498" srcfile="f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c" line="390" line_offset="+57" module="MFCLeakTest" base="00400000" />
+<STACKENTRY decl="RegisterWaitForInputIdle" decl_offset="+73" srcfile="" module="kernel32" base="7c800000" />
+
+
+</LEAK>
+</MEMREPORT>

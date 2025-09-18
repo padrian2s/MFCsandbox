@@ -1,0 +1,73 @@
+// Plot.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (Plot.tlb) that will become a resource in
+// Plot.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(A74CD7DD-EA6F-11D4-ABF3-000102378429), version(1.0),
+  helpfile("Plot.hlp"),
+  helpstring("Plot ActiveX Control module"),
+  control ]
+library PLOTLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CPlotCtrl
+
+	[ uuid(A74CD7DE-EA6F-11D4-ABF3-000102378429),
+	  helpstring("Dispatch interface for Plot Control"), hidden ]
+	dispinterface _DPlot
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CPlotCtrl)
+			[id(DISPID_BACKCOLOR), bindable, requestedit] OLE_COLOR BackColor;
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(1)] boolean ShowGrid;
+			[id(2)] boolean XLog;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CPlotCtrl)
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CPlotCtrl
+
+	[ uuid(A74CD7DF-EA6F-11D4-ABF3-000102378429),
+	  helpstring("Event interface for Plot Control") ]
+	dispinterface _DPlotEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CPlotCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CPlotCtrl
+
+	[ uuid(A74CD7E0-EA6F-11D4-ABF3-000102378429),
+	  helpstring("Plot Control"), control ]
+	coclass Plot
+	{
+		[default] dispinterface _DPlot;
+		[default, source] dispinterface _DPlotEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

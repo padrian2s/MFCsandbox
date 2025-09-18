@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ATLSink - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP8030.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/ATLSink.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Submission\VBeventswithVC\ATLSink\ATLSink.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP8030.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP8033.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ATLSink.pdb" /debug /machine:I386 /out:"Debug/ATLSink.exe" /pdbtype:sept 
+.\Debug\ATLSink.obj
+.\Debug\StdAfx.obj
+.\Debug\ATLSink.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP8033.TMP"
+Creating temporary file "C:\WINDOWS\TEMP\RSP8034.BAT" with contents
+[
+@echo off
+".\Debug\ATLSink.exe" /RegServer
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+echo Server registration done!
+]
+Creating command line "C:\WINDOWS\TEMP\RSP8034.BAT"
+Compiling...
+ATLSink.cpp
+Linking...
+<h3>Output Window</h3>
+Performing registration
+Server registration done!
+
+
+
+<h3>Results</h3>
+ATLSink.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

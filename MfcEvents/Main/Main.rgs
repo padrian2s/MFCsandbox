@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{7ECE0040-F211-4C77-8F22-331EDCB8BE53} = s 'Main'
+		'Main.EXE'
+		{
+			val AppID = s {7ECE0040-F211-4C77-8F22-331EDCB8BE53}
+		}
+	}
+}

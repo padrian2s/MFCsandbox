@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gradient", "Gradient.vcproj", "{5110D96B-736C-4BE6-8D49-34999AE0E015}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5110D96B-736C-4BE6-8D49-34999AE0E015}.Debug.ActiveCfg = Debug|Win32
+		{5110D96B-736C-4BE6-8D49-34999AE0E015}.Debug.Build.0 = Debug|Win32
+		{5110D96B-736C-4BE6-8D49-34999AE0E015}.Release.ActiveCfg = Release|Win32
+		{5110D96B-736C-4BE6-8D49-34999AE0E015}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

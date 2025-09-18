@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{E6FDF86B-F3D1-11D4-8576-0002A516ECE8}") = "javasharp", "javasharp.vjsproj", "{E04338DE-6123-4DFF-A488-D3B69E288631}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E04338DE-6123-4DFF-A488-D3B69E288631}.Debug.ActiveCfg = Debug|.NET
+		{E04338DE-6123-4DFF-A488-D3B69E288631}.Debug.Build.0 = Debug|.NET
+		{E04338DE-6123-4DFF-A488-D3B69E288631}.Release.ActiveCfg = Release|.NET
+		{E04338DE-6123-4DFF-A488-D3B69E288631}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

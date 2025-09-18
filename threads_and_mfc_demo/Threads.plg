@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Threads - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Aria\LOCALS~1\Temp\RSPB2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Debug/Threads.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Aria\Desktop\Threads_final\Threads\LoopSlider.cpp"
+"C:\Documents and Settings\Aria\Desktop\Threads_final\Threads\Threads.cpp"
+"C:\Documents and Settings\Aria\Desktop\Threads_final\Threads\ThreadsDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Aria\LOCALS~1\Temp\RSPB2.tmp" 
+Creating temporary file "C:\DOCUME~1\Aria\LOCALS~1\Temp\RSPB3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Threads.pdb" /debug /machine:I386 /out:"Debug/Threads.exe" /pdbtype:sept 
+".\Debug\LoopSlider.obj"
+".\Debug\StdAfx.obj"
+".\Debug\texttospeech.obj"
+".\Debug\Threads.obj"
+".\Debug\ThreadsDlg.obj"
+".\Debug\Threads.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Aria\LOCALS~1\Temp\RSPB3.tmp"
+<h3>Output Window</h3>
+Compiling...
+ThreadsDlg.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+LoopSlider.cpp
+Threads.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Threads.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

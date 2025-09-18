@@ -1,0 +1,104 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: Plot, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\MFCsandbox\activexTutorial\Plot\Debug\RSP000001.rsp" with contents
+[
+/D "_DEBUG" /mktyplib203 /env win32  /tlb ".\Debug/Plot.tlb"
+.\Plot.odl
+]
+Creating command line "midl.exe @c:\MFCsandbox\activexTutorial\Plot\Debug\RSP000001.rsp /nologo"
+Creating temporary file "c:\MFCsandbox\activexTutorial\Plot\Debug\RSP000002.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_USRDLL" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /RTC1 /MDd /Yc"stdafx.h" /Fp".\Debug/Plot.pch" /Fo".\Debug/" /Fd".\Debug/" /W3 /c /ZI /TP
+.\StdAfx.cpp
+]
+Creating command line "cl.exe @c:\MFCsandbox\activexTutorial\Plot\Debug\RSP000002.rsp /nologo"
+Creating temporary file "c:\MFCsandbox\activexTutorial\Plot\Debug\RSP000003.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_USRDLL" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /RTC1 /MDd /Yu"stdafx.h" /Fp".\Debug/Plot.pch" /Fo".\Debug/" /Fd".\Debug/" /W3 /c /ZI /TP
+.\PlotPpg.cpp
+.\PlotCtl.cpp
+.\Plot.cpp
+]
+Creating command line "cl.exe @c:\MFCsandbox\activexTutorial\Plot\Debug\RSP000003.rsp /nologo"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating Type Library...
+Processing .\Plot.odl
+Plot.odl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\wtypes.idl
+wtypes.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\basetsd.h
+basetsd.h
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\guiddef.h
+guiddef.h
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oaidl.acf
+oaidl.acf
+Compiling...
+StdAfx.cpp
+ WINVER not defined. Defaulting to 0x0501 (Windows XP and Windows .NET Server)
+Compiling...
+PlotPpg.cpp
+PlotCtl.cpp
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(193) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(194) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(196) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(331) : error C2668: 'log10' : ambiguous call to overloaded function
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(614): could be 'long double log10(long double)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(566): or       'float log10(float)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(194): or       'double log10(double)'
+        while trying to match the argument list '(int)'
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(346) : error C2668: 'log10' : ambiguous call to overloaded function
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(614): could be 'long double log10(long double)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(566): or       'float log10(float)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(194): or       'double log10(double)'
+        while trying to match the argument list '(int)'
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(361) : error C2668: 'log10' : ambiguous call to overloaded function
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(614): could be 'long double log10(long double)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(566): or       'float log10(float)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(194): or       'double log10(double)'
+        while trying to match the argument list '(int)'
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(376) : error C2668: 'log10' : ambiguous call to overloaded function
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(614): could be 'long double log10(long double)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(566): or       'float log10(float)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(194): or       'double log10(double)'
+        while trying to match the argument list '(int)'
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(391) : error C2668: 'log10' : ambiguous call to overloaded function
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(614): could be 'long double log10(long double)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(566): or       'float log10(float)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(194): or       'double log10(double)'
+        while trying to match the argument list '(int)'
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(406) : error C2668: 'log10' : ambiguous call to overloaded function
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(614): could be 'long double log10(long double)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(566): or       'float log10(float)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(194): or       'double log10(double)'
+        while trying to match the argument list '(int)'
+c:\MFCsandbox\activexTutorial\Plot\PlotCtl.cpp(421) : error C2668: 'log10' : ambiguous call to overloaded function
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(614): could be 'long double log10(long double)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(566): or       'float log10(float)'
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h(194): or       'double log10(double)'
+        while trying to match the argument list '(int)'
+Plot.cpp
+Generating Code...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\MFCsandbox\activexTutorial\Plot\Debug\BuildLog.htm"
+Plot - 7 error(s), 3 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

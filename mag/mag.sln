@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mag", "mag.vcproj", "{FAB22A7B-6476-4586-AB56-8DD00125EF7D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FAB22A7B-6476-4586-AB56-8DD00125EF7D}.Debug.ActiveCfg = Debug|Win32
+		{FAB22A7B-6476-4586-AB56-8DD00125EF7D}.Debug.Build.0 = Debug|Win32
+		{FAB22A7B-6476-4586-AB56-8DD00125EF7D}.Release.ActiveCfg = Release|Win32
+		{FAB22A7B-6476-4586-AB56-8DD00125EF7D}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

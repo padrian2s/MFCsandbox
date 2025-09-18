@@ -1,0 +1,19 @@
+
+	// Main.idl : IDL source for Main.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (Main.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(442839BA-C4B0-4B23-80E7-5926FBEDF4BA),
+	version(1.0),
+	helpstring("Main 1.0 Type Library")
+]
+library MainLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	

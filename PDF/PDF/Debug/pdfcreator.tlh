@@ -1,0 +1,1888 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.6030 (9e3aea6b).
+//
+// c:\mfcsandbox\pdf\pdf\debug\pdfcreator.tlh
+//
+// C++ source equivalent of Win32 type library C:\Program Files\PDFCreator\PDFCreator.exe
+// compiler-generated file created 08/27/07 at 16:17:31 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace PDFCreator {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("1ce9dc08-9fbc-45c6-8a7c-4fe1e208a613"))
+/* LIBID */ __PDFCreator;
+struct __declspec(uuid("edd16d7e-7339-4c43-ba18-f00077165ffe"))
+/* dual interface */ _clsPDFCreatorOptions;
+struct /* coclass */ clsPDFCreatorOptions;
+struct __declspec(uuid("63be3bc3-2b1d-4456-bfc7-900099f94aa2"))
+/* dual interface */ _clsPDFCreatorError;
+struct /* coclass */ clsPDFCreatorError;
+struct __declspec(uuid("2e2e2568-aa5b-4535-8291-c8930d1760c1"))
+/* dual interface */ _clsPDFCreatorInfoSpoolFile;
+struct /* coclass */ clsPDFCreatorInfoSpoolFile;
+struct __declspec(uuid("5a2893d6-f5ef-4e30-9960-3418c58c17a4"))
+/* dual interface */ _clsPDFCreator;
+struct /* coclass */ clsPDFCreator;
+struct __declspec(uuid("fd7e6f0f-eef8-4667-818a-d4a23ecd649f"))
+/* dispinterface */ __clsPDFCreator;
+typedef struct _clsPDFCreatorOptions clsPDFCreatorOptions___v0;
+typedef struct _clsPDFCreator clsPDFCreator___v0;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_clsPDFCreatorOptions, __uuidof(_clsPDFCreatorOptions));
+_COM_SMARTPTR_TYPEDEF(_clsPDFCreatorError, __uuidof(_clsPDFCreatorError));
+_COM_SMARTPTR_TYPEDEF(_clsPDFCreatorInfoSpoolFile, __uuidof(_clsPDFCreatorInfoSpoolFile));
+_COM_SMARTPTR_TYPEDEF(_clsPDFCreator, __uuidof(_clsPDFCreator));
+_COM_SMARTPTR_TYPEDEF(__clsPDFCreator, __uuidof(__clsPDFCreator));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("edd16d7e-7339-4c43-ba18-f00077165ffe"))
+_clsPDFCreatorOptions : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAdditionalGhostscriptParameters,put=PutAdditionalGhostscriptParameters))
+    _bstr_t AdditionalGhostscriptParameters;
+    __declspec(property(get=GetAdditionalGhostscriptSearchpath,put=PutAdditionalGhostscriptSearchpath))
+    _bstr_t AdditionalGhostscriptSearchpath;
+    __declspec(property(get=GetAddWindowsFontpath,put=PutAddWindowsFontpath))
+    long AddWindowsFontpath;
+    __declspec(property(get=GetAutosaveDirectory,put=PutAutosaveDirectory))
+    _bstr_t AutosaveDirectory;
+    __declspec(property(get=GetAutosaveFilename,put=PutAutosaveFilename))
+    _bstr_t AutosaveFilename;
+    __declspec(property(get=GetAutosaveFormat,put=PutAutosaveFormat))
+    long AutosaveFormat;
+    __declspec(property(get=GetAutosaveStartStandardProgram,put=PutAutosaveStartStandardProgram))
+    long AutosaveStartStandardProgram;
+    __declspec(property(get=GetBitmapResolution,put=PutBitmapResolution))
+    long BitmapResolution;
+    __declspec(property(get=GetBMPColorscount,put=PutBMPColorscount))
+    long BMPColorscount;
+    __declspec(property(get=GetClientComputerResolveIPAddress,put=PutClientComputerResolveIPAddress))
+    long ClientComputerResolveIPAddress;
+    __declspec(property(get=GetDeviceHeightPoints,put=PutDeviceHeightPoints))
+    double DeviceHeightPoints;
+    __declspec(property(get=GetDeviceWidthPoints,put=PutDeviceWidthPoints))
+    double DeviceWidthPoints;
+    __declspec(property(get=GetDirectoryGhostscriptBinaries,put=PutDirectoryGhostscriptBinaries))
+    _bstr_t DirectoryGhostscriptBinaries;
+    __declspec(property(get=GetDirectoryGhostscriptFonts,put=PutDirectoryGhostscriptFonts))
+    _bstr_t DirectoryGhostscriptFonts;
+    __declspec(property(get=GetDirectoryGhostscriptLibraries,put=PutDirectoryGhostscriptLibraries))
+    _bstr_t DirectoryGhostscriptLibraries;
+    __declspec(property(get=GetDirectoryGhostscriptResource,put=PutDirectoryGhostscriptResource))
+    _bstr_t DirectoryGhostscriptResource;
+    __declspec(property(get=GetDisableEmail,put=PutDisableEmail))
+    long DisableEmail;
+    __declspec(property(get=GetDontUseDocumentSettings,put=PutDontUseDocumentSettings))
+    long DontUseDocumentSettings;
+    __declspec(property(get=GetEPSLanguageLevel,put=PutEPSLanguageLevel))
+    long EPSLanguageLevel;
+    __declspec(property(get=GetFilenameSubstitutions,put=PutFilenameSubstitutions))
+    _bstr_t FilenameSubstitutions;
+    __declspec(property(get=GetFilenameSubstitutionsOnlyInTitle,put=PutFilenameSubstitutionsOnlyInTitle))
+    long FilenameSubstitutionsOnlyInTitle;
+    __declspec(property(get=GetJPEGColorscount,put=PutJPEGColorscount))
+    long JPEGColorscount;
+    __declspec(property(get=GetJPEGQuality,put=PutJPEGQuality))
+    long JPEGQuality;
+    __declspec(property(get=GetLanguage,put=PutLanguage))
+    _bstr_t Language;
+    __declspec(property(get=GetLastSaveDirectory,put=PutLastSaveDirectory))
+    _bstr_t LastSaveDirectory;
+    __declspec(property(get=GetLogging,put=PutLogging))
+    long Logging;
+    __declspec(property(get=GetLogLines,put=PutLogLines))
+    long LogLines;
+    __declspec(property(get=GetNoConfirmMessageSwitchingDefaultprinter,put=PutNoConfirmMessageSwitchingDefaultprinter))
+    long NoConfirmMessageSwitchingDefaultprinter;
+    __declspec(property(get=GetNoProcessingAtStartup,put=PutNoProcessingAtStartup))
+    long NoProcessingAtStartup;
+    __declspec(property(get=GetNoPSCheck,put=PutNoPSCheck))
+    long NoPSCheck;
+    __declspec(property(get=GetOnePagePerFile,put=PutOnePagePerFile))
+    long OnePagePerFile;
+    __declspec(property(get=GetOptionsDesign,put=PutOptionsDesign))
+    long OptionsDesign;
+    __declspec(property(get=GetOptionsEnabled,put=PutOptionsEnabled))
+    long OptionsEnabled;
+    __declspec(property(get=GetOptionsVisible,put=PutOptionsVisible))
+    long OptionsVisible;
+    __declspec(property(get=GetPapersize,put=PutPapersize))
+    _bstr_t Papersize;
+    __declspec(property(get=GetPCXColorscount,put=PutPCXColorscount))
+    long PCXColorscount;
+    __declspec(property(get=GetPDFAllowAssembly,put=PutPDFAllowAssembly))
+    long PDFAllowAssembly;
+    __declspec(property(get=GetPDFAllowDegradedPrinting,put=PutPDFAllowDegradedPrinting))
+    long PDFAllowDegradedPrinting;
+    __declspec(property(get=GetPDFAllowFillIn,put=PutPDFAllowFillIn))
+    long PDFAllowFillIn;
+    __declspec(property(get=GetPDFAllowScreenReaders,put=PutPDFAllowScreenReaders))
+    long PDFAllowScreenReaders;
+    __declspec(property(get=GetPDFColorsCMYKToRGB,put=PutPDFColorsCMYKToRGB))
+    long PDFColorsCMYKToRGB;
+    __declspec(property(get=GetPDFColorsColorModel,put=PutPDFColorsColorModel))
+    long PDFColorsColorModel;
+    __declspec(property(get=GetPDFColorsPreserveHalftone,put=PutPDFColorsPreserveHalftone))
+    long PDFColorsPreserveHalftone;
+    __declspec(property(get=GetPDFColorsPreserveOverprint,put=PutPDFColorsPreserveOverprint))
+    long PDFColorsPreserveOverprint;
+    __declspec(property(get=GetPDFColorsPreserveTransfer,put=PutPDFColorsPreserveTransfer))
+    long PDFColorsPreserveTransfer;
+    __declspec(property(get=GetPDFCompressionColorCompression,put=PutPDFCompressionColorCompression))
+    long PDFCompressionColorCompression;
+    __declspec(property(get=GetPDFCompressionColorCompressionChoice,put=PutPDFCompressionColorCompressionChoice))
+    long PDFCompressionColorCompressionChoice;
+    __declspec(property(get=GetPDFCompressionColorCompressionJPEGHighFactor,put=PutPDFCompressionColorCompressionJPEGHighFactor))
+    double PDFCompressionColorCompressionJPEGHighFactor;
+    __declspec(property(get=GetPDFCompressionColorCompressionJPEGLowFactor,put=PutPDFCompressionColorCompressionJPEGLowFactor))
+    double PDFCompressionColorCompressionJPEGLowFactor;
+    __declspec(property(get=GetPDFCompressionColorCompressionJPEGMaximumFactor,put=PutPDFCompressionColorCompressionJPEGMaximumFactor))
+    double PDFCompressionColorCompressionJPEGMaximumFactor;
+    __declspec(property(get=GetPDFCompressionColorCompressionJPEGMediumFactor,put=PutPDFCompressionColorCompressionJPEGMediumFactor))
+    double PDFCompressionColorCompressionJPEGMediumFactor;
+    __declspec(property(get=GetPDFCompressionColorCompressionJPEGMinimumFactor,put=PutPDFCompressionColorCompressionJPEGMinimumFactor))
+    double PDFCompressionColorCompressionJPEGMinimumFactor;
+    __declspec(property(get=GetPDFCompressionColorResample,put=PutPDFCompressionColorResample))
+    long PDFCompressionColorResample;
+    __declspec(property(get=GetPDFCompressionColorResampleChoice,put=PutPDFCompressionColorResampleChoice))
+    long PDFCompressionColorResampleChoice;
+    __declspec(property(get=GetPDFCompressionColorResolution,put=PutPDFCompressionColorResolution))
+    long PDFCompressionColorResolution;
+    __declspec(property(get=GetPDFCompressionGreyCompression,put=PutPDFCompressionGreyCompression))
+    long PDFCompressionGreyCompression;
+    __declspec(property(get=GetPDFCompressionGreyCompressionChoice,put=PutPDFCompressionGreyCompressionChoice))
+    long PDFCompressionGreyCompressionChoice;
+    __declspec(property(get=GetPDFCompressionGreyCompressionJPEGHighFactor,put=PutPDFCompressionGreyCompressionJPEGHighFactor))
+    double PDFCompressionGreyCompressionJPEGHighFactor;
+    __declspec(property(get=GetPDFCompressionGreyCompressionJPEGLowFactor,put=PutPDFCompressionGreyCompressionJPEGLowFactor))
+    double PDFCompressionGreyCompressionJPEGLowFactor;
+    __declspec(property(get=GetPDFCompressionGreyCompressionJPEGMaximumFactor,put=PutPDFCompressionGreyCompressionJPEGMaximumFactor))
+    double PDFCompressionGreyCompressionJPEGMaximumFactor;
+    __declspec(property(get=GetPDFCompressionGreyCompressionJPEGMediumFactor,put=PutPDFCompressionGreyCompressionJPEGMediumFactor))
+    double PDFCompressionGreyCompressionJPEGMediumFactor;
+    __declspec(property(get=GetPDFCompressionGreyCompressionJPEGMinimumFactor,put=PutPDFCompressionGreyCompressionJPEGMinimumFactor))
+    double PDFCompressionGreyCompressionJPEGMinimumFactor;
+    __declspec(property(get=GetPDFCompressionGreyResample,put=PutPDFCompressionGreyResample))
+    long PDFCompressionGreyResample;
+    __declspec(property(get=GetPDFCompressionGreyResampleChoice,put=PutPDFCompressionGreyResampleChoice))
+    long PDFCompressionGreyResampleChoice;
+    __declspec(property(get=GetPDFCompressionGreyResolution,put=PutPDFCompressionGreyResolution))
+    long PDFCompressionGreyResolution;
+    __declspec(property(get=GetPDFCompressionMonoCompression,put=PutPDFCompressionMonoCompression))
+    long PDFCompressionMonoCompression;
+    __declspec(property(get=GetPDFCompressionMonoCompressionChoice,put=PutPDFCompressionMonoCompressionChoice))
+    long PDFCompressionMonoCompressionChoice;
+    __declspec(property(get=GetPDFCompressionMonoResample,put=PutPDFCompressionMonoResample))
+    long PDFCompressionMonoResample;
+    __declspec(property(get=GetPDFCompressionMonoResampleChoice,put=PutPDFCompressionMonoResampleChoice))
+    long PDFCompressionMonoResampleChoice;
+    __declspec(property(get=GetPDFCompressionMonoResolution,put=PutPDFCompressionMonoResolution))
+    long PDFCompressionMonoResolution;
+    __declspec(property(get=GetPDFCompressionTextCompression,put=PutPDFCompressionTextCompression))
+    long PDFCompressionTextCompression;
+    __declspec(property(get=GetPDFDisallowCopy,put=PutPDFDisallowCopy))
+    long PDFDisallowCopy;
+    __declspec(property(get=GetPDFDisallowModifyAnnotations,put=PutPDFDisallowModifyAnnotations))
+    long PDFDisallowModifyAnnotations;
+    __declspec(property(get=GetPDFDisallowModifyContents,put=PutPDFDisallowModifyContents))
+    long PDFDisallowModifyContents;
+    __declspec(property(get=GetPDFDisallowPrinting,put=PutPDFDisallowPrinting))
+    long PDFDisallowPrinting;
+    __declspec(property(get=GetPDFEncryptor,put=PutPDFEncryptor))
+    long PDFEncryptor;
+    __declspec(property(get=GetPDFFontsEmbedAll,put=PutPDFFontsEmbedAll))
+    long PDFFontsEmbedAll;
+    __declspec(property(get=GetPDFFontsSubSetFonts,put=PutPDFFontsSubSetFonts))
+    long PDFFontsSubSetFonts;
+    __declspec(property(get=GetPDFFontsSubSetFontsPercent,put=PutPDFFontsSubSetFontsPercent))
+    long PDFFontsSubSetFontsPercent;
+    __declspec(property(get=GetPDFGeneralASCII85,put=PutPDFGeneralASCII85))
+    long PDFGeneralASCII85;
+    __declspec(property(get=GetPDFGeneralAutorotate,put=PutPDFGeneralAutorotate))
+    long PDFGeneralAutorotate;
+    __declspec(property(get=GetPDFGeneralCompatibility,put=PutPDFGeneralCompatibility))
+    long PDFGeneralCompatibility;
+    __declspec(property(get=GetPDFGeneralOverprint,put=PutPDFGeneralOverprint))
+    long PDFGeneralOverprint;
+    __declspec(property(get=GetPDFGeneralResolution,put=PutPDFGeneralResolution))
+    long PDFGeneralResolution;
+    __declspec(property(get=GetPDFHighEncryption,put=PutPDFHighEncryption))
+    long PDFHighEncryption;
+    __declspec(property(get=GetPDFLowEncryption,put=PutPDFLowEncryption))
+    long PDFLowEncryption;
+    __declspec(property(get=GetPDFOptimize,put=PutPDFOptimize))
+    long PDFOptimize;
+    __declspec(property(get=GetPDFOwnerPass,put=PutPDFOwnerPass))
+    long PDFOwnerPass;
+    __declspec(property(get=GetPDFOwnerPasswordString,put=PutPDFOwnerPasswordString))
+    _bstr_t PDFOwnerPasswordString;
+    __declspec(property(get=GetPDFUserPass,put=PutPDFUserPass))
+    long PDFUserPass;
+    __declspec(property(get=GetPDFUserPasswordString,put=PutPDFUserPasswordString))
+    _bstr_t PDFUserPasswordString;
+    __declspec(property(get=GetPDFUseSecurity,put=PutPDFUseSecurity))
+    long PDFUseSecurity;
+    __declspec(property(get=GetPNGColorscount,put=PutPNGColorscount))
+    long PNGColorscount;
+    __declspec(property(get=GetPrintAfterSaving,put=PutPrintAfterSaving))
+    long PrintAfterSaving;
+    __declspec(property(get=GetPrintAfterSavingDuplex,put=PutPrintAfterSavingDuplex))
+    long PrintAfterSavingDuplex;
+    __declspec(property(get=GetPrintAfterSavingNoCancel,put=PutPrintAfterSavingNoCancel))
+    long PrintAfterSavingNoCancel;
+    __declspec(property(get=GetPrintAfterSavingPrinter,put=PutPrintAfterSavingPrinter))
+    _bstr_t PrintAfterSavingPrinter;
+    __declspec(property(get=GetPrintAfterSavingQueryUser,put=PutPrintAfterSavingQueryUser))
+    long PrintAfterSavingQueryUser;
+    __declspec(property(get=GetPrintAfterSavingTumble,put=PutPrintAfterSavingTumble))
+    long PrintAfterSavingTumble;
+    __declspec(property(get=GetPrinterStop,put=PutPrinterStop))
+    long PrinterStop;
+    __declspec(property(get=GetPrinterTemppath,put=PutPrinterTemppath))
+    _bstr_t PrinterTemppath;
+    __declspec(property(get=GetProcessPriority,put=PutProcessPriority))
+    long ProcessPriority;
+    __declspec(property(get=GetProgramFont,put=PutProgramFont))
+    _bstr_t ProgramFont;
+    __declspec(property(get=GetProgramFontCharset,put=PutProgramFontCharset))
+    long ProgramFontCharset;
+    __declspec(property(get=GetProgramFontSize,put=PutProgramFontSize))
+    long ProgramFontSize;
+    __declspec(property(get=GetPSLanguageLevel,put=PutPSLanguageLevel))
+    long PSLanguageLevel;
+    __declspec(property(get=GetRemoveAllKnownFileExtensions,put=PutRemoveAllKnownFileExtensions))
+    long RemoveAllKnownFileExtensions;
+    __declspec(property(get=GetRemoveSpaces,put=PutRemoveSpaces))
+    long RemoveSpaces;
+    __declspec(property(get=GetRunProgramAfterSaving,put=PutRunProgramAfterSaving))
+    long RunProgramAfterSaving;
+    __declspec(property(get=GetRunProgramAfterSavingProgramname,put=PutRunProgramAfterSavingProgramname))
+    _bstr_t RunProgramAfterSavingProgramname;
+    __declspec(property(get=GetRunProgramAfterSavingProgramParameters,put=PutRunProgramAfterSavingProgramParameters))
+    _bstr_t RunProgramAfterSavingProgramParameters;
+    __declspec(property(get=GetRunProgramAfterSavingWaitUntilReady,put=PutRunProgramAfterSavingWaitUntilReady))
+    long RunProgramAfterSavingWaitUntilReady;
+    __declspec(property(get=GetRunProgramAfterSavingWindowstyle,put=PutRunProgramAfterSavingWindowstyle))
+    long RunProgramAfterSavingWindowstyle;
+    __declspec(property(get=GetRunProgramBeforeSaving,put=PutRunProgramBeforeSaving))
+    long RunProgramBeforeSaving;
+    __declspec(property(get=GetRunProgramBeforeSavingProgramname,put=PutRunProgramBeforeSavingProgramname))
+    _bstr_t RunProgramBeforeSavingProgramname;
+    __declspec(property(get=GetRunProgramBeforeSavingProgramParameters,put=PutRunProgramBeforeSavingProgramParameters))
+    _bstr_t RunProgramBeforeSavingProgramParameters;
+    __declspec(property(get=GetRunProgramBeforeSavingWindowstyle,put=PutRunProgramBeforeSavingWindowstyle))
+    long RunProgramBeforeSavingWindowstyle;
+    __declspec(property(get=GetSaveFilename,put=PutSaveFilename))
+    _bstr_t SaveFilename;
+    __declspec(property(get=GetSendEmailAfterAutoSaving,put=PutSendEmailAfterAutoSaving))
+    long SendEmailAfterAutoSaving;
+    __declspec(property(get=GetSendMailMethod,put=PutSendMailMethod))
+    long SendMailMethod;
+    __declspec(property(get=GetShowAnimation,put=PutShowAnimation))
+    long ShowAnimation;
+    __declspec(property(get=GetStampFontColor,put=PutStampFontColor))
+    _bstr_t StampFontColor;
+    __declspec(property(get=GetStampFontname,put=PutStampFontname))
+    _bstr_t StampFontname;
+    __declspec(property(get=GetStampFontsize,put=PutStampFontsize))
+    long StampFontsize;
+    __declspec(property(get=GetStampOutlineFontthickness,put=PutStampOutlineFontthickness))
+    long StampOutlineFontthickness;
+    __declspec(property(get=GetStampString,put=PutStampString))
+    _bstr_t StampString;
+    __declspec(property(get=GetStampUseOutlineFont,put=PutStampUseOutlineFont))
+    long StampUseOutlineFont;
+    __declspec(property(get=GetStandardAuthor,put=PutStandardAuthor))
+    _bstr_t StandardAuthor;
+    __declspec(property(get=GetStandardCreationdate,put=PutStandardCreationdate))
+    _bstr_t StandardCreationdate;
+    __declspec(property(get=GetStandardDateformat,put=PutStandardDateformat))
+    _bstr_t StandardDateformat;
+    __declspec(property(get=GetStandardKeywords,put=PutStandardKeywords))
+    _bstr_t StandardKeywords;
+    __declspec(property(get=GetStandardMailDomain,put=PutStandardMailDomain))
+    _bstr_t StandardMailDomain;
+    __declspec(property(get=GetStandardModifydate,put=PutStandardModifydate))
+    _bstr_t StandardModifydate;
+    __declspec(property(get=GetStandardSaveformat,put=PutStandardSaveformat))
+    long StandardSaveformat;
+    __declspec(property(get=GetStandardSubject,put=PutStandardSubject))
+    _bstr_t StandardSubject;
+    __declspec(property(get=GetStandardTitle,put=PutStandardTitle))
+    _bstr_t StandardTitle;
+    __declspec(property(get=GetStartStandardProgram,put=PutStartStandardProgram))
+    long StartStandardProgram;
+    __declspec(property(get=GetTIFFColorscount,put=PutTIFFColorscount))
+    long TIFFColorscount;
+    __declspec(property(get=GetToolbars,put=PutToolbars))
+    long Toolbars;
+    __declspec(property(get=GetUseAutosave,put=PutUseAutosave))
+    long UseAutosave;
+    __declspec(property(get=GetUseAutosaveDirectory,put=PutUseAutosaveDirectory))
+    long UseAutosaveDirectory;
+    __declspec(property(get=GetUseCreationDateNow,put=PutUseCreationDateNow))
+    long UseCreationDateNow;
+    __declspec(property(get=GetUseStandardAuthor,put=PutUseStandardAuthor))
+    long UseStandardAuthor;
+    __declspec(property(get=GetUseCustomPaperSize,put=PutUseCustomPaperSize))
+    _bstr_t UseCustomPaperSize;
+    __declspec(property(get=GetUseFixPapersize,put=PutUseFixPapersize))
+    long UseFixPapersize;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetAdditionalGhostscriptParameters ( );
+    void PutAdditionalGhostscriptParameters (
+        _bstr_t AdditionalGhostscriptParameters );
+    _bstr_t GetAdditionalGhostscriptSearchpath ( );
+    void PutAdditionalGhostscriptSearchpath (
+        _bstr_t AdditionalGhostscriptSearchpath );
+    long GetAddWindowsFontpath ( );
+    void PutAddWindowsFontpath (
+        long AddWindowsFontpath );
+    _bstr_t GetAutosaveDirectory ( );
+    void PutAutosaveDirectory (
+        _bstr_t AutosaveDirectory );
+    _bstr_t GetAutosaveFilename ( );
+    void PutAutosaveFilename (
+        _bstr_t AutosaveFilename );
+    long GetAutosaveFormat ( );
+    void PutAutosaveFormat (
+        long AutosaveFormat );
+    long GetAutosaveStartStandardProgram ( );
+    void PutAutosaveStartStandardProgram (
+        long AutosaveStartStandardProgram );
+    long GetBitmapResolution ( );
+    void PutBitmapResolution (
+        long BitmapResolution );
+    long GetBMPColorscount ( );
+    void PutBMPColorscount (
+        long BMPColorscount );
+    long GetClientComputerResolveIPAddress ( );
+    void PutClientComputerResolveIPAddress (
+        long ClientComputerResolveIPAddress );
+    double GetDeviceHeightPoints ( );
+    void PutDeviceHeightPoints (
+        double DeviceHeightPoints );
+    double GetDeviceWidthPoints ( );
+    void PutDeviceWidthPoints (
+        double DeviceWidthPoints );
+    _bstr_t GetDirectoryGhostscriptBinaries ( );
+    void PutDirectoryGhostscriptBinaries (
+        _bstr_t DirectoryGhostscriptBinaries );
+    _bstr_t GetDirectoryGhostscriptFonts ( );
+    void PutDirectoryGhostscriptFonts (
+        _bstr_t DirectoryGhostscriptFonts );
+    _bstr_t GetDirectoryGhostscriptLibraries ( );
+    void PutDirectoryGhostscriptLibraries (
+        _bstr_t DirectoryGhostscriptLibraries );
+    _bstr_t GetDirectoryGhostscriptResource ( );
+    void PutDirectoryGhostscriptResource (
+        _bstr_t DirectoryGhostscriptResource );
+    long GetDisableEmail ( );
+    void PutDisableEmail (
+        long DisableEmail );
+    long GetDontUseDocumentSettings ( );
+    void PutDontUseDocumentSettings (
+        long DontUseDocumentSettings );
+    long GetEPSLanguageLevel ( );
+    void PutEPSLanguageLevel (
+        long EPSLanguageLevel );
+    _bstr_t GetFilenameSubstitutions ( );
+    void PutFilenameSubstitutions (
+        _bstr_t FilenameSubstitutions );
+    long GetFilenameSubstitutionsOnlyInTitle ( );
+    void PutFilenameSubstitutionsOnlyInTitle (
+        long FilenameSubstitutionsOnlyInTitle );
+    long GetJPEGColorscount ( );
+    void PutJPEGColorscount (
+        long JPEGColorscount );
+    long GetJPEGQuality ( );
+    void PutJPEGQuality (
+        long JPEGQuality );
+    _bstr_t GetLanguage ( );
+    void PutLanguage (
+        _bstr_t Language );
+    _bstr_t GetLastSaveDirectory ( );
+    void PutLastSaveDirectory (
+        _bstr_t LastSaveDirectory );
+    long GetLogging ( );
+    void PutLogging (
+        long Logging );
+    long GetLogLines ( );
+    void PutLogLines (
+        long LogLines );
+    long GetNoConfirmMessageSwitchingDefaultprinter ( );
+    void PutNoConfirmMessageSwitchingDefaultprinter (
+        long NoConfirmMessageSwitchingDefaultprinter );
+    long GetNoProcessingAtStartup ( );
+    void PutNoProcessingAtStartup (
+        long NoProcessingAtStartup );
+    long GetNoPSCheck ( );
+    void PutNoPSCheck (
+        long NoPSCheck );
+    long GetOnePagePerFile ( );
+    void PutOnePagePerFile (
+        long OnePagePerFile );
+    long GetOptionsDesign ( );
+    void PutOptionsDesign (
+        long OptionsDesign );
+    long GetOptionsEnabled ( );
+    void PutOptionsEnabled (
+        long OptionsEnabled );
+    long GetOptionsVisible ( );
+    void PutOptionsVisible (
+        long OptionsVisible );
+    _bstr_t GetPapersize ( );
+    void PutPapersize (
+        _bstr_t Papersize );
+    long GetPCXColorscount ( );
+    void PutPCXColorscount (
+        long PCXColorscount );
+    long GetPDFAllowAssembly ( );
+    void PutPDFAllowAssembly (
+        long PDFAllowAssembly );
+    long GetPDFAllowDegradedPrinting ( );
+    void PutPDFAllowDegradedPrinting (
+        long PDFAllowDegradedPrinting );
+    long GetPDFAllowFillIn ( );
+    void PutPDFAllowFillIn (
+        long PDFAllowFillIn );
+    long GetPDFAllowScreenReaders ( );
+    void PutPDFAllowScreenReaders (
+        long PDFAllowScreenReaders );
+    long GetPDFColorsCMYKToRGB ( );
+    void PutPDFColorsCMYKToRGB (
+        long PDFColorsCMYKToRGB );
+    long GetPDFColorsColorModel ( );
+    void PutPDFColorsColorModel (
+        long PDFColorsColorModel );
+    long GetPDFColorsPreserveHalftone ( );
+    void PutPDFColorsPreserveHalftone (
+        long PDFColorsPreserveHalftone );
+    long GetPDFColorsPreserveOverprint ( );
+    void PutPDFColorsPreserveOverprint (
+        long PDFColorsPreserveOverprint );
+    long GetPDFColorsPreserveTransfer ( );
+    void PutPDFColorsPreserveTransfer (
+        long PDFColorsPreserveTransfer );
+    long GetPDFCompressionColorCompression ( );
+    void PutPDFCompressionColorCompression (
+        long PDFCompressionColorCompression );
+    long GetPDFCompressionColorCompressionChoice ( );
+    void PutPDFCompressionColorCompressionChoice (
+        long PDFCompressionColorCompressionChoice );
+    double GetPDFCompressionColorCompressionJPEGHighFactor ( );
+    void PutPDFCompressionColorCompressionJPEGHighFactor (
+        double PDFCompressionColorCompressionJPEGHighFactor );
+    double GetPDFCompressionColorCompressionJPEGLowFactor ( );
+    void PutPDFCompressionColorCompressionJPEGLowFactor (
+        double PDFCompressionColorCompressionJPEGLowFactor );
+    double GetPDFCompressionColorCompressionJPEGMaximumFactor ( );
+    void PutPDFCompressionColorCompressionJPEGMaximumFactor (
+        double PDFCompressionColorCompressionJPEGMaximumFactor );
+    double GetPDFCompressionColorCompressionJPEGMediumFactor ( );
+    void PutPDFCompressionColorCompressionJPEGMediumFactor (
+        double PDFCompressionColorCompressionJPEGMediumFactor );
+    double GetPDFCompressionColorCompressionJPEGMinimumFactor ( );
+    void PutPDFCompressionColorCompressionJPEGMinimumFactor (
+        double PDFCompressionColorCompressionJPEGMinimumFactor );
+    long GetPDFCompressionColorResample ( );
+    void PutPDFCompressionColorResample (
+        long PDFCompressionColorResample );
+    long GetPDFCompressionColorResampleChoice ( );
+    void PutPDFCompressionColorResampleChoice (
+        long PDFCompressionColorResampleChoice );
+    long GetPDFCompressionColorResolution ( );
+    void PutPDFCompressionColorResolution (
+        long PDFCompressionColorResolution );
+    long GetPDFCompressionGreyCompression ( );
+    void PutPDFCompressionGreyCompression (
+        long PDFCompressionGreyCompression );
+    long GetPDFCompressionGreyCompressionChoice ( );
+    void PutPDFCompressionGreyCompressionChoice (
+        long PDFCompressionGreyCompressionChoice );
+    double GetPDFCompressionGreyCompressionJPEGHighFactor ( );
+    void PutPDFCompressionGreyCompressionJPEGHighFactor (
+        double PDFCompressionGreyCompressionJPEGHighFactor );
+    double GetPDFCompressionGreyCompressionJPEGLowFactor ( );
+    void PutPDFCompressionGreyCompressionJPEGLowFactor (
+        double PDFCompressionGreyCompressionJPEGLowFactor );
+    double GetPDFCompressionGreyCompressionJPEGMaximumFactor ( );
+    void PutPDFCompressionGreyCompressionJPEGMaximumFactor (
+        double PDFCompressionGreyCompressionJPEGMaximumFactor );
+    double GetPDFCompressionGreyCompressionJPEGMediumFactor ( );
+    void PutPDFCompressionGreyCompressionJPEGMediumFactor (
+        double PDFCompressionGreyCompressionJPEGMediumFactor );
+    double GetPDFCompressionGreyCompressionJPEGMinimumFactor ( );
+    void PutPDFCompressionGreyCompressionJPEGMinimumFactor (
+        double PDFCompressionGreyCompressionJPEGMinimumFactor );
+    long GetPDFCompressionGreyResample ( );
+    void PutPDFCompressionGreyResample (
+        long PDFCompressionGreyResample );
+    long GetPDFCompressionGreyResampleChoice ( );
+    void PutPDFCompressionGreyResampleChoice (
+        long PDFCompressionGreyResampleChoice );
+    long GetPDFCompressionGreyResolution ( );
+    void PutPDFCompressionGreyResolution (
+        long PDFCompressionGreyResolution );
+    long GetPDFCompressionMonoCompression ( );
+    void PutPDFCompressionMonoCompression (
+        long PDFCompressionMonoCompression );
+    long GetPDFCompressionMonoCompressionChoice ( );
+    void PutPDFCompressionMonoCompressionChoice (
+        long PDFCompressionMonoCompressionChoice );
+    long GetPDFCompressionMonoResample ( );
+    void PutPDFCompressionMonoResample (
+        long PDFCompressionMonoResample );
+    long GetPDFCompressionMonoResampleChoice ( );
+    void PutPDFCompressionMonoResampleChoice (
+        long PDFCompressionMonoResampleChoice );
+    long GetPDFCompressionMonoResolution ( );
+    void PutPDFCompressionMonoResolution (
+        long PDFCompressionMonoResolution );
+    long GetPDFCompressionTextCompression ( );
+    void PutPDFCompressionTextCompression (
+        long PDFCompressionTextCompression );
+    long GetPDFDisallowCopy ( );
+    void PutPDFDisallowCopy (
+        long PDFDisallowCopy );
+    long GetPDFDisallowModifyAnnotations ( );
+    void PutPDFDisallowModifyAnnotations (
+        long PDFDisallowModifyAnnotations );
+    long GetPDFDisallowModifyContents ( );
+    void PutPDFDisallowModifyContents (
+        long PDFDisallowModifyContents );
+    long GetPDFDisallowPrinting ( );
+    void PutPDFDisallowPrinting (
+        long PDFDisallowPrinting );
+    long GetPDFEncryptor ( );
+    void PutPDFEncryptor (
+        long PDFEncryptor );
+    long GetPDFFontsEmbedAll ( );
+    void PutPDFFontsEmbedAll (
+        long PDFFontsEmbedAll );
+    long GetPDFFontsSubSetFonts ( );
+    void PutPDFFontsSubSetFonts (
+        long PDFFontsSubSetFonts );
+    long GetPDFFontsSubSetFontsPercent ( );
+    void PutPDFFontsSubSetFontsPercent (
+        long PDFFontsSubSetFontsPercent );
+    long GetPDFGeneralASCII85 ( );
+    void PutPDFGeneralASCII85 (
+        long PDFGeneralASCII85 );
+    long GetPDFGeneralAutorotate ( );
+    void PutPDFGeneralAutorotate (
+        long PDFGeneralAutorotate );
+    long GetPDFGeneralCompatibility ( );
+    void PutPDFGeneralCompatibility (
+        long PDFGeneralCompatibility );
+    long GetPDFGeneralOverprint ( );
+    void PutPDFGeneralOverprint (
+        long PDFGeneralOverprint );
+    long GetPDFGeneralResolution ( );
+    void PutPDFGeneralResolution (
+        long PDFGeneralResolution );
+    long GetPDFHighEncryption ( );
+    void PutPDFHighEncryption (
+        long PDFHighEncryption );
+    long GetPDFLowEncryption ( );
+    void PutPDFLowEncryption (
+        long PDFLowEncryption );
+    long GetPDFOptimize ( );
+    void PutPDFOptimize (
+        long PDFOptimize );
+    long GetPDFOwnerPass ( );
+    void PutPDFOwnerPass (
+        long PDFOwnerPass );
+    _bstr_t GetPDFOwnerPasswordString ( );
+    void PutPDFOwnerPasswordString (
+        _bstr_t PDFOwnerPasswordString );
+    long GetPDFUserPass ( );
+    void PutPDFUserPass (
+        long PDFUserPass );
+    _bstr_t GetPDFUserPasswordString ( );
+    void PutPDFUserPasswordString (
+        _bstr_t PDFUserPasswordString );
+    long GetPDFUseSecurity ( );
+    void PutPDFUseSecurity (
+        long PDFUseSecurity );
+    long GetPNGColorscount ( );
+    void PutPNGColorscount (
+        long PNGColorscount );
+    long GetPrintAfterSaving ( );
+    void PutPrintAfterSaving (
+        long PrintAfterSaving );
+    long GetPrintAfterSavingDuplex ( );
+    void PutPrintAfterSavingDuplex (
+        long PrintAfterSavingDuplex );
+    long GetPrintAfterSavingNoCancel ( );
+    void PutPrintAfterSavingNoCancel (
+        long PrintAfterSavingNoCancel );
+    _bstr_t GetPrintAfterSavingPrinter ( );
+    void PutPrintAfterSavingPrinter (
+        _bstr_t PrintAfterSavingPrinter );
+    long GetPrintAfterSavingQueryUser ( );
+    void PutPrintAfterSavingQueryUser (
+        long PrintAfterSavingQueryUser );
+    long GetPrintAfterSavingTumble ( );
+    void PutPrintAfterSavingTumble (
+        long PrintAfterSavingTumble );
+    long GetPrinterStop ( );
+    void PutPrinterStop (
+        long PrinterStop );
+    _bstr_t GetPrinterTemppath ( );
+    void PutPrinterTemppath (
+        _bstr_t PrinterTemppath );
+    long GetProcessPriority ( );
+    void PutProcessPriority (
+        long ProcessPriority );
+    _bstr_t GetProgramFont ( );
+    void PutProgramFont (
+        _bstr_t ProgramFont );
+    long GetProgramFontCharset ( );
+    void PutProgramFontCharset (
+        long ProgramFontCharset );
+    long GetProgramFontSize ( );
+    void PutProgramFontSize (
+        long ProgramFontSize );
+    long GetPSLanguageLevel ( );
+    void PutPSLanguageLevel (
+        long PSLanguageLevel );
+    long GetRemoveAllKnownFileExtensions ( );
+    void PutRemoveAllKnownFileExtensions (
+        long RemoveAllKnownFileExtensions );
+    long GetRemoveSpaces ( );
+    void PutRemoveSpaces (
+        long RemoveSpaces );
+    long GetRunProgramAfterSaving ( );
+    void PutRunProgramAfterSaving (
+        long RunProgramAfterSaving );
+    _bstr_t GetRunProgramAfterSavingProgramname ( );
+    void PutRunProgramAfterSavingProgramname (
+        _bstr_t RunProgramAfterSavingProgramname );
+    _bstr_t GetRunProgramAfterSavingProgramParameters ( );
+    void PutRunProgramAfterSavingProgramParameters (
+        _bstr_t RunProgramAfterSavingProgramParameters );
+    long GetRunProgramAfterSavingWaitUntilReady ( );
+    void PutRunProgramAfterSavingWaitUntilReady (
+        long RunProgramAfterSavingWaitUntilReady );
+    long GetRunProgramAfterSavingWindowstyle ( );
+    void PutRunProgramAfterSavingWindowstyle (
+        long RunProgramAfterSavingWindowstyle );
+    long GetRunProgramBeforeSaving ( );
+    void PutRunProgramBeforeSaving (
+        long RunProgramBeforeSaving );
+    _bstr_t GetRunProgramBeforeSavingProgramname ( );
+    void PutRunProgramBeforeSavingProgramname (
+        _bstr_t RunProgramBeforeSavingProgramname );
+    _bstr_t GetRunProgramBeforeSavingProgramParameters ( );
+    void PutRunProgramBeforeSavingProgramParameters (
+        _bstr_t RunProgramBeforeSavingProgramParameters );
+    long GetRunProgramBeforeSavingWindowstyle ( );
+    void PutRunProgramBeforeSavingWindowstyle (
+        long RunProgramBeforeSavingWindowstyle );
+    _bstr_t GetSaveFilename ( );
+    void PutSaveFilename (
+        _bstr_t SaveFilename );
+    long GetSendEmailAfterAutoSaving ( );
+    void PutSendEmailAfterAutoSaving (
+        long SendEmailAfterAutoSaving );
+    long GetSendMailMethod ( );
+    void PutSendMailMethod (
+        long SendMailMethod );
+    long GetShowAnimation ( );
+    void PutShowAnimation (
+        long ShowAnimation );
+    _bstr_t GetStampFontColor ( );
+    void PutStampFontColor (
+        _bstr_t StampFontColor );
+    _bstr_t GetStampFontname ( );
+    void PutStampFontname (
+        _bstr_t StampFontname );
+    long GetStampFontsize ( );
+    void PutStampFontsize (
+        long StampFontsize );
+    long GetStampOutlineFontthickness ( );
+    void PutStampOutlineFontthickness (
+        long StampOutlineFontthickness );
+    _bstr_t GetStampString ( );
+    void PutStampString (
+        _bstr_t StampString );
+    long GetStampUseOutlineFont ( );
+    void PutStampUseOutlineFont (
+        long StampUseOutlineFont );
+    _bstr_t GetStandardAuthor ( );
+    void PutStandardAuthor (
+        _bstr_t StandardAuthor );
+    _bstr_t GetStandardCreationdate ( );
+    void PutStandardCreationdate (
+        _bstr_t StandardCreationdate );
+    _bstr_t GetStandardDateformat ( );
+    void PutStandardDateformat (
+        _bstr_t StandardDateformat );
+    _bstr_t GetStandardKeywords ( );
+    void PutStandardKeywords (
+        _bstr_t StandardKeywords );
+    _bstr_t GetStandardMailDomain ( );
+    void PutStandardMailDomain (
+        _bstr_t StandardMailDomain );
+    _bstr_t GetStandardModifydate ( );
+    void PutStandardModifydate (
+        _bstr_t StandardModifydate );
+    long GetStandardSaveformat ( );
+    void PutStandardSaveformat (
+        long StandardSaveformat );
+    _bstr_t GetStandardSubject ( );
+    void PutStandardSubject (
+        _bstr_t StandardSubject );
+    _bstr_t GetStandardTitle ( );
+    void PutStandardTitle (
+        _bstr_t StandardTitle );
+    long GetStartStandardProgram ( );
+    void PutStartStandardProgram (
+        long StartStandardProgram );
+    long GetTIFFColorscount ( );
+    void PutTIFFColorscount (
+        long TIFFColorscount );
+    long GetToolbars ( );
+    void PutToolbars (
+        long Toolbars );
+    long GetUseAutosave ( );
+    void PutUseAutosave (
+        long UseAutosave );
+    long GetUseAutosaveDirectory ( );
+    void PutUseAutosaveDirectory (
+        long UseAutosaveDirectory );
+    long GetUseCreationDateNow ( );
+    void PutUseCreationDateNow (
+        long UseCreationDateNow );
+    long GetUseStandardAuthor ( );
+    void PutUseStandardAuthor (
+        long UseStandardAuthor );
+    _bstr_t GetUseCustomPaperSize ( );
+    void PutUseCustomPaperSize (
+        _bstr_t UseCustomPaperSize );
+    long GetUseFixPapersize ( );
+    void PutUseFixPapersize (
+        long UseFixPapersize );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AdditionalGhostscriptParameters (
+        /*[out,retval]*/ BSTR * AdditionalGhostscriptParameters ) = 0;
+      virtual HRESULT __stdcall put_AdditionalGhostscriptParameters (
+        /*[in]*/ BSTR AdditionalGhostscriptParameters ) = 0;
+      virtual HRESULT __stdcall get_AdditionalGhostscriptSearchpath (
+        /*[out,retval]*/ BSTR * AdditionalGhostscriptSearchpath ) = 0;
+      virtual HRESULT __stdcall put_AdditionalGhostscriptSearchpath (
+        /*[in]*/ BSTR AdditionalGhostscriptSearchpath ) = 0;
+      virtual HRESULT __stdcall get_AddWindowsFontpath (
+        /*[out,retval]*/ long * AddWindowsFontpath ) = 0;
+      virtual HRESULT __stdcall put_AddWindowsFontpath (
+        /*[in]*/ long AddWindowsFontpath ) = 0;
+      virtual HRESULT __stdcall get_AutosaveDirectory (
+        /*[out,retval]*/ BSTR * AutosaveDirectory ) = 0;
+      virtual HRESULT __stdcall put_AutosaveDirectory (
+        /*[in]*/ BSTR AutosaveDirectory ) = 0;
+      virtual HRESULT __stdcall get_AutosaveFilename (
+        /*[out,retval]*/ BSTR * AutosaveFilename ) = 0;
+      virtual HRESULT __stdcall put_AutosaveFilename (
+        /*[in]*/ BSTR AutosaveFilename ) = 0;
+      virtual HRESULT __stdcall get_AutosaveFormat (
+        /*[out,retval]*/ long * AutosaveFormat ) = 0;
+      virtual HRESULT __stdcall put_AutosaveFormat (
+        /*[in]*/ long AutosaveFormat ) = 0;
+      virtual HRESULT __stdcall get_AutosaveStartStandardProgram (
+        /*[out,retval]*/ long * AutosaveStartStandardProgram ) = 0;
+      virtual HRESULT __stdcall put_AutosaveStartStandardProgram (
+        /*[in]*/ long AutosaveStartStandardProgram ) = 0;
+      virtual HRESULT __stdcall get_BitmapResolution (
+        /*[out,retval]*/ long * BitmapResolution ) = 0;
+      virtual HRESULT __stdcall put_BitmapResolution (
+        /*[in]*/ long BitmapResolution ) = 0;
+      virtual HRESULT __stdcall get_BMPColorscount (
+        /*[out,retval]*/ long * BMPColorscount ) = 0;
+      virtual HRESULT __stdcall put_BMPColorscount (
+        /*[in]*/ long BMPColorscount ) = 0;
+      virtual HRESULT __stdcall get_ClientComputerResolveIPAddress (
+        /*[out,retval]*/ long * ClientComputerResolveIPAddress ) = 0;
+      virtual HRESULT __stdcall put_ClientComputerResolveIPAddress (
+        /*[in]*/ long ClientComputerResolveIPAddress ) = 0;
+      virtual HRESULT __stdcall get_DeviceHeightPoints (
+        /*[out,retval]*/ double * DeviceHeightPoints ) = 0;
+      virtual HRESULT __stdcall put_DeviceHeightPoints (
+        /*[in]*/ double DeviceHeightPoints ) = 0;
+      virtual HRESULT __stdcall get_DeviceWidthPoints (
+        /*[out,retval]*/ double * DeviceWidthPoints ) = 0;
+      virtual HRESULT __stdcall put_DeviceWidthPoints (
+        /*[in]*/ double DeviceWidthPoints ) = 0;
+      virtual HRESULT __stdcall get_DirectoryGhostscriptBinaries (
+        /*[out,retval]*/ BSTR * DirectoryGhostscriptBinaries ) = 0;
+      virtual HRESULT __stdcall put_DirectoryGhostscriptBinaries (
+        /*[in]*/ BSTR DirectoryGhostscriptBinaries ) = 0;
+      virtual HRESULT __stdcall get_DirectoryGhostscriptFonts (
+        /*[out,retval]*/ BSTR * DirectoryGhostscriptFonts ) = 0;
+      virtual HRESULT __stdcall put_DirectoryGhostscriptFonts (
+        /*[in]*/ BSTR DirectoryGhostscriptFonts ) = 0;
+      virtual HRESULT __stdcall get_DirectoryGhostscriptLibraries (
+        /*[out,retval]*/ BSTR * DirectoryGhostscriptLibraries ) = 0;
+      virtual HRESULT __stdcall put_DirectoryGhostscriptLibraries (
+        /*[in]*/ BSTR DirectoryGhostscriptLibraries ) = 0;
+      virtual HRESULT __stdcall get_DirectoryGhostscriptResource (
+        /*[out,retval]*/ BSTR * DirectoryGhostscriptResource ) = 0;
+      virtual HRESULT __stdcall put_DirectoryGhostscriptResource (
+        /*[in]*/ BSTR DirectoryGhostscriptResource ) = 0;
+      virtual HRESULT __stdcall get_DisableEmail (
+        /*[out,retval]*/ long * DisableEmail ) = 0;
+      virtual HRESULT __stdcall put_DisableEmail (
+        /*[in]*/ long DisableEmail ) = 0;
+      virtual HRESULT __stdcall get_DontUseDocumentSettings (
+        /*[out,retval]*/ long * DontUseDocumentSettings ) = 0;
+      virtual HRESULT __stdcall put_DontUseDocumentSettings (
+        /*[in]*/ long DontUseDocumentSettings ) = 0;
+      virtual HRESULT __stdcall get_EPSLanguageLevel (
+        /*[out,retval]*/ long * EPSLanguageLevel ) = 0;
+      virtual HRESULT __stdcall put_EPSLanguageLevel (
+        /*[in]*/ long EPSLanguageLevel ) = 0;
+      virtual HRESULT __stdcall get_FilenameSubstitutions (
+        /*[out,retval]*/ BSTR * FilenameSubstitutions ) = 0;
+      virtual HRESULT __stdcall put_FilenameSubstitutions (
+        /*[in]*/ BSTR FilenameSubstitutions ) = 0;
+      virtual HRESULT __stdcall get_FilenameSubstitutionsOnlyInTitle (
+        /*[out,retval]*/ long * FilenameSubstitutionsOnlyInTitle ) = 0;
+      virtual HRESULT __stdcall put_FilenameSubstitutionsOnlyInTitle (
+        /*[in]*/ long FilenameSubstitutionsOnlyInTitle ) = 0;
+      virtual HRESULT __stdcall get_JPEGColorscount (
+        /*[out,retval]*/ long * JPEGColorscount ) = 0;
+      virtual HRESULT __stdcall put_JPEGColorscount (
+        /*[in]*/ long JPEGColorscount ) = 0;
+      virtual HRESULT __stdcall get_JPEGQuality (
+        /*[out,retval]*/ long * JPEGQuality ) = 0;
+      virtual HRESULT __stdcall put_JPEGQuality (
+        /*[in]*/ long JPEGQuality ) = 0;
+      virtual HRESULT __stdcall get_Language (
+        /*[out,retval]*/ BSTR * Language ) = 0;
+      virtual HRESULT __stdcall put_Language (
+        /*[in]*/ BSTR Language ) = 0;
+      virtual HRESULT __stdcall get_LastSaveDirectory (
+        /*[out,retval]*/ BSTR * LastSaveDirectory ) = 0;
+      virtual HRESULT __stdcall put_LastSaveDirectory (
+        /*[in]*/ BSTR LastSaveDirectory ) = 0;
+      virtual HRESULT __stdcall get_Logging (
+        /*[out,retval]*/ long * Logging ) = 0;
+      virtual HRESULT __stdcall put_Logging (
+        /*[in]*/ long Logging ) = 0;
+      virtual HRESULT __stdcall get_LogLines (
+        /*[out,retval]*/ long * LogLines ) = 0;
+      virtual HRESULT __stdcall put_LogLines (
+        /*[in]*/ long LogLines ) = 0;
+      virtual HRESULT __stdcall get_NoConfirmMessageSwitchingDefaultprinter (
+        /*[out,retval]*/ long * NoConfirmMessageSwitchingDefaultprinter ) = 0;
+      virtual HRESULT __stdcall put_NoConfirmMessageSwitchingDefaultprinter (
+        /*[in]*/ long NoConfirmMessageSwitchingDefaultprinter ) = 0;
+      virtual HRESULT __stdcall get_NoProcessingAtStartup (
+        /*[out,retval]*/ long * NoProcessingAtStartup ) = 0;
+      virtual HRESULT __stdcall put_NoProcessingAtStartup (
+        /*[in]*/ long NoProcessingAtStartup ) = 0;
+      virtual HRESULT __stdcall get_NoPSCheck (
+        /*[out,retval]*/ long * NoPSCheck ) = 0;
+      virtual HRESULT __stdcall put_NoPSCheck (
+        /*[in]*/ long NoPSCheck ) = 0;
+      virtual HRESULT __stdcall get_OnePagePerFile (
+        /*[out,retval]*/ long * OnePagePerFile ) = 0;
+      virtual HRESULT __stdcall put_OnePagePerFile (
+        /*[in]*/ long OnePagePerFile ) = 0;
+      virtual HRESULT __stdcall get_OptionsDesign (
+        /*[out,retval]*/ long * OptionsDesign ) = 0;
+      virtual HRESULT __stdcall put_OptionsDesign (
+        /*[in]*/ long OptionsDesign ) = 0;
+      virtual HRESULT __stdcall get_OptionsEnabled (
+        /*[out,retval]*/ long * OptionsEnabled ) = 0;
+      virtual HRESULT __stdcall put_OptionsEnabled (
+        /*[in]*/ long OptionsEnabled ) = 0;
+      virtual HRESULT __stdcall get_OptionsVisible (
+        /*[out,retval]*/ long * OptionsVisible ) = 0;
+      virtual HRESULT __stdcall put_OptionsVisible (
+        /*[in]*/ long OptionsVisible ) = 0;
+      virtual HRESULT __stdcall get_Papersize (
+        /*[out,retval]*/ BSTR * Papersize ) = 0;
+      virtual HRESULT __stdcall put_Papersize (
+        /*[in]*/ BSTR Papersize ) = 0;
+      virtual HRESULT __stdcall get_PCXColorscount (
+        /*[out,retval]*/ long * PCXColorscount ) = 0;
+      virtual HRESULT __stdcall put_PCXColorscount (
+        /*[in]*/ long PCXColorscount ) = 0;
+      virtual HRESULT __stdcall get_PDFAllowAssembly (
+        /*[out,retval]*/ long * PDFAllowAssembly ) = 0;
+      virtual HRESULT __stdcall put_PDFAllowAssembly (
+        /*[in]*/ long PDFAllowAssembly ) = 0;
+      virtual HRESULT __stdcall get_PDFAllowDegradedPrinting (
+        /*[out,retval]*/ long * PDFAllowDegradedPrinting ) = 0;
+      virtual HRESULT __stdcall put_PDFAllowDegradedPrinting (
+        /*[in]*/ long PDFAllowDegradedPrinting ) = 0;
+      virtual HRESULT __stdcall get_PDFAllowFillIn (
+        /*[out,retval]*/ long * PDFAllowFillIn ) = 0;
+      virtual HRESULT __stdcall put_PDFAllowFillIn (
+        /*[in]*/ long PDFAllowFillIn ) = 0;
+      virtual HRESULT __stdcall get_PDFAllowScreenReaders (
+        /*[out,retval]*/ long * PDFAllowScreenReaders ) = 0;
+      virtual HRESULT __stdcall put_PDFAllowScreenReaders (
+        /*[in]*/ long PDFAllowScreenReaders ) = 0;
+      virtual HRESULT __stdcall get_PDFColorsCMYKToRGB (
+        /*[out,retval]*/ long * PDFColorsCMYKToRGB ) = 0;
+      virtual HRESULT __stdcall put_PDFColorsCMYKToRGB (
+        /*[in]*/ long PDFColorsCMYKToRGB ) = 0;
+      virtual HRESULT __stdcall get_PDFColorsColorModel (
+        /*[out,retval]*/ long * PDFColorsColorModel ) = 0;
+      virtual HRESULT __stdcall put_PDFColorsColorModel (
+        /*[in]*/ long PDFColorsColorModel ) = 0;
+      virtual HRESULT __stdcall get_PDFColorsPreserveHalftone (
+        /*[out,retval]*/ long * PDFColorsPreserveHalftone ) = 0;
+      virtual HRESULT __stdcall put_PDFColorsPreserveHalftone (
+        /*[in]*/ long PDFColorsPreserveHalftone ) = 0;
+      virtual HRESULT __stdcall get_PDFColorsPreserveOverprint (
+        /*[out,retval]*/ long * PDFColorsPreserveOverprint ) = 0;
+      virtual HRESULT __stdcall put_PDFColorsPreserveOverprint (
+        /*[in]*/ long PDFColorsPreserveOverprint ) = 0;
+      virtual HRESULT __stdcall get_PDFColorsPreserveTransfer (
+        /*[out,retval]*/ long * PDFColorsPreserveTransfer ) = 0;
+      virtual HRESULT __stdcall put_PDFColorsPreserveTransfer (
+        /*[in]*/ long PDFColorsPreserveTransfer ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorCompression (
+        /*[out,retval]*/ long * PDFCompressionColorCompression ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorCompression (
+        /*[in]*/ long PDFCompressionColorCompression ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorCompressionChoice (
+        /*[out,retval]*/ long * PDFCompressionColorCompressionChoice ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorCompressionChoice (
+        /*[in]*/ long PDFCompressionColorCompressionChoice ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorCompressionJPEGHighFactor (
+        /*[out,retval]*/ double * PDFCompressionColorCompressionJPEGHighFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorCompressionJPEGHighFactor (
+        /*[in]*/ double PDFCompressionColorCompressionJPEGHighFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorCompressionJPEGLowFactor (
+        /*[out,retval]*/ double * PDFCompressionColorCompressionJPEGLowFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorCompressionJPEGLowFactor (
+        /*[in]*/ double PDFCompressionColorCompressionJPEGLowFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorCompressionJPEGMaximumFactor (
+        /*[out,retval]*/ double * PDFCompressionColorCompressionJPEGMaximumFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorCompressionJPEGMaximumFactor (
+        /*[in]*/ double PDFCompressionColorCompressionJPEGMaximumFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorCompressionJPEGMediumFactor (
+        /*[out,retval]*/ double * PDFCompressionColorCompressionJPEGMediumFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorCompressionJPEGMediumFactor (
+        /*[in]*/ double PDFCompressionColorCompressionJPEGMediumFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorCompressionJPEGMinimumFactor (
+        /*[out,retval]*/ double * PDFCompressionColorCompressionJPEGMinimumFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorCompressionJPEGMinimumFactor (
+        /*[in]*/ double PDFCompressionColorCompressionJPEGMinimumFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorResample (
+        /*[out,retval]*/ long * PDFCompressionColorResample ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorResample (
+        /*[in]*/ long PDFCompressionColorResample ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorResampleChoice (
+        /*[out,retval]*/ long * PDFCompressionColorResampleChoice ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorResampleChoice (
+        /*[in]*/ long PDFCompressionColorResampleChoice ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionColorResolution (
+        /*[out,retval]*/ long * PDFCompressionColorResolution ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionColorResolution (
+        /*[in]*/ long PDFCompressionColorResolution ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyCompression (
+        /*[out,retval]*/ long * PDFCompressionGreyCompression ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyCompression (
+        /*[in]*/ long PDFCompressionGreyCompression ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyCompressionChoice (
+        /*[out,retval]*/ long * PDFCompressionGreyCompressionChoice ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyCompressionChoice (
+        /*[in]*/ long PDFCompressionGreyCompressionChoice ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyCompressionJPEGHighFactor (
+        /*[out,retval]*/ double * PDFCompressionGreyCompressionJPEGHighFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyCompressionJPEGHighFactor (
+        /*[in]*/ double PDFCompressionGreyCompressionJPEGHighFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyCompressionJPEGLowFactor (
+        /*[out,retval]*/ double * PDFCompressionGreyCompressionJPEGLowFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyCompressionJPEGLowFactor (
+        /*[in]*/ double PDFCompressionGreyCompressionJPEGLowFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyCompressionJPEGMaximumFactor (
+        /*[out,retval]*/ double * PDFCompressionGreyCompressionJPEGMaximumFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyCompressionJPEGMaximumFactor (
+        /*[in]*/ double PDFCompressionGreyCompressionJPEGMaximumFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyCompressionJPEGMediumFactor (
+        /*[out,retval]*/ double * PDFCompressionGreyCompressionJPEGMediumFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyCompressionJPEGMediumFactor (
+        /*[in]*/ double PDFCompressionGreyCompressionJPEGMediumFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyCompressionJPEGMinimumFactor (
+        /*[out,retval]*/ double * PDFCompressionGreyCompressionJPEGMinimumFactor ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyCompressionJPEGMinimumFactor (
+        /*[in]*/ double PDFCompressionGreyCompressionJPEGMinimumFactor ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyResample (
+        /*[out,retval]*/ long * PDFCompressionGreyResample ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyResample (
+        /*[in]*/ long PDFCompressionGreyResample ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyResampleChoice (
+        /*[out,retval]*/ long * PDFCompressionGreyResampleChoice ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyResampleChoice (
+        /*[in]*/ long PDFCompressionGreyResampleChoice ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionGreyResolution (
+        /*[out,retval]*/ long * PDFCompressionGreyResolution ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionGreyResolution (
+        /*[in]*/ long PDFCompressionGreyResolution ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionMonoCompression (
+        /*[out,retval]*/ long * PDFCompressionMonoCompression ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionMonoCompression (
+        /*[in]*/ long PDFCompressionMonoCompression ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionMonoCompressionChoice (
+        /*[out,retval]*/ long * PDFCompressionMonoCompressionChoice ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionMonoCompressionChoice (
+        /*[in]*/ long PDFCompressionMonoCompressionChoice ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionMonoResample (
+        /*[out,retval]*/ long * PDFCompressionMonoResample ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionMonoResample (
+        /*[in]*/ long PDFCompressionMonoResample ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionMonoResampleChoice (
+        /*[out,retval]*/ long * PDFCompressionMonoResampleChoice ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionMonoResampleChoice (
+        /*[in]*/ long PDFCompressionMonoResampleChoice ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionMonoResolution (
+        /*[out,retval]*/ long * PDFCompressionMonoResolution ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionMonoResolution (
+        /*[in]*/ long PDFCompressionMonoResolution ) = 0;
+      virtual HRESULT __stdcall get_PDFCompressionTextCompression (
+        /*[out,retval]*/ long * PDFCompressionTextCompression ) = 0;
+      virtual HRESULT __stdcall put_PDFCompressionTextCompression (
+        /*[in]*/ long PDFCompressionTextCompression ) = 0;
+      virtual HRESULT __stdcall get_PDFDisallowCopy (
+        /*[out,retval]*/ long * PDFDisallowCopy ) = 0;
+      virtual HRESULT __stdcall put_PDFDisallowCopy (
+        /*[in]*/ long PDFDisallowCopy ) = 0;
+      virtual HRESULT __stdcall get_PDFDisallowModifyAnnotations (
+        /*[out,retval]*/ long * PDFDisallowModifyAnnotations ) = 0;
+      virtual HRESULT __stdcall put_PDFDisallowModifyAnnotations (
+        /*[in]*/ long PDFDisallowModifyAnnotations ) = 0;
+      virtual HRESULT __stdcall get_PDFDisallowModifyContents (
+        /*[out,retval]*/ long * PDFDisallowModifyContents ) = 0;
+      virtual HRESULT __stdcall put_PDFDisallowModifyContents (
+        /*[in]*/ long PDFDisallowModifyContents ) = 0;
+      virtual HRESULT __stdcall get_PDFDisallowPrinting (
+        /*[out,retval]*/ long * PDFDisallowPrinting ) = 0;
+      virtual HRESULT __stdcall put_PDFDisallowPrinting (
+        /*[in]*/ long PDFDisallowPrinting ) = 0;
+      virtual HRESULT __stdcall get_PDFEncryptor (
+        /*[out,retval]*/ long * PDFEncryptor ) = 0;
+      virtual HRESULT __stdcall put_PDFEncryptor (
+        /*[in]*/ long PDFEncryptor ) = 0;
+      virtual HRESULT __stdcall get_PDFFontsEmbedAll (
+        /*[out,retval]*/ long * PDFFontsEmbedAll ) = 0;
+      virtual HRESULT __stdcall put_PDFFontsEmbedAll (
+        /*[in]*/ long PDFFontsEmbedAll ) = 0;
+      virtual HRESULT __stdcall get_PDFFontsSubSetFonts (
+        /*[out,retval]*/ long * PDFFontsSubSetFonts ) = 0;
+      virtual HRESULT __stdcall put_PDFFontsSubSetFonts (
+        /*[in]*/ long PDFFontsSubSetFonts ) = 0;
+      virtual HRESULT __stdcall get_PDFFontsSubSetFontsPercent (
+        /*[out,retval]*/ long * PDFFontsSubSetFontsPercent ) = 0;
+      virtual HRESULT __stdcall put_PDFFontsSubSetFontsPercent (
+        /*[in]*/ long PDFFontsSubSetFontsPercent ) = 0;
+      virtual HRESULT __stdcall get_PDFGeneralASCII85 (
+        /*[out,retval]*/ long * PDFGeneralASCII85 ) = 0;
+      virtual HRESULT __stdcall put_PDFGeneralASCII85 (
+        /*[in]*/ long PDFGeneralASCII85 ) = 0;
+      virtual HRESULT __stdcall get_PDFGeneralAutorotate (
+        /*[out,retval]*/ long * PDFGeneralAutorotate ) = 0;
+      virtual HRESULT __stdcall put_PDFGeneralAutorotate (
+        /*[in]*/ long PDFGeneralAutorotate ) = 0;
+      virtual HRESULT __stdcall get_PDFGeneralCompatibility (
+        /*[out,retval]*/ long * PDFGeneralCompatibility ) = 0;
+      virtual HRESULT __stdcall put_PDFGeneralCompatibility (
+        /*[in]*/ long PDFGeneralCompatibility ) = 0;
+      virtual HRESULT __stdcall get_PDFGeneralOverprint (
+        /*[out,retval]*/ long * PDFGeneralOverprint ) = 0;
+      virtual HRESULT __stdcall put_PDFGeneralOverprint (
+        /*[in]*/ long PDFGeneralOverprint ) = 0;
+      virtual HRESULT __stdcall get_PDFGeneralResolution (
+        /*[out,retval]*/ long * PDFGeneralResolution ) = 0;
+      virtual HRESULT __stdcall put_PDFGeneralResolution (
+        /*[in]*/ long PDFGeneralResolution ) = 0;
+      virtual HRESULT __stdcall get_PDFHighEncryption (
+        /*[out,retval]*/ long * PDFHighEncryption ) = 0;
+      virtual HRESULT __stdcall put_PDFHighEncryption (
+        /*[in]*/ long PDFHighEncryption ) = 0;
+      virtual HRESULT __stdcall get_PDFLowEncryption (
+        /*[out,retval]*/ long * PDFLowEncryption ) = 0;
+      virtual HRESULT __stdcall put_PDFLowEncryption (
+        /*[in]*/ long PDFLowEncryption ) = 0;
+      virtual HRESULT __stdcall get_PDFOptimize (
+        /*[out,retval]*/ long * PDFOptimize ) = 0;
+      virtual HRESULT __stdcall put_PDFOptimize (
+        /*[in]*/ long PDFOptimize ) = 0;
+      virtual HRESULT __stdcall get_PDFOwnerPass (
+        /*[out,retval]*/ long * PDFOwnerPass ) = 0;
+      virtual HRESULT __stdcall put_PDFOwnerPass (
+        /*[in]*/ long PDFOwnerPass ) = 0;
+      virtual HRESULT __stdcall get_PDFOwnerPasswordString (
+        /*[out,retval]*/ BSTR * PDFOwnerPasswordString ) = 0;
+      virtual HRESULT __stdcall put_PDFOwnerPasswordString (
+        /*[in]*/ BSTR PDFOwnerPasswordString ) = 0;
+      virtual HRESULT __stdcall get_PDFUserPass (
+        /*[out,retval]*/ long * PDFUserPass ) = 0;
+      virtual HRESULT __stdcall put_PDFUserPass (
+        /*[in]*/ long PDFUserPass ) = 0;
+      virtual HRESULT __stdcall get_PDFUserPasswordString (
+        /*[out,retval]*/ BSTR * PDFUserPasswordString ) = 0;
+      virtual HRESULT __stdcall put_PDFUserPasswordString (
+        /*[in]*/ BSTR PDFUserPasswordString ) = 0;
+      virtual HRESULT __stdcall get_PDFUseSecurity (
+        /*[out,retval]*/ long * PDFUseSecurity ) = 0;
+      virtual HRESULT __stdcall put_PDFUseSecurity (
+        /*[in]*/ long PDFUseSecurity ) = 0;
+      virtual HRESULT __stdcall get_PNGColorscount (
+        /*[out,retval]*/ long * PNGColorscount ) = 0;
+      virtual HRESULT __stdcall put_PNGColorscount (
+        /*[in]*/ long PNGColorscount ) = 0;
+      virtual HRESULT __stdcall get_PrintAfterSaving (
+        /*[out,retval]*/ long * PrintAfterSaving ) = 0;
+      virtual HRESULT __stdcall put_PrintAfterSaving (
+        /*[in]*/ long PrintAfterSaving ) = 0;
+      virtual HRESULT __stdcall get_PrintAfterSavingDuplex (
+        /*[out,retval]*/ long * PrintAfterSavingDuplex ) = 0;
+      virtual HRESULT __stdcall put_PrintAfterSavingDuplex (
+        /*[in]*/ long PrintAfterSavingDuplex ) = 0;
+      virtual HRESULT __stdcall get_PrintAfterSavingNoCancel (
+        /*[out,retval]*/ long * PrintAfterSavingNoCancel ) = 0;
+      virtual HRESULT __stdcall put_PrintAfterSavingNoCancel (
+        /*[in]*/ long PrintAfterSavingNoCancel ) = 0;
+      virtual HRESULT __stdcall get_PrintAfterSavingPrinter (
+        /*[out,retval]*/ BSTR * PrintAfterSavingPrinter ) = 0;
+      virtual HRESULT __stdcall put_PrintAfterSavingPrinter (
+        /*[in]*/ BSTR PrintAfterSavingPrinter ) = 0;
+      virtual HRESULT __stdcall get_PrintAfterSavingQueryUser (
+        /*[out,retval]*/ long * PrintAfterSavingQueryUser ) = 0;
+      virtual HRESULT __stdcall put_PrintAfterSavingQueryUser (
+        /*[in]*/ long PrintAfterSavingQueryUser ) = 0;
+      virtual HRESULT __stdcall get_PrintAfterSavingTumble (
+        /*[out,retval]*/ long * PrintAfterSavingTumble ) = 0;
+      virtual HRESULT __stdcall put_PrintAfterSavingTumble (
+        /*[in]*/ long PrintAfterSavingTumble ) = 0;
+      virtual HRESULT __stdcall get_PrinterStop (
+        /*[out,retval]*/ long * PrinterStop ) = 0;
+      virtual HRESULT __stdcall put_PrinterStop (
+        /*[in]*/ long PrinterStop ) = 0;
+      virtual HRESULT __stdcall get_PrinterTemppath (
+        /*[out,retval]*/ BSTR * PrinterTemppath ) = 0;
+      virtual HRESULT __stdcall put_PrinterTemppath (
+        /*[in]*/ BSTR PrinterTemppath ) = 0;
+      virtual HRESULT __stdcall get_ProcessPriority (
+        /*[out,retval]*/ long * ProcessPriority ) = 0;
+      virtual HRESULT __stdcall put_ProcessPriority (
+        /*[in]*/ long ProcessPriority ) = 0;
+      virtual HRESULT __stdcall get_ProgramFont (
+        /*[out,retval]*/ BSTR * ProgramFont ) = 0;
+      virtual HRESULT __stdcall put_ProgramFont (
+        /*[in]*/ BSTR ProgramFont ) = 0;
+      virtual HRESULT __stdcall get_ProgramFontCharset (
+        /*[out,retval]*/ long * ProgramFontCharset ) = 0;
+      virtual HRESULT __stdcall put_ProgramFontCharset (
+        /*[in]*/ long ProgramFontCharset ) = 0;
+      virtual HRESULT __stdcall get_ProgramFontSize (
+        /*[out,retval]*/ long * ProgramFontSize ) = 0;
+      virtual HRESULT __stdcall put_ProgramFontSize (
+        /*[in]*/ long ProgramFontSize ) = 0;
+      virtual HRESULT __stdcall get_PSLanguageLevel (
+        /*[out,retval]*/ long * PSLanguageLevel ) = 0;
+      virtual HRESULT __stdcall put_PSLanguageLevel (
+        /*[in]*/ long PSLanguageLevel ) = 0;
+      virtual HRESULT __stdcall get_RemoveAllKnownFileExtensions (
+        /*[out,retval]*/ long * RemoveAllKnownFileExtensions ) = 0;
+      virtual HRESULT __stdcall put_RemoveAllKnownFileExtensions (
+        /*[in]*/ long RemoveAllKnownFileExtensions ) = 0;
+      virtual HRESULT __stdcall get_RemoveSpaces (
+        /*[out,retval]*/ long * RemoveSpaces ) = 0;
+      virtual HRESULT __stdcall put_RemoveSpaces (
+        /*[in]*/ long RemoveSpaces ) = 0;
+      virtual HRESULT __stdcall get_RunProgramAfterSaving (
+        /*[out,retval]*/ long * RunProgramAfterSaving ) = 0;
+      virtual HRESULT __stdcall put_RunProgramAfterSaving (
+        /*[in]*/ long RunProgramAfterSaving ) = 0;
+      virtual HRESULT __stdcall get_RunProgramAfterSavingProgramname (
+        /*[out,retval]*/ BSTR * RunProgramAfterSavingProgramname ) = 0;
+      virtual HRESULT __stdcall put_RunProgramAfterSavingProgramname (
+        /*[in]*/ BSTR RunProgramAfterSavingProgramname ) = 0;
+      virtual HRESULT __stdcall get_RunProgramAfterSavingProgramParameters (
+        /*[out,retval]*/ BSTR * RunProgramAfterSavingProgramParameters ) = 0;
+      virtual HRESULT __stdcall put_RunProgramAfterSavingProgramParameters (
+        /*[in]*/ BSTR RunProgramAfterSavingProgramParameters ) = 0;
+      virtual HRESULT __stdcall get_RunProgramAfterSavingWaitUntilReady (
+        /*[out,retval]*/ long * RunProgramAfterSavingWaitUntilReady ) = 0;
+      virtual HRESULT __stdcall put_RunProgramAfterSavingWaitUntilReady (
+        /*[in]*/ long RunProgramAfterSavingWaitUntilReady ) = 0;
+      virtual HRESULT __stdcall get_RunProgramAfterSavingWindowstyle (
+        /*[out,retval]*/ long * RunProgramAfterSavingWindowstyle ) = 0;
+      virtual HRESULT __stdcall put_RunProgramAfterSavingWindowstyle (
+        /*[in]*/ long RunProgramAfterSavingWindowstyle ) = 0;
+      virtual HRESULT __stdcall get_RunProgramBeforeSaving (
+        /*[out,retval]*/ long * RunProgramBeforeSaving ) = 0;
+      virtual HRESULT __stdcall put_RunProgramBeforeSaving (
+        /*[in]*/ long RunProgramBeforeSaving ) = 0;
+      virtual HRESULT __stdcall get_RunProgramBeforeSavingProgramname (
+        /*[out,retval]*/ BSTR * RunProgramBeforeSavingProgramname ) = 0;
+      virtual HRESULT __stdcall put_RunProgramBeforeSavingProgramname (
+        /*[in]*/ BSTR RunProgramBeforeSavingProgramname ) = 0;
+      virtual HRESULT __stdcall get_RunProgramBeforeSavingProgramParameters (
+        /*[out,retval]*/ BSTR * RunProgramBeforeSavingProgramParameters ) = 0;
+      virtual HRESULT __stdcall put_RunProgramBeforeSavingProgramParameters (
+        /*[in]*/ BSTR RunProgramBeforeSavingProgramParameters ) = 0;
+      virtual HRESULT __stdcall get_RunProgramBeforeSavingWindowstyle (
+        /*[out,retval]*/ long * RunProgramBeforeSavingWindowstyle ) = 0;
+      virtual HRESULT __stdcall put_RunProgramBeforeSavingWindowstyle (
+        /*[in]*/ long RunProgramBeforeSavingWindowstyle ) = 0;
+      virtual HRESULT __stdcall get_SaveFilename (
+        /*[out,retval]*/ BSTR * SaveFilename ) = 0;
+      virtual HRESULT __stdcall put_SaveFilename (
+        /*[in]*/ BSTR SaveFilename ) = 0;
+      virtual HRESULT __stdcall get_SendEmailAfterAutoSaving (
+        /*[out,retval]*/ long * SendEmailAfterAutoSaving ) = 0;
+      virtual HRESULT __stdcall put_SendEmailAfterAutoSaving (
+        /*[in]*/ long SendEmailAfterAutoSaving ) = 0;
+      virtual HRESULT __stdcall get_SendMailMethod (
+        /*[out,retval]*/ long * SendMailMethod ) = 0;
+      virtual HRESULT __stdcall put_SendMailMethod (
+        /*[in]*/ long SendMailMethod ) = 0;
+      virtual HRESULT __stdcall get_ShowAnimation (
+        /*[out,retval]*/ long * ShowAnimation ) = 0;
+      virtual HRESULT __stdcall put_ShowAnimation (
+        /*[in]*/ long ShowAnimation ) = 0;
+      virtual HRESULT __stdcall get_StampFontColor (
+        /*[out,retval]*/ BSTR * StampFontColor ) = 0;
+      virtual HRESULT __stdcall put_StampFontColor (
+        /*[in]*/ BSTR StampFontColor ) = 0;
+      virtual HRESULT __stdcall get_StampFontname (
+        /*[out,retval]*/ BSTR * StampFontname ) = 0;
+      virtual HRESULT __stdcall put_StampFontname (
+        /*[in]*/ BSTR StampFontname ) = 0;
+      virtual HRESULT __stdcall get_StampFontsize (
+        /*[out,retval]*/ long * StampFontsize ) = 0;
+      virtual HRESULT __stdcall put_StampFontsize (
+        /*[in]*/ long StampFontsize ) = 0;
+      virtual HRESULT __stdcall get_StampOutlineFontthickness (
+        /*[out,retval]*/ long * StampOutlineFontthickness ) = 0;
+      virtual HRESULT __stdcall put_StampOutlineFontthickness (
+        /*[in]*/ long StampOutlineFontthickness ) = 0;
+      virtual HRESULT __stdcall get_StampString (
+        /*[out,retval]*/ BSTR * StampString ) = 0;
+      virtual HRESULT __stdcall put_StampString (
+        /*[in]*/ BSTR StampString ) = 0;
+      virtual HRESULT __stdcall get_StampUseOutlineFont (
+        /*[out,retval]*/ long * StampUseOutlineFont ) = 0;
+      virtual HRESULT __stdcall put_StampUseOutlineFont (
+        /*[in]*/ long StampUseOutlineFont ) = 0;
+      virtual HRESULT __stdcall get_StandardAuthor (
+        /*[out,retval]*/ BSTR * StandardAuthor ) = 0;
+      virtual HRESULT __stdcall put_StandardAuthor (
+        /*[in]*/ BSTR StandardAuthor ) = 0;
+      virtual HRESULT __stdcall get_StandardCreationdate (
+        /*[out,retval]*/ BSTR * StandardCreationdate ) = 0;
+      virtual HRESULT __stdcall put_StandardCreationdate (
+        /*[in]*/ BSTR StandardCreationdate ) = 0;
+      virtual HRESULT __stdcall get_StandardDateformat (
+        /*[out,retval]*/ BSTR * StandardDateformat ) = 0;
+      virtual HRESULT __stdcall put_StandardDateformat (
+        /*[in]*/ BSTR StandardDateformat ) = 0;
+      virtual HRESULT __stdcall get_StandardKeywords (
+        /*[out,retval]*/ BSTR * StandardKeywords ) = 0;
+      virtual HRESULT __stdcall put_StandardKeywords (
+        /*[in]*/ BSTR StandardKeywords ) = 0;
+      virtual HRESULT __stdcall get_StandardMailDomain (
+        /*[out,retval]*/ BSTR * StandardMailDomain ) = 0;
+      virtual HRESULT __stdcall put_StandardMailDomain (
+        /*[in]*/ BSTR StandardMailDomain ) = 0;
+      virtual HRESULT __stdcall get_StandardModifydate (
+        /*[out,retval]*/ BSTR * StandardModifydate ) = 0;
+      virtual HRESULT __stdcall put_StandardModifydate (
+        /*[in]*/ BSTR StandardModifydate ) = 0;
+      virtual HRESULT __stdcall get_StandardSaveformat (
+        /*[out,retval]*/ long * StandardSaveformat ) = 0;
+      virtual HRESULT __stdcall put_StandardSaveformat (
+        /*[in]*/ long StandardSaveformat ) = 0;
+      virtual HRESULT __stdcall get_StandardSubject (
+        /*[out,retval]*/ BSTR * StandardSubject ) = 0;
+      virtual HRESULT __stdcall put_StandardSubject (
+        /*[in]*/ BSTR StandardSubject ) = 0;
+      virtual HRESULT __stdcall get_StandardTitle (
+        /*[out,retval]*/ BSTR * StandardTitle ) = 0;
+      virtual HRESULT __stdcall put_StandardTitle (
+        /*[in]*/ BSTR StandardTitle ) = 0;
+      virtual HRESULT __stdcall get_StartStandardProgram (
+        /*[out,retval]*/ long * StartStandardProgram ) = 0;
+      virtual HRESULT __stdcall put_StartStandardProgram (
+        /*[in]*/ long StartStandardProgram ) = 0;
+      virtual HRESULT __stdcall get_TIFFColorscount (
+        /*[out,retval]*/ long * TIFFColorscount ) = 0;
+      virtual HRESULT __stdcall put_TIFFColorscount (
+        /*[in]*/ long TIFFColorscount ) = 0;
+      virtual HRESULT __stdcall get_Toolbars (
+        /*[out,retval]*/ long * Toolbars ) = 0;
+      virtual HRESULT __stdcall put_Toolbars (
+        /*[in]*/ long Toolbars ) = 0;
+      virtual HRESULT __stdcall get_UseAutosave (
+        /*[out,retval]*/ long * UseAutosave ) = 0;
+      virtual HRESULT __stdcall put_UseAutosave (
+        /*[in]*/ long UseAutosave ) = 0;
+      virtual HRESULT __stdcall get_UseAutosaveDirectory (
+        /*[out,retval]*/ long * UseAutosaveDirectory ) = 0;
+      virtual HRESULT __stdcall put_UseAutosaveDirectory (
+        /*[in]*/ long UseAutosaveDirectory ) = 0;
+      virtual HRESULT __stdcall get_UseCreationDateNow (
+        /*[out,retval]*/ long * UseCreationDateNow ) = 0;
+      virtual HRESULT __stdcall put_UseCreationDateNow (
+        /*[in]*/ long UseCreationDateNow ) = 0;
+      virtual HRESULT __stdcall get_UseStandardAuthor (
+        /*[out,retval]*/ long * UseStandardAuthor ) = 0;
+      virtual HRESULT __stdcall put_UseStandardAuthor (
+        /*[in]*/ long UseStandardAuthor ) = 0;
+      virtual HRESULT __stdcall get_UseCustomPaperSize (
+        /*[out,retval]*/ BSTR * UseCustomPaperSize ) = 0;
+      virtual HRESULT __stdcall put_UseCustomPaperSize (
+        /*[in]*/ BSTR UseCustomPaperSize ) = 0;
+      virtual HRESULT __stdcall get_UseFixPapersize (
+        /*[out,retval]*/ long * UseFixPapersize ) = 0;
+      virtual HRESULT __stdcall put_UseFixPapersize (
+        /*[in]*/ long UseFixPapersize ) = 0;
+};
+
+struct __declspec(uuid("f8f15298-30fd-427c-bdfa-55e9ab615632"))
+clsPDFCreatorOptions;
+    // [ default ] interface _clsPDFCreatorOptions
+
+struct __declspec(uuid("63be3bc3-2b1d-4456-bfc7-900099f94aa2"))
+_clsPDFCreatorError : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetNumber,put=PutNumber))
+    long Number;
+    __declspec(property(get=GetDescription,put=PutDescription))
+    _bstr_t Description;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetNumber ( );
+    void PutNumber (
+        long Number );
+    _bstr_t GetDescription ( );
+    void PutDescription (
+        _bstr_t Description );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Number (
+        /*[out,retval]*/ long * Number ) = 0;
+      virtual HRESULT __stdcall put_Number (
+        /*[in]*/ long Number ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * Description ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR Description ) = 0;
+};
+
+struct __declspec(uuid("082391c9-8188-4364-b4fd-66a1524b2097"))
+clsPDFCreatorError;
+    // [ default ] interface _clsPDFCreatorError
+
+struct __declspec(uuid("2e2e2568-aa5b-4535-8291-c8930d1760c1"))
+_clsPDFCreatorInfoSpoolFile : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetREDMON_PORT,put=PutREDMON_PORT))
+    _bstr_t REDMON_PORT;
+    __declspec(property(get=GetREDMON_JOB,put=PutREDMON_JOB))
+    _bstr_t REDMON_JOB;
+    __declspec(property(get=GetREDMON_PRINTER,put=PutREDMON_PRINTER))
+    _bstr_t REDMON_PRINTER;
+    __declspec(property(get=GetREDMON_MACHINE,put=PutREDMON_MACHINE))
+    _bstr_t REDMON_MACHINE;
+    __declspec(property(get=GetREDMON_USER,put=PutREDMON_USER))
+    _bstr_t REDMON_USER;
+    __declspec(property(get=GetREDMON_DOCNAME,put=PutREDMON_DOCNAME))
+    _bstr_t REDMON_DOCNAME;
+    __declspec(property(get=GetREDMON_FILENAME,put=PutREDMON_FILENAME))
+    _bstr_t REDMON_FILENAME;
+    __declspec(property(get=GetREDMON_SESSIONID,put=PutREDMON_SESSIONID))
+    _bstr_t REDMON_SESSIONID;
+    __declspec(property(get=GetSpoolFilename,put=PutSpoolFilename))
+    _bstr_t SpoolFilename;
+    __declspec(property(get=GetSpoolerAccount,put=PutSpoolerAccount))
+    _bstr_t SpoolerAccount;
+    __declspec(property(get=GetComputer,put=PutComputer))
+    _bstr_t Computer;
+    __declspec(property(get=GetCreated,put=PutCreated))
+    _bstr_t Created;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetREDMON_PORT ( );
+    void PutREDMON_PORT (
+        _bstr_t REDMON_PORT );
+    _bstr_t GetREDMON_JOB ( );
+    void PutREDMON_JOB (
+        _bstr_t REDMON_JOB );
+    _bstr_t GetREDMON_PRINTER ( );
+    void PutREDMON_PRINTER (
+        _bstr_t REDMON_PRINTER );
+    _bstr_t GetREDMON_MACHINE ( );
+    void PutREDMON_MACHINE (
+        _bstr_t REDMON_MACHINE );
+    _bstr_t GetREDMON_USER ( );
+    void PutREDMON_USER (
+        _bstr_t REDMON_USER );
+    _bstr_t GetREDMON_DOCNAME ( );
+    void PutREDMON_DOCNAME (
+        _bstr_t REDMON_DOCNAME );
+    _bstr_t GetREDMON_FILENAME ( );
+    void PutREDMON_FILENAME (
+        _bstr_t REDMON_FILENAME );
+    _bstr_t GetREDMON_SESSIONID ( );
+    void PutREDMON_SESSIONID (
+        _bstr_t REDMON_SESSIONID );
+    _bstr_t GetSpoolFilename ( );
+    void PutSpoolFilename (
+        _bstr_t SpoolFilename );
+    _bstr_t GetSpoolerAccount ( );
+    void PutSpoolerAccount (
+        _bstr_t SpoolerAccount );
+    _bstr_t GetComputer ( );
+    void PutComputer (
+        _bstr_t Computer );
+    _bstr_t GetCreated ( );
+    void PutCreated (
+        _bstr_t Created );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_REDMON_PORT (
+        /*[out,retval]*/ BSTR * REDMON_PORT ) = 0;
+      virtual HRESULT __stdcall put_REDMON_PORT (
+        /*[in]*/ BSTR REDMON_PORT ) = 0;
+      virtual HRESULT __stdcall get_REDMON_JOB (
+        /*[out,retval]*/ BSTR * REDMON_JOB ) = 0;
+      virtual HRESULT __stdcall put_REDMON_JOB (
+        /*[in]*/ BSTR REDMON_JOB ) = 0;
+      virtual HRESULT __stdcall get_REDMON_PRINTER (
+        /*[out,retval]*/ BSTR * REDMON_PRINTER ) = 0;
+      virtual HRESULT __stdcall put_REDMON_PRINTER (
+        /*[in]*/ BSTR REDMON_PRINTER ) = 0;
+      virtual HRESULT __stdcall get_REDMON_MACHINE (
+        /*[out,retval]*/ BSTR * REDMON_MACHINE ) = 0;
+      virtual HRESULT __stdcall put_REDMON_MACHINE (
+        /*[in]*/ BSTR REDMON_MACHINE ) = 0;
+      virtual HRESULT __stdcall get_REDMON_USER (
+        /*[out,retval]*/ BSTR * REDMON_USER ) = 0;
+      virtual HRESULT __stdcall put_REDMON_USER (
+        /*[in]*/ BSTR REDMON_USER ) = 0;
+      virtual HRESULT __stdcall get_REDMON_DOCNAME (
+        /*[out,retval]*/ BSTR * REDMON_DOCNAME ) = 0;
+      virtual HRESULT __stdcall put_REDMON_DOCNAME (
+        /*[in]*/ BSTR REDMON_DOCNAME ) = 0;
+      virtual HRESULT __stdcall get_REDMON_FILENAME (
+        /*[out,retval]*/ BSTR * REDMON_FILENAME ) = 0;
+      virtual HRESULT __stdcall put_REDMON_FILENAME (
+        /*[in]*/ BSTR REDMON_FILENAME ) = 0;
+      virtual HRESULT __stdcall get_REDMON_SESSIONID (
+        /*[out,retval]*/ BSTR * REDMON_SESSIONID ) = 0;
+      virtual HRESULT __stdcall put_REDMON_SESSIONID (
+        /*[in]*/ BSTR REDMON_SESSIONID ) = 0;
+      virtual HRESULT __stdcall get_SpoolFilename (
+        /*[out,retval]*/ BSTR * SpoolFilename ) = 0;
+      virtual HRESULT __stdcall put_SpoolFilename (
+        /*[in]*/ BSTR SpoolFilename ) = 0;
+      virtual HRESULT __stdcall get_SpoolerAccount (
+        /*[out,retval]*/ BSTR * SpoolerAccount ) = 0;
+      virtual HRESULT __stdcall put_SpoolerAccount (
+        /*[in]*/ BSTR SpoolerAccount ) = 0;
+      virtual HRESULT __stdcall get_Computer (
+        /*[out,retval]*/ BSTR * Computer ) = 0;
+      virtual HRESULT __stdcall put_Computer (
+        /*[in]*/ BSTR Computer ) = 0;
+      virtual HRESULT __stdcall get_Created (
+        /*[out,retval]*/ BSTR * Created ) = 0;
+      virtual HRESULT __stdcall put_Created (
+        /*[in]*/ BSTR Created ) = 0;
+};
+
+struct __declspec(uuid("85ba86c8-f6fa-4731-bd3a-ad0e6e655bdd"))
+clsPDFCreatorInfoSpoolFile;
+    // [ default ] interface _clsPDFCreatorInfoSpoolFile
+
+struct __declspec(uuid("5a2893d6-f5ef-4e30-9960-3418c58c17a4"))
+_clsPDFCreator : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetcStandardOption))
+    _variant_t cStandardOption[];
+    __declspec(property(get=GetcOptions,put=PutRefcOptions))
+    _clsPDFCreatorOptionsPtr cOptions;
+    __declspec(property(get=GetcOption,put=PutcOption))
+    _variant_t cOption[];
+    __declspec(property(get=GetcOptionsNames))
+    VBA::_CollectionPtr cOptionsNames;
+    __declspec(property(get=GetcPrinterStop,put=PutcPrinterStop))
+    VARIANT_BOOL cPrinterStop;
+    __declspec(property(get=GetcInstalledAsServer))
+    VARIANT_BOOL cInstalledAsServer;
+    __declspec(property(get=GetcVisible,put=PutcVisible))
+    VARIANT_BOOL cVisible;
+    __declspec(property(get=GetcWindowsVersion))
+    _bstr_t cWindowsVersion;
+    __declspec(property(get=GetcProgramIsRunning))
+    VARIANT_BOOL cProgramIsRunning;
+    __declspec(property(get=GetcProgramRelease))
+    _bstr_t cProgramRelease[];
+    __declspec(property(get=GetcIsOptionsDialogDisplayed))
+    VARIANT_BOOL cIsOptionsDialogDisplayed;
+    __declspec(property(get=GetcIsLogfileDialogDisplayed))
+    VARIANT_BOOL cIsLogfileDialogDisplayed;
+    __declspec(property(get=GetcPDFCreatorApplicationPath))
+    _bstr_t cPDFCreatorApplicationPath;
+    __declspec(property(get=GetcOutputFilename))
+    _bstr_t cOutputFilename;
+    __declspec(property(get=GetcErrorDetail))
+    _variant_t cErrorDetail[];
+    __declspec(property(get=GetcError))
+    _clsPDFCreatorErrorPtr cError;
+    __declspec(property(get=GetcPostscriptInfo))
+    _bstr_t cPostscriptInfo[][];
+    __declspec(property(get=GetcIsConverted,put=PutcIsConverted))
+    VARIANT_BOOL cIsConverted;
+    __declspec(property(get=GetcWindowState,put=PutcWindowState))
+    long cWindowState;
+    __declspec(property(get=GetcDefaultPrinter,put=PutcDefaultPrinter))
+    _bstr_t cDefaultPrinter;
+    __declspec(property(get=GetcPrintjobFilename))
+    _bstr_t cPrintjobFilename[];
+    __declspec(property(get=GetcCountOfPrintjobs))
+    long cCountOfPrintjobs;
+    __declspec(property(get=GetcPrintjobInfo))
+    _bstr_t cPrintjobInfo[][];
+    __declspec(property(get=GetcPrintjobInfos))
+    _clsPDFCreatorInfoSpoolFilePtr cPrintjobInfos[];
+    __declspec(property(get=GetcStandardOptions))
+    _clsPDFCreatorOptionsPtr cStandardOptions;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _clsPDFCreatorErrorPtr GetcError ( );
+    _variant_t GetcErrorDetail (
+        _bstr_t PropertyName );
+    HRESULT cErrorClear ( );
+    _bstr_t GetcOutputFilename ( );
+    _bstr_t GetcPDFCreatorApplicationPath ( );
+    VARIANT_BOOL GetcIsLogfileDialogDisplayed ( );
+    VARIANT_BOOL GetcIsOptionsDialogDisplayed ( );
+    _bstr_t GetcProgramRelease (
+        VARIANT_BOOL WithBeta );
+    VARIANT_BOOL GetcProgramIsRunning ( );
+    _bstr_t GetcWindowsVersion ( );
+    VARIANT_BOOL GetcVisible ( );
+    void PutcVisible (
+        VARIANT_BOOL _arg1 );
+    VARIANT_BOOL GetcInstalledAsServer ( );
+    VARIANT_BOOL GetcPrinterStop ( );
+    void PutcPrinterStop (
+        VARIANT_BOOL _arg1 );
+    VBA::_CollectionPtr GetcOptionsNames ( );
+    _variant_t GetcOption (
+        _bstr_t PropertyName );
+    void PutcOption (
+        _bstr_t PropertyName,
+        const _variant_t & _arg2 );
+    _clsPDFCreatorOptionsPtr GetcOptions ( );
+    void PutRefcOptions (
+        struct _clsPDFCreatorOptions * _arg1 );
+    _variant_t GetcStandardOption (
+        _bstr_t PropertyName );
+    _clsPDFCreatorOptionsPtr GetcStandardOptions ( );
+    _clsPDFCreatorInfoSpoolFilePtr GetcPrintjobInfos (
+        _bstr_t PrintjobFilename );
+    _bstr_t GetcPrintjobInfo (
+        _bstr_t PrintjobFilename,
+        _bstr_t PropertyName );
+    long GetcCountOfPrintjobs ( );
+    _bstr_t GetcPrintjobFilename (
+        long JobNumber );
+    _bstr_t GetcDefaultPrinter ( );
+    void PutcDefaultPrinter (
+        _bstr_t _arg1 );
+    long GetcWindowState ( );
+    void PutcWindowState (
+        long _arg1 );
+    VARIANT_BOOL GetcIsConverted ( );
+    void PutcIsConverted (
+        VARIANT_BOOL _arg1 );
+    HRESULT cDeletePrintjob (
+        long JobNumber );
+    HRESULT cMovePrintjobBottom (
+        long JobNumber );
+    HRESULT cMovePrintjobTop (
+        long JobNumber );
+    HRESULT cMovePrintjobUp (
+        long JobNumber );
+    HRESULT cMovePrintjobDown (
+        long JobNumber );
+    VARIANT_BOOL cClose ( );
+    VARIANT_BOOL cCloseRunningSession ( );
+    VARIANT_BOOL cStart (
+        _bstr_t Params,
+        VARIANT_BOOL ForceInitialize );
+    HRESULT cClearCache ( );
+    HRESULT cClearLogfile ( );
+    HRESULT cConvertPostscriptfile (
+        _bstr_t InputFilename,
+        _bstr_t OutputFilename );
+    HRESULT cTestEvent (
+        _bstr_t EventName );
+    HRESULT cShowLogfileDialog (
+        VARIANT_BOOL Value );
+    HRESULT cShowOptionsDialog (
+        VARIANT_BOOL Value );
+    HRESULT cSendMail (
+        _bstr_t OutputFilename,
+        _bstr_t Recipients );
+    VARIANT_BOOL cIsPrintable (
+        _bstr_t Filename );
+    HRESULT cCombineAll ( );
+    VBA::_CollectionPtr cGetPDFCreatorPrinters ( );
+    _bstr_t cGetLogfile ( );
+    HRESULT cWriteToLogfile (
+        _bstr_t LogStr );
+    HRESULT cPrintFile (
+        _bstr_t Filename );
+    HRESULT cPrintPDFCreatorTestpage ( );
+    HRESULT cPrintPrinterTestpage (
+        _bstr_t Printername );
+    _clsPDFCreatorOptionsPtr cReadOptions ( );
+    HRESULT cSaveOptions (
+        const _variant_t & Options1 = vtMissing );
+    _clsPDFCreatorOptionsPtr cReadOptionsFromFile (
+        _bstr_t INIFilename );
+    HRESULT cSaveOptionsToFile (
+        _bstr_t INIFilename,
+        const _variant_t & Options1 = vtMissing );
+    _bstr_t GetcPostscriptInfo (
+        _bstr_t PostscriptFilename,
+        _bstr_t PropertyName );
+    HRESULT cAddPrintjob (
+        _bstr_t PostscriptFilename );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_cError (
+        /*[out,retval]*/ struct _clsPDFCreatorError * * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cErrorDetail (
+        /*[in]*/ BSTR PropertyName,
+        /*[out,retval]*/ VARIANT * _arg2 ) = 0;
+      virtual HRESULT __stdcall raw_cErrorClear ( ) = 0;
+      virtual HRESULT __stdcall get_cOutputFilename (
+        /*[out,retval]*/ BSTR * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cPDFCreatorApplicationPath (
+        /*[out,retval]*/ BSTR * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cIsLogfileDialogDisplayed (
+        /*[out,retval]*/ VARIANT_BOOL * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cIsOptionsDialogDisplayed (
+        /*[out,retval]*/ VARIANT_BOOL * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cProgramRelease (
+        /*[in]*/ VARIANT_BOOL WithBeta,
+        /*[out,retval]*/ BSTR * _arg2 ) = 0;
+      virtual HRESULT __stdcall get_cProgramIsRunning (
+        /*[out,retval]*/ VARIANT_BOOL * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cWindowsVersion (
+        /*[out,retval]*/ BSTR * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cVisible (
+        /*[out,retval]*/ VARIANT_BOOL * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_cVisible (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cInstalledAsServer (
+        /*[out,retval]*/ VARIANT_BOOL * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cPrinterStop (
+        /*[out,retval]*/ VARIANT_BOOL * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_cPrinterStop (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cOptionsNames (
+        /*[out,retval]*/ struct VBA::_Collection * * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cOption (
+        /*[in]*/ BSTR PropertyName,
+        /*[out,retval]*/ VARIANT * _arg2 ) = 0;
+      virtual HRESULT __stdcall put_cOption (
+        /*[in]*/ BSTR PropertyName,
+        /*[in]*/ VARIANT _arg2 ) = 0;
+      virtual HRESULT __stdcall get_cOptions (
+        /*[out,retval]*/ struct _clsPDFCreatorOptions * * _arg1 ) = 0;
+      virtual HRESULT __stdcall putref_cOptions (
+        /*[in]*/ struct _clsPDFCreatorOptions * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cStandardOption (
+        /*[in]*/ BSTR PropertyName,
+        /*[out,retval]*/ VARIANT * _arg2 ) = 0;
+      virtual HRESULT __stdcall get_cStandardOptions (
+        /*[out,retval]*/ struct _clsPDFCreatorOptions * * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cPrintjobInfos (
+        /*[in]*/ BSTR PrintjobFilename,
+        /*[out,retval]*/ struct _clsPDFCreatorInfoSpoolFile * * _arg2 ) = 0;
+      virtual HRESULT __stdcall get_cPrintjobInfo (
+        /*[in]*/ BSTR PrintjobFilename,
+        /*[in]*/ BSTR PropertyName,
+        /*[out,retval]*/ BSTR * _arg3 ) = 0;
+      virtual HRESULT __stdcall get_cCountOfPrintjobs (
+        /*[out,retval]*/ long * _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cPrintjobFilename (
+        /*[in]*/ long JobNumber,
+        /*[out,retval]*/ BSTR * _arg2 ) = 0;
+      virtual HRESULT __stdcall get_cDefaultPrinter (
+        /*[out,retval]*/ BSTR * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_cDefaultPrinter (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cWindowState (
+        /*[out,retval]*/ long * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_cWindowState (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall get_cIsConverted (
+        /*[out,retval]*/ VARIANT_BOOL * _arg1 ) = 0;
+      virtual HRESULT __stdcall put_cIsConverted (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_cDeletePrintjob (
+        /*[in]*/ long JobNumber ) = 0;
+      virtual HRESULT __stdcall raw_cMovePrintjobBottom (
+        /*[in]*/ long JobNumber ) = 0;
+      virtual HRESULT __stdcall raw_cMovePrintjobTop (
+        /*[in]*/ long JobNumber ) = 0;
+      virtual HRESULT __stdcall raw_cMovePrintjobUp (
+        /*[in]*/ long JobNumber ) = 0;
+      virtual HRESULT __stdcall raw_cMovePrintjobDown (
+        /*[in]*/ long JobNumber ) = 0;
+      virtual HRESULT __stdcall raw_cClose (
+        /*[out,retval]*/ VARIANT_BOOL * _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_cCloseRunningSession (
+        /*[out,retval]*/ VARIANT_BOOL * _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_cStart (
+        /*[in]*/ BSTR Params,
+        /*[in]*/ VARIANT_BOOL ForceInitialize,
+        /*[out,retval]*/ VARIANT_BOOL * _arg3 ) = 0;
+      virtual HRESULT __stdcall raw_cClearCache ( ) = 0;
+      virtual HRESULT __stdcall raw_cClearLogfile ( ) = 0;
+      virtual HRESULT __stdcall raw_cConvertPostscriptfile (
+        /*[in]*/ BSTR InputFilename,
+        /*[in]*/ BSTR OutputFilename ) = 0;
+      virtual HRESULT __stdcall raw_cTestEvent (
+        /*[in]*/ BSTR EventName ) = 0;
+      virtual HRESULT __stdcall raw_cShowLogfileDialog (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall raw_cShowOptionsDialog (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall raw_cSendMail (
+        /*[in]*/ BSTR OutputFilename,
+        /*[in]*/ BSTR Recipients ) = 0;
+      virtual HRESULT __stdcall raw_cIsPrintable (
+        /*[in]*/ BSTR Filename,
+        /*[out,retval]*/ VARIANT_BOOL * _arg2 ) = 0;
+      virtual HRESULT __stdcall raw_cCombineAll ( ) = 0;
+      virtual HRESULT __stdcall raw_cGetPDFCreatorPrinters (
+        /*[out,retval]*/ struct VBA::_Collection * * _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_cGetLogfile (
+        /*[out,retval]*/ BSTR * _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_cWriteToLogfile (
+        /*[in]*/ BSTR LogStr ) = 0;
+      virtual HRESULT __stdcall raw_cPrintFile (
+        /*[in]*/ BSTR Filename ) = 0;
+      virtual HRESULT __stdcall raw_cPrintPDFCreatorTestpage ( ) = 0;
+      virtual HRESULT __stdcall raw_cPrintPrinterTestpage (
+        /*[in]*/ BSTR Printername ) = 0;
+      virtual HRESULT __stdcall raw_cReadOptions (
+        /*[out,retval]*/ struct _clsPDFCreatorOptions * * _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_cSaveOptions (
+        /*[in]*/ VARIANT Options1 = vtMissing ) = 0;
+      virtual HRESULT __stdcall raw_cReadOptionsFromFile (
+        /*[in]*/ BSTR INIFilename,
+        /*[out,retval]*/ struct _clsPDFCreatorOptions * * _arg2 ) = 0;
+      virtual HRESULT __stdcall raw_cSaveOptionsToFile (
+        /*[in]*/ BSTR INIFilename,
+        /*[in]*/ VARIANT Options1 = vtMissing ) = 0;
+      virtual HRESULT __stdcall get_cPostscriptInfo (
+        /*[in]*/ BSTR PostscriptFilename,
+        /*[in]*/ BSTR PropertyName,
+        /*[out,retval]*/ BSTR * _arg3 ) = 0;
+      virtual HRESULT __stdcall raw_cAddPrintjob (
+        /*[in]*/ BSTR PostscriptFilename ) = 0;
+};
+
+struct __declspec(uuid("3a619ae4-50ec-46c8-b19e-be8f50dd2f22"))
+clsPDFCreator;
+    // [ default ] interface _clsPDFCreator
+    // [ default, source ] dispinterface __clsPDFCreator
+
+struct __declspec(uuid("fd7e6f0f-eef8-4667-818a-d4a23ecd649f"))
+__clsPDFCreator : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT eReady ( );
+    HRESULT eError ( );
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\mfcsandbox\pdf\pdf\debug\pdfcreator.tli"
+
+} // namespace PDFCreator
+
+#pragma pack(pop)

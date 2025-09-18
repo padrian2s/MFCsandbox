@@ -1,0 +1,53 @@
+// Generated .IDL file (by the OLE/COM Object Viewer)
+// 
+// typelib filename: VBEvents.dll
+
+[
+  uuid(BB7B028D-7863-4916-8E21-CAFEF7AAF04E),
+  version(1.0)
+]
+library VBEvents
+{
+    // TLib :     // TLib : OLE Automation : {00020430-0000-0000-C000-000000000046}
+    importlib("StdOle2.Tlb");
+
+    // Forward declare all types defined in this typelib
+    interface _clsEventSrc;
+    dispinterface __clsEventSrc;
+
+    [
+      odl,
+      uuid(128D13FE-16F7-4AC0-BFBE-557567FA1A58),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _clsEventSrc : IDispatch {
+        [id(0x60030000)]
+        HRESULT prcFireEvent();
+    };
+
+    [
+      uuid(46F0E144-B78D-4912-A63F-AE7EFB7961CF),
+      version(1.0)
+    ]
+    coclass clsEventSrc {
+        [default] interface _clsEventSrc;
+        [default, source] dispinterface __clsEventSrc;
+    };
+
+    [
+      uuid(5EEE17B4-95A5-4818-B71E-8428D434268B),
+      version(1.0),
+      hidden,
+      nonextensible
+    ]
+    dispinterface __clsEventSrc {
+        properties:
+        methods:
+            [id(0x00000001)]
+            void evtNotify();
+    };
+};

@@ -1,0 +1,26 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.6030 (d2b97599).
+//
+// c:\mfcsandbox\vbeventswithvc\vbeventswithvc\client\debug\vbevents.tli
+//
+// Wrapper implementations for Win32 type library ..\VBActiveX\VBEvents.dll
+// compiler-generated file created 08/27/07 at 15:40:38 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface _clsEventSrc wrapper method implementations
+//
+
+inline HRESULT _clsEventSrc::prcFireEvent ( ) {
+    HRESULT _hr = raw_prcFireEvent();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface __clsEventSrc wrapper method implementations
+//
+
+inline HRESULT __clsEventSrc::evtNotify ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}

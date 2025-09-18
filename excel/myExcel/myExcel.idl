@@ -1,0 +1,29 @@
+// myExcel.idl : type library source for myExcel.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (myExcel.tlb).
+
+[ uuid(4BF9971C-60C0-4632-827E-DFF2BB254283), version(1.0) ]
+library myExcel
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CmyExcelDoc
+	
+	[ uuid(093C96E3-0563-4717-AA0E-ABE05A3D2A51) ]
+	dispinterface ImyExcel
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CmyExcelDoc
+	
+	[ uuid(DA29EBF7-D010-4DFD-A113-F33D5D6B2D93) ]
+	coclass myExcel
+	{
+		[default] dispinterface ImyExcel;
+	};
+};

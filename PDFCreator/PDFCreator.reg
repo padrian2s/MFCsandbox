@@ -1,0 +1,14 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\PDFCreator.Application = PDFCreator Application
+HKEY_CLASSES_ROOT\PDFCreator.Application\CLSID = {D88E9723-9BA4-4B53-896A-9F50A3DF4281}
+
+HKEY_CLASSES_ROOT\CLSID\{D88E9723-9BA4-4B53-896A-9F50A3DF4281} = PDFCreator Application
+HKEY_CLASSES_ROOT\CLSID\{D88E9723-9BA4-4B53-896A-9F50A3DF4281}\ProgId = PDFCreator.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{D88E9723-9BA4-4B53-896A-9F50A3DF4281}\LocalServer32 = PDFCreator.EXE

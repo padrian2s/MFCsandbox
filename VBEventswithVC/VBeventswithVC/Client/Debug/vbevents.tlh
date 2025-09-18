@@ -1,0 +1,78 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.6030 (d2b97599).
+//
+// c:\mfcsandbox\vbeventswithvc\vbeventswithvc\client\debug\vbevents.tlh
+//
+// C++ source equivalent of Win32 type library ..\VBActiveX\VBEvents.dll
+// compiler-generated file created 08/27/07 at 15:40:38 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace MFCClient {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("bb7b028d-7863-4916-8e21-cafef7aaf04e"))
+/* LIBID */ __VBEvents;
+struct __declspec(uuid("128d13fe-16f7-4ac0-bfbe-557567fa1a58"))
+/* dual interface */ _clsEventSrc;
+struct /* coclass */ clsEventSrc;
+struct __declspec(uuid("5eee17b4-95a5-4818-b71e-8428d434268b"))
+/* dispinterface */ __clsEventSrc;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_clsEventSrc, __uuidof(_clsEventSrc));
+_COM_SMARTPTR_TYPEDEF(__clsEventSrc, __uuidof(__clsEventSrc));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("128d13fe-16f7-4ac0-bfbe-557567fa1a58"))
+_clsEventSrc : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT prcFireEvent ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_prcFireEvent ( ) = 0;
+};
+
+struct __declspec(uuid("46f0e144-b78d-4912-a63f-ae7efb7961cf"))
+clsEventSrc;
+    // [ default ] interface _clsEventSrc
+    // [ default, source ] dispinterface __clsEventSrc
+
+struct __declspec(uuid("5eee17b4-95a5-4818-b71e-8428d434268b"))
+__clsEventSrc : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT evtNotify ( );
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\mfcsandbox\vbeventswithvc\vbeventswithvc\client\debug\vbevents.tli"
+
+} // namespace MFCClient
+
+#pragma pack(pop)

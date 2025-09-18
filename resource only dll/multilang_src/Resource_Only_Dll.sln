@@ -1,0 +1,63 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiLang", "MultiLang\MultiLang.vcproj", "{59E6F1D1-D828-40D9-9BC5-657BA3C5E559}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyApp", "MyApp\MyApp.vcproj", "{9EA36A35-C29D-48D3-899B-F0FD77075428}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D7BE577-2FC3-4AF3-A42C-AC3B549F6644} = {1D7BE577-2FC3-4AF3-A42C-AC3B549F6644}
+		{59E6F1D1-D828-40D9-9BC5-657BA3C5E559} = {59E6F1D1-D828-40D9-9BC5-657BA3C5E559}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyDLL", "MyDLL\MyDLL.vcproj", "{1D7BE577-2FC3-4AF3-A42C-AC3B549F6644}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59E6F1D1-D828-40D9-9BC5-657BA3C5E559} = {59E6F1D1-D828-40D9-9BC5-657BA3C5E559}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccProjectUniqueName0 = MyApp\\MyApp.vcproj
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection0 = MyApp\\
+		SccProjectUniqueName1 = MyDLL\\MyDLL.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection1 = MyDLL\\
+		SccProjectName2 = Perforce\u0020Project
+		SccLocalPath2 = .
+		SccProvider2 = MSSCCI:Perforce\u0020SCM
+		CanCheckoutShared = true
+		SolutionUniqueID = {00D76375-8F82-48EF-A2CD-6ECB8B7286CD}
+		SccProjectUniqueName3 = MultiLang\\MultiLang.vcproj
+		SccLocalPath3 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection3 = MultiLang\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{59E6F1D1-D828-40D9-9BC5-657BA3C5E559}.Debug.ActiveCfg = Debug|Win32
+		{59E6F1D1-D828-40D9-9BC5-657BA3C5E559}.Debug.Build.0 = Debug|Win32
+		{59E6F1D1-D828-40D9-9BC5-657BA3C5E559}.Release.ActiveCfg = Release|Win32
+		{59E6F1D1-D828-40D9-9BC5-657BA3C5E559}.Release.Build.0 = Release|Win32
+		{9EA36A35-C29D-48D3-899B-F0FD77075428}.Debug.ActiveCfg = Debug|Win32
+		{9EA36A35-C29D-48D3-899B-F0FD77075428}.Debug.Build.0 = Debug|Win32
+		{9EA36A35-C29D-48D3-899B-F0FD77075428}.Release.ActiveCfg = Release|Win32
+		{9EA36A35-C29D-48D3-899B-F0FD77075428}.Release.Build.0 = Release|Win32
+		{1D7BE577-2FC3-4AF3-A42C-AC3B549F6644}.Debug.ActiveCfg = Debug|Win32
+		{1D7BE577-2FC3-4AF3-A42C-AC3B549F6644}.Debug.Build.0 = Debug|Win32
+		{1D7BE577-2FC3-4AF3-A42C-AC3B549F6644}.Release.ActiveCfg = Release|Win32
+		{1D7BE577-2FC3-4AF3-A42C-AC3B549F6644}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDIRes", "MDIRes.vcproj", "{982DC754-9E44-4D7D-B842-A3A2603759CC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "resourceOnlyDll", "..\resourceOnlyDll\resourceOnlyDll.vcproj", "{EB6A4C4A-C642-41DE-813D-991A2F8C7F81}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{982DC754-9E44-4D7D-B842-A3A2603759CC}.Debug.ActiveCfg = Debug|Win32
+		{982DC754-9E44-4D7D-B842-A3A2603759CC}.Debug.Build.0 = Debug|Win32
+		{982DC754-9E44-4D7D-B842-A3A2603759CC}.Release.ActiveCfg = Release|Win32
+		{982DC754-9E44-4D7D-B842-A3A2603759CC}.Release.Build.0 = Release|Win32
+		{EB6A4C4A-C642-41DE-813D-991A2F8C7F81}.Debug.ActiveCfg = Debug|Win32
+		{EB6A4C4A-C642-41DE-813D-991A2F8C7F81}.Debug.Build.0 = Debug|Win32
+		{EB6A4C4A-C642-41DE-813D-991A2F8C7F81}.Release.ActiveCfg = Release|Win32
+		{EB6A4C4A-C642-41DE-813D-991A2F8C7F81}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

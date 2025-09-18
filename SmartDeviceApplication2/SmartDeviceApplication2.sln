@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "SmartDeviceApplication2", "SmartDeviceApplication2.csdproj", "{FAF006C8-AB2F-4308-8D1D-9C8368F7DE09}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FAF006C8-AB2F-4308-8D1D-9C8368F7DE09}.Debug.ActiveCfg = Debug|Pocket PC
+		{FAF006C8-AB2F-4308-8D1D-9C8368F7DE09}.Debug.Build.0 = Debug|Pocket PC
+		{FAF006C8-AB2F-4308-8D1D-9C8368F7DE09}.Debug.Deploy.0 = Debug|Pocket PC
+		{FAF006C8-AB2F-4308-8D1D-9C8368F7DE09}.Release.ActiveCfg = Release|Pocket PC
+		{FAF006C8-AB2F-4308-8D1D-9C8368F7DE09}.Release.Build.0 = Release|Pocket PC
+		{FAF006C8-AB2F-4308-8D1D-9C8368F7DE09}.Release.Deploy.0 = Release|Pocket PC
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

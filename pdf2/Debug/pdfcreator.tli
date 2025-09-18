@@ -1,0 +1,2339 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.6030 (ea0c6447).
+//
+// c:\mfcsandbox\pdf2\debug\pdfcreator.tli
+//
+// Wrapper implementations for Win32 type library C:\Program Files\PDFCreator\PDFCreator.exe
+// compiler-generated file created 08/15/07 at 15:49:31 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface _clsPDFCreatorOptions wrapper method implementations
+//
+
+inline _bstr_t _clsPDFCreatorOptions::GetAdditionalGhostscriptParameters ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_AdditionalGhostscriptParameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutAdditionalGhostscriptParameters ( _bstr_t AdditionalGhostscriptParameters ) {
+    HRESULT _hr = put_AdditionalGhostscriptParameters(AdditionalGhostscriptParameters);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetAdditionalGhostscriptSearchpath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_AdditionalGhostscriptSearchpath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutAdditionalGhostscriptSearchpath ( _bstr_t AdditionalGhostscriptSearchpath ) {
+    HRESULT _hr = put_AdditionalGhostscriptSearchpath(AdditionalGhostscriptSearchpath);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetAddWindowsFontpath ( ) {
+    long _result = 0;
+    HRESULT _hr = get_AddWindowsFontpath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutAddWindowsFontpath ( long AddWindowsFontpath ) {
+    HRESULT _hr = put_AddWindowsFontpath(AddWindowsFontpath);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetAutosaveDirectory ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_AutosaveDirectory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutAutosaveDirectory ( _bstr_t AutosaveDirectory ) {
+    HRESULT _hr = put_AutosaveDirectory(AutosaveDirectory);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetAutosaveFilename ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_AutosaveFilename(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutAutosaveFilename ( _bstr_t AutosaveFilename ) {
+    HRESULT _hr = put_AutosaveFilename(AutosaveFilename);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetAutosaveFormat ( ) {
+    long _result = 0;
+    HRESULT _hr = get_AutosaveFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutAutosaveFormat ( long AutosaveFormat ) {
+    HRESULT _hr = put_AutosaveFormat(AutosaveFormat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetAutosaveStartStandardProgram ( ) {
+    long _result = 0;
+    HRESULT _hr = get_AutosaveStartStandardProgram(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutAutosaveStartStandardProgram ( long AutosaveStartStandardProgram ) {
+    HRESULT _hr = put_AutosaveStartStandardProgram(AutosaveStartStandardProgram);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetBitmapResolution ( ) {
+    long _result = 0;
+    HRESULT _hr = get_BitmapResolution(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutBitmapResolution ( long BitmapResolution ) {
+    HRESULT _hr = put_BitmapResolution(BitmapResolution);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetBMPColorscount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_BMPColorscount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutBMPColorscount ( long BMPColorscount ) {
+    HRESULT _hr = put_BMPColorscount(BMPColorscount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetClientComputerResolveIPAddress ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ClientComputerResolveIPAddress(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutClientComputerResolveIPAddress ( long ClientComputerResolveIPAddress ) {
+    HRESULT _hr = put_ClientComputerResolveIPAddress(ClientComputerResolveIPAddress);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetDeviceHeightPoints ( ) {
+    double _result = 0;
+    HRESULT _hr = get_DeviceHeightPoints(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutDeviceHeightPoints ( double DeviceHeightPoints ) {
+    HRESULT _hr = put_DeviceHeightPoints(DeviceHeightPoints);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetDeviceWidthPoints ( ) {
+    double _result = 0;
+    HRESULT _hr = get_DeviceWidthPoints(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutDeviceWidthPoints ( double DeviceWidthPoints ) {
+    HRESULT _hr = put_DeviceWidthPoints(DeviceWidthPoints);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetDirectoryGhostscriptBinaries ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DirectoryGhostscriptBinaries(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutDirectoryGhostscriptBinaries ( _bstr_t DirectoryGhostscriptBinaries ) {
+    HRESULT _hr = put_DirectoryGhostscriptBinaries(DirectoryGhostscriptBinaries);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetDirectoryGhostscriptFonts ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DirectoryGhostscriptFonts(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutDirectoryGhostscriptFonts ( _bstr_t DirectoryGhostscriptFonts ) {
+    HRESULT _hr = put_DirectoryGhostscriptFonts(DirectoryGhostscriptFonts);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetDirectoryGhostscriptLibraries ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DirectoryGhostscriptLibraries(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutDirectoryGhostscriptLibraries ( _bstr_t DirectoryGhostscriptLibraries ) {
+    HRESULT _hr = put_DirectoryGhostscriptLibraries(DirectoryGhostscriptLibraries);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetDirectoryGhostscriptResource ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DirectoryGhostscriptResource(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutDirectoryGhostscriptResource ( _bstr_t DirectoryGhostscriptResource ) {
+    HRESULT _hr = put_DirectoryGhostscriptResource(DirectoryGhostscriptResource);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetDisableEmail ( ) {
+    long _result = 0;
+    HRESULT _hr = get_DisableEmail(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutDisableEmail ( long DisableEmail ) {
+    HRESULT _hr = put_DisableEmail(DisableEmail);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetDontUseDocumentSettings ( ) {
+    long _result = 0;
+    HRESULT _hr = get_DontUseDocumentSettings(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutDontUseDocumentSettings ( long DontUseDocumentSettings ) {
+    HRESULT _hr = put_DontUseDocumentSettings(DontUseDocumentSettings);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetEPSLanguageLevel ( ) {
+    long _result = 0;
+    HRESULT _hr = get_EPSLanguageLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutEPSLanguageLevel ( long EPSLanguageLevel ) {
+    HRESULT _hr = put_EPSLanguageLevel(EPSLanguageLevel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetFilenameSubstitutions ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FilenameSubstitutions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutFilenameSubstitutions ( _bstr_t FilenameSubstitutions ) {
+    HRESULT _hr = put_FilenameSubstitutions(FilenameSubstitutions);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetFilenameSubstitutionsOnlyInTitle ( ) {
+    long _result = 0;
+    HRESULT _hr = get_FilenameSubstitutionsOnlyInTitle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutFilenameSubstitutionsOnlyInTitle ( long FilenameSubstitutionsOnlyInTitle ) {
+    HRESULT _hr = put_FilenameSubstitutionsOnlyInTitle(FilenameSubstitutionsOnlyInTitle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetJPEGColorscount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_JPEGColorscount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutJPEGColorscount ( long JPEGColorscount ) {
+    HRESULT _hr = put_JPEGColorscount(JPEGColorscount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetJPEGQuality ( ) {
+    long _result = 0;
+    HRESULT _hr = get_JPEGQuality(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutJPEGQuality ( long JPEGQuality ) {
+    HRESULT _hr = put_JPEGQuality(JPEGQuality);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetLanguage ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Language(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutLanguage ( _bstr_t Language ) {
+    HRESULT _hr = put_Language(Language);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetLastSaveDirectory ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LastSaveDirectory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutLastSaveDirectory ( _bstr_t LastSaveDirectory ) {
+    HRESULT _hr = put_LastSaveDirectory(LastSaveDirectory);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetLogging ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Logging(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutLogging ( long Logging ) {
+    HRESULT _hr = put_Logging(Logging);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetLogLines ( ) {
+    long _result = 0;
+    HRESULT _hr = get_LogLines(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutLogLines ( long LogLines ) {
+    HRESULT _hr = put_LogLines(LogLines);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetNoConfirmMessageSwitchingDefaultprinter ( ) {
+    long _result = 0;
+    HRESULT _hr = get_NoConfirmMessageSwitchingDefaultprinter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutNoConfirmMessageSwitchingDefaultprinter ( long NoConfirmMessageSwitchingDefaultprinter ) {
+    HRESULT _hr = put_NoConfirmMessageSwitchingDefaultprinter(NoConfirmMessageSwitchingDefaultprinter);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetNoProcessingAtStartup ( ) {
+    long _result = 0;
+    HRESULT _hr = get_NoProcessingAtStartup(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutNoProcessingAtStartup ( long NoProcessingAtStartup ) {
+    HRESULT _hr = put_NoProcessingAtStartup(NoProcessingAtStartup);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetNoPSCheck ( ) {
+    long _result = 0;
+    HRESULT _hr = get_NoPSCheck(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutNoPSCheck ( long NoPSCheck ) {
+    HRESULT _hr = put_NoPSCheck(NoPSCheck);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetOnePagePerFile ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OnePagePerFile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutOnePagePerFile ( long OnePagePerFile ) {
+    HRESULT _hr = put_OnePagePerFile(OnePagePerFile);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetOptionsDesign ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OptionsDesign(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutOptionsDesign ( long OptionsDesign ) {
+    HRESULT _hr = put_OptionsDesign(OptionsDesign);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetOptionsEnabled ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OptionsEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutOptionsEnabled ( long OptionsEnabled ) {
+    HRESULT _hr = put_OptionsEnabled(OptionsEnabled);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetOptionsVisible ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OptionsVisible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutOptionsVisible ( long OptionsVisible ) {
+    HRESULT _hr = put_OptionsVisible(OptionsVisible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetPapersize ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Papersize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutPapersize ( _bstr_t Papersize ) {
+    HRESULT _hr = put_Papersize(Papersize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPCXColorscount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PCXColorscount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPCXColorscount ( long PCXColorscount ) {
+    HRESULT _hr = put_PCXColorscount(PCXColorscount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFAllowAssembly ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFAllowAssembly(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFAllowAssembly ( long PDFAllowAssembly ) {
+    HRESULT _hr = put_PDFAllowAssembly(PDFAllowAssembly);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFAllowDegradedPrinting ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFAllowDegradedPrinting(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFAllowDegradedPrinting ( long PDFAllowDegradedPrinting ) {
+    HRESULT _hr = put_PDFAllowDegradedPrinting(PDFAllowDegradedPrinting);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFAllowFillIn ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFAllowFillIn(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFAllowFillIn ( long PDFAllowFillIn ) {
+    HRESULT _hr = put_PDFAllowFillIn(PDFAllowFillIn);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFAllowScreenReaders ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFAllowScreenReaders(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFAllowScreenReaders ( long PDFAllowScreenReaders ) {
+    HRESULT _hr = put_PDFAllowScreenReaders(PDFAllowScreenReaders);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFColorsCMYKToRGB ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFColorsCMYKToRGB(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFColorsCMYKToRGB ( long PDFColorsCMYKToRGB ) {
+    HRESULT _hr = put_PDFColorsCMYKToRGB(PDFColorsCMYKToRGB);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFColorsColorModel ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFColorsColorModel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFColorsColorModel ( long PDFColorsColorModel ) {
+    HRESULT _hr = put_PDFColorsColorModel(PDFColorsColorModel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFColorsPreserveHalftone ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFColorsPreserveHalftone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFColorsPreserveHalftone ( long PDFColorsPreserveHalftone ) {
+    HRESULT _hr = put_PDFColorsPreserveHalftone(PDFColorsPreserveHalftone);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFColorsPreserveOverprint ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFColorsPreserveOverprint(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFColorsPreserveOverprint ( long PDFColorsPreserveOverprint ) {
+    HRESULT _hr = put_PDFColorsPreserveOverprint(PDFColorsPreserveOverprint);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFColorsPreserveTransfer ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFColorsPreserveTransfer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFColorsPreserveTransfer ( long PDFColorsPreserveTransfer ) {
+    HRESULT _hr = put_PDFColorsPreserveTransfer(PDFColorsPreserveTransfer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionColorCompression ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionColorCompression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorCompression ( long PDFCompressionColorCompression ) {
+    HRESULT _hr = put_PDFCompressionColorCompression(PDFCompressionColorCompression);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionColorCompressionChoice ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionColorCompressionChoice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorCompressionChoice ( long PDFCompressionColorCompressionChoice ) {
+    HRESULT _hr = put_PDFCompressionColorCompressionChoice(PDFCompressionColorCompressionChoice);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionColorCompressionJPEGHighFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionColorCompressionJPEGHighFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorCompressionJPEGHighFactor ( double PDFCompressionColorCompressionJPEGHighFactor ) {
+    HRESULT _hr = put_PDFCompressionColorCompressionJPEGHighFactor(PDFCompressionColorCompressionJPEGHighFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionColorCompressionJPEGLowFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionColorCompressionJPEGLowFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorCompressionJPEGLowFactor ( double PDFCompressionColorCompressionJPEGLowFactor ) {
+    HRESULT _hr = put_PDFCompressionColorCompressionJPEGLowFactor(PDFCompressionColorCompressionJPEGLowFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionColorCompressionJPEGMaximumFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionColorCompressionJPEGMaximumFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorCompressionJPEGMaximumFactor ( double PDFCompressionColorCompressionJPEGMaximumFactor ) {
+    HRESULT _hr = put_PDFCompressionColorCompressionJPEGMaximumFactor(PDFCompressionColorCompressionJPEGMaximumFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionColorCompressionJPEGMediumFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionColorCompressionJPEGMediumFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorCompressionJPEGMediumFactor ( double PDFCompressionColorCompressionJPEGMediumFactor ) {
+    HRESULT _hr = put_PDFCompressionColorCompressionJPEGMediumFactor(PDFCompressionColorCompressionJPEGMediumFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionColorCompressionJPEGMinimumFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionColorCompressionJPEGMinimumFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorCompressionJPEGMinimumFactor ( double PDFCompressionColorCompressionJPEGMinimumFactor ) {
+    HRESULT _hr = put_PDFCompressionColorCompressionJPEGMinimumFactor(PDFCompressionColorCompressionJPEGMinimumFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionColorResample ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionColorResample(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorResample ( long PDFCompressionColorResample ) {
+    HRESULT _hr = put_PDFCompressionColorResample(PDFCompressionColorResample);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionColorResampleChoice ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionColorResampleChoice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorResampleChoice ( long PDFCompressionColorResampleChoice ) {
+    HRESULT _hr = put_PDFCompressionColorResampleChoice(PDFCompressionColorResampleChoice);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionColorResolution ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionColorResolution(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionColorResolution ( long PDFCompressionColorResolution ) {
+    HRESULT _hr = put_PDFCompressionColorResolution(PDFCompressionColorResolution);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionGreyCompression ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyCompression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyCompression ( long PDFCompressionGreyCompression ) {
+    HRESULT _hr = put_PDFCompressionGreyCompression(PDFCompressionGreyCompression);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionGreyCompressionChoice ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyCompressionChoice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyCompressionChoice ( long PDFCompressionGreyCompressionChoice ) {
+    HRESULT _hr = put_PDFCompressionGreyCompressionChoice(PDFCompressionGreyCompressionChoice);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionGreyCompressionJPEGHighFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyCompressionJPEGHighFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyCompressionJPEGHighFactor ( double PDFCompressionGreyCompressionJPEGHighFactor ) {
+    HRESULT _hr = put_PDFCompressionGreyCompressionJPEGHighFactor(PDFCompressionGreyCompressionJPEGHighFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionGreyCompressionJPEGLowFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyCompressionJPEGLowFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyCompressionJPEGLowFactor ( double PDFCompressionGreyCompressionJPEGLowFactor ) {
+    HRESULT _hr = put_PDFCompressionGreyCompressionJPEGLowFactor(PDFCompressionGreyCompressionJPEGLowFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionGreyCompressionJPEGMaximumFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyCompressionJPEGMaximumFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyCompressionJPEGMaximumFactor ( double PDFCompressionGreyCompressionJPEGMaximumFactor ) {
+    HRESULT _hr = put_PDFCompressionGreyCompressionJPEGMaximumFactor(PDFCompressionGreyCompressionJPEGMaximumFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionGreyCompressionJPEGMediumFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyCompressionJPEGMediumFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyCompressionJPEGMediumFactor ( double PDFCompressionGreyCompressionJPEGMediumFactor ) {
+    HRESULT _hr = put_PDFCompressionGreyCompressionJPEGMediumFactor(PDFCompressionGreyCompressionJPEGMediumFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsPDFCreatorOptions::GetPDFCompressionGreyCompressionJPEGMinimumFactor ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyCompressionJPEGMinimumFactor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyCompressionJPEGMinimumFactor ( double PDFCompressionGreyCompressionJPEGMinimumFactor ) {
+    HRESULT _hr = put_PDFCompressionGreyCompressionJPEGMinimumFactor(PDFCompressionGreyCompressionJPEGMinimumFactor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionGreyResample ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyResample(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyResample ( long PDFCompressionGreyResample ) {
+    HRESULT _hr = put_PDFCompressionGreyResample(PDFCompressionGreyResample);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionGreyResampleChoice ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyResampleChoice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyResampleChoice ( long PDFCompressionGreyResampleChoice ) {
+    HRESULT _hr = put_PDFCompressionGreyResampleChoice(PDFCompressionGreyResampleChoice);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionGreyResolution ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionGreyResolution(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionGreyResolution ( long PDFCompressionGreyResolution ) {
+    HRESULT _hr = put_PDFCompressionGreyResolution(PDFCompressionGreyResolution);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionMonoCompression ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionMonoCompression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionMonoCompression ( long PDFCompressionMonoCompression ) {
+    HRESULT _hr = put_PDFCompressionMonoCompression(PDFCompressionMonoCompression);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionMonoCompressionChoice ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionMonoCompressionChoice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionMonoCompressionChoice ( long PDFCompressionMonoCompressionChoice ) {
+    HRESULT _hr = put_PDFCompressionMonoCompressionChoice(PDFCompressionMonoCompressionChoice);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionMonoResample ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionMonoResample(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionMonoResample ( long PDFCompressionMonoResample ) {
+    HRESULT _hr = put_PDFCompressionMonoResample(PDFCompressionMonoResample);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionMonoResampleChoice ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionMonoResampleChoice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionMonoResampleChoice ( long PDFCompressionMonoResampleChoice ) {
+    HRESULT _hr = put_PDFCompressionMonoResampleChoice(PDFCompressionMonoResampleChoice);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionMonoResolution ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionMonoResolution(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionMonoResolution ( long PDFCompressionMonoResolution ) {
+    HRESULT _hr = put_PDFCompressionMonoResolution(PDFCompressionMonoResolution);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFCompressionTextCompression ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFCompressionTextCompression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFCompressionTextCompression ( long PDFCompressionTextCompression ) {
+    HRESULT _hr = put_PDFCompressionTextCompression(PDFCompressionTextCompression);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFDisallowCopy ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFDisallowCopy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFDisallowCopy ( long PDFDisallowCopy ) {
+    HRESULT _hr = put_PDFDisallowCopy(PDFDisallowCopy);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFDisallowModifyAnnotations ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFDisallowModifyAnnotations(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFDisallowModifyAnnotations ( long PDFDisallowModifyAnnotations ) {
+    HRESULT _hr = put_PDFDisallowModifyAnnotations(PDFDisallowModifyAnnotations);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFDisallowModifyContents ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFDisallowModifyContents(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFDisallowModifyContents ( long PDFDisallowModifyContents ) {
+    HRESULT _hr = put_PDFDisallowModifyContents(PDFDisallowModifyContents);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFDisallowPrinting ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFDisallowPrinting(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFDisallowPrinting ( long PDFDisallowPrinting ) {
+    HRESULT _hr = put_PDFDisallowPrinting(PDFDisallowPrinting);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFEncryptor ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFEncryptor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFEncryptor ( long PDFEncryptor ) {
+    HRESULT _hr = put_PDFEncryptor(PDFEncryptor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFFontsEmbedAll ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFFontsEmbedAll(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFFontsEmbedAll ( long PDFFontsEmbedAll ) {
+    HRESULT _hr = put_PDFFontsEmbedAll(PDFFontsEmbedAll);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFFontsSubSetFonts ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFFontsSubSetFonts(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFFontsSubSetFonts ( long PDFFontsSubSetFonts ) {
+    HRESULT _hr = put_PDFFontsSubSetFonts(PDFFontsSubSetFonts);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFFontsSubSetFontsPercent ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFFontsSubSetFontsPercent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFFontsSubSetFontsPercent ( long PDFFontsSubSetFontsPercent ) {
+    HRESULT _hr = put_PDFFontsSubSetFontsPercent(PDFFontsSubSetFontsPercent);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFGeneralASCII85 ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFGeneralASCII85(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFGeneralASCII85 ( long PDFGeneralASCII85 ) {
+    HRESULT _hr = put_PDFGeneralASCII85(PDFGeneralASCII85);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFGeneralAutorotate ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFGeneralAutorotate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFGeneralAutorotate ( long PDFGeneralAutorotate ) {
+    HRESULT _hr = put_PDFGeneralAutorotate(PDFGeneralAutorotate);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFGeneralCompatibility ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFGeneralCompatibility(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFGeneralCompatibility ( long PDFGeneralCompatibility ) {
+    HRESULT _hr = put_PDFGeneralCompatibility(PDFGeneralCompatibility);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFGeneralOverprint ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFGeneralOverprint(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFGeneralOverprint ( long PDFGeneralOverprint ) {
+    HRESULT _hr = put_PDFGeneralOverprint(PDFGeneralOverprint);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFGeneralResolution ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFGeneralResolution(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFGeneralResolution ( long PDFGeneralResolution ) {
+    HRESULT _hr = put_PDFGeneralResolution(PDFGeneralResolution);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFHighEncryption ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFHighEncryption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFHighEncryption ( long PDFHighEncryption ) {
+    HRESULT _hr = put_PDFHighEncryption(PDFHighEncryption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFLowEncryption ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFLowEncryption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFLowEncryption ( long PDFLowEncryption ) {
+    HRESULT _hr = put_PDFLowEncryption(PDFLowEncryption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFOptimize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFOptimize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFOptimize ( long PDFOptimize ) {
+    HRESULT _hr = put_PDFOptimize(PDFOptimize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFOwnerPass ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFOwnerPass(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFOwnerPass ( long PDFOwnerPass ) {
+    HRESULT _hr = put_PDFOwnerPass(PDFOwnerPass);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetPDFOwnerPasswordString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PDFOwnerPasswordString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutPDFOwnerPasswordString ( _bstr_t PDFOwnerPasswordString ) {
+    HRESULT _hr = put_PDFOwnerPasswordString(PDFOwnerPasswordString);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFUserPass ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFUserPass(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFUserPass ( long PDFUserPass ) {
+    HRESULT _hr = put_PDFUserPass(PDFUserPass);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetPDFUserPasswordString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PDFUserPasswordString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutPDFUserPasswordString ( _bstr_t PDFUserPasswordString ) {
+    HRESULT _hr = put_PDFUserPasswordString(PDFUserPasswordString);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPDFUseSecurity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PDFUseSecurity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPDFUseSecurity ( long PDFUseSecurity ) {
+    HRESULT _hr = put_PDFUseSecurity(PDFUseSecurity);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPNGColorscount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PNGColorscount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPNGColorscount ( long PNGColorscount ) {
+    HRESULT _hr = put_PNGColorscount(PNGColorscount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPrintAfterSaving ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PrintAfterSaving(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPrintAfterSaving ( long PrintAfterSaving ) {
+    HRESULT _hr = put_PrintAfterSaving(PrintAfterSaving);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPrintAfterSavingDuplex ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PrintAfterSavingDuplex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPrintAfterSavingDuplex ( long PrintAfterSavingDuplex ) {
+    HRESULT _hr = put_PrintAfterSavingDuplex(PrintAfterSavingDuplex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPrintAfterSavingNoCancel ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PrintAfterSavingNoCancel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPrintAfterSavingNoCancel ( long PrintAfterSavingNoCancel ) {
+    HRESULT _hr = put_PrintAfterSavingNoCancel(PrintAfterSavingNoCancel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetPrintAfterSavingPrinter ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PrintAfterSavingPrinter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutPrintAfterSavingPrinter ( _bstr_t PrintAfterSavingPrinter ) {
+    HRESULT _hr = put_PrintAfterSavingPrinter(PrintAfterSavingPrinter);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPrintAfterSavingQueryUser ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PrintAfterSavingQueryUser(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPrintAfterSavingQueryUser ( long PrintAfterSavingQueryUser ) {
+    HRESULT _hr = put_PrintAfterSavingQueryUser(PrintAfterSavingQueryUser);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPrintAfterSavingTumble ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PrintAfterSavingTumble(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPrintAfterSavingTumble ( long PrintAfterSavingTumble ) {
+    HRESULT _hr = put_PrintAfterSavingTumble(PrintAfterSavingTumble);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPrinterStop ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PrinterStop(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPrinterStop ( long PrinterStop ) {
+    HRESULT _hr = put_PrinterStop(PrinterStop);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetPrinterTemppath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PrinterTemppath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutPrinterTemppath ( _bstr_t PrinterTemppath ) {
+    HRESULT _hr = put_PrinterTemppath(PrinterTemppath);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetProcessPriority ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ProcessPriority(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutProcessPriority ( long ProcessPriority ) {
+    HRESULT _hr = put_ProcessPriority(ProcessPriority);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetProgramFont ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ProgramFont(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutProgramFont ( _bstr_t ProgramFont ) {
+    HRESULT _hr = put_ProgramFont(ProgramFont);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetProgramFontCharset ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ProgramFontCharset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutProgramFontCharset ( long ProgramFontCharset ) {
+    HRESULT _hr = put_ProgramFontCharset(ProgramFontCharset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetProgramFontSize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ProgramFontSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutProgramFontSize ( long ProgramFontSize ) {
+    HRESULT _hr = put_ProgramFontSize(ProgramFontSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetPSLanguageLevel ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PSLanguageLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutPSLanguageLevel ( long PSLanguageLevel ) {
+    HRESULT _hr = put_PSLanguageLevel(PSLanguageLevel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetRemoveAllKnownFileExtensions ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RemoveAllKnownFileExtensions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutRemoveAllKnownFileExtensions ( long RemoveAllKnownFileExtensions ) {
+    HRESULT _hr = put_RemoveAllKnownFileExtensions(RemoveAllKnownFileExtensions);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetRemoveSpaces ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RemoveSpaces(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutRemoveSpaces ( long RemoveSpaces ) {
+    HRESULT _hr = put_RemoveSpaces(RemoveSpaces);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetRunProgramAfterSaving ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RunProgramAfterSaving(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutRunProgramAfterSaving ( long RunProgramAfterSaving ) {
+    HRESULT _hr = put_RunProgramAfterSaving(RunProgramAfterSaving);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetRunProgramAfterSavingProgramname ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RunProgramAfterSavingProgramname(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutRunProgramAfterSavingProgramname ( _bstr_t RunProgramAfterSavingProgramname ) {
+    HRESULT _hr = put_RunProgramAfterSavingProgramname(RunProgramAfterSavingProgramname);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetRunProgramAfterSavingProgramParameters ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RunProgramAfterSavingProgramParameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutRunProgramAfterSavingProgramParameters ( _bstr_t RunProgramAfterSavingProgramParameters ) {
+    HRESULT _hr = put_RunProgramAfterSavingProgramParameters(RunProgramAfterSavingProgramParameters);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetRunProgramAfterSavingWaitUntilReady ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RunProgramAfterSavingWaitUntilReady(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutRunProgramAfterSavingWaitUntilReady ( long RunProgramAfterSavingWaitUntilReady ) {
+    HRESULT _hr = put_RunProgramAfterSavingWaitUntilReady(RunProgramAfterSavingWaitUntilReady);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetRunProgramAfterSavingWindowstyle ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RunProgramAfterSavingWindowstyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutRunProgramAfterSavingWindowstyle ( long RunProgramAfterSavingWindowstyle ) {
+    HRESULT _hr = put_RunProgramAfterSavingWindowstyle(RunProgramAfterSavingWindowstyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetRunProgramBeforeSaving ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RunProgramBeforeSaving(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutRunProgramBeforeSaving ( long RunProgramBeforeSaving ) {
+    HRESULT _hr = put_RunProgramBeforeSaving(RunProgramBeforeSaving);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetRunProgramBeforeSavingProgramname ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RunProgramBeforeSavingProgramname(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutRunProgramBeforeSavingProgramname ( _bstr_t RunProgramBeforeSavingProgramname ) {
+    HRESULT _hr = put_RunProgramBeforeSavingProgramname(RunProgramBeforeSavingProgramname);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetRunProgramBeforeSavingProgramParameters ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RunProgramBeforeSavingProgramParameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutRunProgramBeforeSavingProgramParameters ( _bstr_t RunProgramBeforeSavingProgramParameters ) {
+    HRESULT _hr = put_RunProgramBeforeSavingProgramParameters(RunProgramBeforeSavingProgramParameters);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetRunProgramBeforeSavingWindowstyle ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RunProgramBeforeSavingWindowstyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutRunProgramBeforeSavingWindowstyle ( long RunProgramBeforeSavingWindowstyle ) {
+    HRESULT _hr = put_RunProgramBeforeSavingWindowstyle(RunProgramBeforeSavingWindowstyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetSaveFilename ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SaveFilename(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutSaveFilename ( _bstr_t SaveFilename ) {
+    HRESULT _hr = put_SaveFilename(SaveFilename);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetSendEmailAfterAutoSaving ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SendEmailAfterAutoSaving(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutSendEmailAfterAutoSaving ( long SendEmailAfterAutoSaving ) {
+    HRESULT _hr = put_SendEmailAfterAutoSaving(SendEmailAfterAutoSaving);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetSendMailMethod ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SendMailMethod(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutSendMailMethod ( long SendMailMethod ) {
+    HRESULT _hr = put_SendMailMethod(SendMailMethod);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetShowAnimation ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ShowAnimation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutShowAnimation ( long ShowAnimation ) {
+    HRESULT _hr = put_ShowAnimation(ShowAnimation);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStampFontColor ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StampFontColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStampFontColor ( _bstr_t StampFontColor ) {
+    HRESULT _hr = put_StampFontColor(StampFontColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStampFontname ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StampFontname(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStampFontname ( _bstr_t StampFontname ) {
+    HRESULT _hr = put_StampFontname(StampFontname);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetStampFontsize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_StampFontsize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutStampFontsize ( long StampFontsize ) {
+    HRESULT _hr = put_StampFontsize(StampFontsize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetStampOutlineFontthickness ( ) {
+    long _result = 0;
+    HRESULT _hr = get_StampOutlineFontthickness(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutStampOutlineFontthickness ( long StampOutlineFontthickness ) {
+    HRESULT _hr = put_StampOutlineFontthickness(StampOutlineFontthickness);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStampString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StampString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStampString ( _bstr_t StampString ) {
+    HRESULT _hr = put_StampString(StampString);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetStampUseOutlineFont ( ) {
+    long _result = 0;
+    HRESULT _hr = get_StampUseOutlineFont(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutStampUseOutlineFont ( long StampUseOutlineFont ) {
+    HRESULT _hr = put_StampUseOutlineFont(StampUseOutlineFont);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStandardAuthor ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StandardAuthor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStandardAuthor ( _bstr_t StandardAuthor ) {
+    HRESULT _hr = put_StandardAuthor(StandardAuthor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStandardCreationdate ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StandardCreationdate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStandardCreationdate ( _bstr_t StandardCreationdate ) {
+    HRESULT _hr = put_StandardCreationdate(StandardCreationdate);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStandardDateformat ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StandardDateformat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStandardDateformat ( _bstr_t StandardDateformat ) {
+    HRESULT _hr = put_StandardDateformat(StandardDateformat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStandardKeywords ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StandardKeywords(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStandardKeywords ( _bstr_t StandardKeywords ) {
+    HRESULT _hr = put_StandardKeywords(StandardKeywords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStandardMailDomain ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StandardMailDomain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStandardMailDomain ( _bstr_t StandardMailDomain ) {
+    HRESULT _hr = put_StandardMailDomain(StandardMailDomain);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStandardModifydate ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StandardModifydate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStandardModifydate ( _bstr_t StandardModifydate ) {
+    HRESULT _hr = put_StandardModifydate(StandardModifydate);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetStandardSaveformat ( ) {
+    long _result = 0;
+    HRESULT _hr = get_StandardSaveformat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutStandardSaveformat ( long StandardSaveformat ) {
+    HRESULT _hr = put_StandardSaveformat(StandardSaveformat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStandardSubject ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StandardSubject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStandardSubject ( _bstr_t StandardSubject ) {
+    HRESULT _hr = put_StandardSubject(StandardSubject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetStandardTitle ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StandardTitle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutStandardTitle ( _bstr_t StandardTitle ) {
+    HRESULT _hr = put_StandardTitle(StandardTitle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetStartStandardProgram ( ) {
+    long _result = 0;
+    HRESULT _hr = get_StartStandardProgram(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutStartStandardProgram ( long StartStandardProgram ) {
+    HRESULT _hr = put_StartStandardProgram(StartStandardProgram);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetTIFFColorscount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TIFFColorscount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutTIFFColorscount ( long TIFFColorscount ) {
+    HRESULT _hr = put_TIFFColorscount(TIFFColorscount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetToolbars ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Toolbars(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutToolbars ( long Toolbars ) {
+    HRESULT _hr = put_Toolbars(Toolbars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetUseAutosave ( ) {
+    long _result = 0;
+    HRESULT _hr = get_UseAutosave(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutUseAutosave ( long UseAutosave ) {
+    HRESULT _hr = put_UseAutosave(UseAutosave);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetUseAutosaveDirectory ( ) {
+    long _result = 0;
+    HRESULT _hr = get_UseAutosaveDirectory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutUseAutosaveDirectory ( long UseAutosaveDirectory ) {
+    HRESULT _hr = put_UseAutosaveDirectory(UseAutosaveDirectory);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetUseCreationDateNow ( ) {
+    long _result = 0;
+    HRESULT _hr = get_UseCreationDateNow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutUseCreationDateNow ( long UseCreationDateNow ) {
+    HRESULT _hr = put_UseCreationDateNow(UseCreationDateNow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetUseStandardAuthor ( ) {
+    long _result = 0;
+    HRESULT _hr = get_UseStandardAuthor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutUseStandardAuthor ( long UseStandardAuthor ) {
+    HRESULT _hr = put_UseStandardAuthor(UseStandardAuthor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorOptions::GetUseCustomPaperSize ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UseCustomPaperSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorOptions::PutUseCustomPaperSize ( _bstr_t UseCustomPaperSize ) {
+    HRESULT _hr = put_UseCustomPaperSize(UseCustomPaperSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreatorOptions::GetUseFixPapersize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_UseFixPapersize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorOptions::PutUseFixPapersize ( long UseFixPapersize ) {
+    HRESULT _hr = put_UseFixPapersize(UseFixPapersize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface _clsPDFCreatorError wrapper method implementations
+//
+
+inline long _clsPDFCreatorError::GetNumber ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Number(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreatorError::PutNumber ( long Number ) {
+    HRESULT _hr = put_Number(Number);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorError::GetDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorError::PutDescription ( _bstr_t Description ) {
+    HRESULT _hr = put_Description(Description);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface _clsPDFCreatorInfoSpoolFile wrapper method implementations
+//
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetREDMON_PORT ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_REDMON_PORT(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutREDMON_PORT ( _bstr_t REDMON_PORT ) {
+    HRESULT _hr = put_REDMON_PORT(REDMON_PORT);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetREDMON_JOB ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_REDMON_JOB(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutREDMON_JOB ( _bstr_t REDMON_JOB ) {
+    HRESULT _hr = put_REDMON_JOB(REDMON_JOB);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetREDMON_PRINTER ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_REDMON_PRINTER(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutREDMON_PRINTER ( _bstr_t REDMON_PRINTER ) {
+    HRESULT _hr = put_REDMON_PRINTER(REDMON_PRINTER);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetREDMON_MACHINE ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_REDMON_MACHINE(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutREDMON_MACHINE ( _bstr_t REDMON_MACHINE ) {
+    HRESULT _hr = put_REDMON_MACHINE(REDMON_MACHINE);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetREDMON_USER ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_REDMON_USER(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutREDMON_USER ( _bstr_t REDMON_USER ) {
+    HRESULT _hr = put_REDMON_USER(REDMON_USER);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetREDMON_DOCNAME ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_REDMON_DOCNAME(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutREDMON_DOCNAME ( _bstr_t REDMON_DOCNAME ) {
+    HRESULT _hr = put_REDMON_DOCNAME(REDMON_DOCNAME);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetREDMON_FILENAME ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_REDMON_FILENAME(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutREDMON_FILENAME ( _bstr_t REDMON_FILENAME ) {
+    HRESULT _hr = put_REDMON_FILENAME(REDMON_FILENAME);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetREDMON_SESSIONID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_REDMON_SESSIONID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutREDMON_SESSIONID ( _bstr_t REDMON_SESSIONID ) {
+    HRESULT _hr = put_REDMON_SESSIONID(REDMON_SESSIONID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetSpoolFilename ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SpoolFilename(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutSpoolFilename ( _bstr_t SpoolFilename ) {
+    HRESULT _hr = put_SpoolFilename(SpoolFilename);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetSpoolerAccount ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SpoolerAccount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutSpoolerAccount ( _bstr_t SpoolerAccount ) {
+    HRESULT _hr = put_SpoolerAccount(SpoolerAccount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetComputer ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Computer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutComputer ( _bstr_t Computer ) {
+    HRESULT _hr = put_Computer(Computer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsPDFCreatorInfoSpoolFile::GetCreated ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Created(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreatorInfoSpoolFile::PutCreated ( _bstr_t Created ) {
+    HRESULT _hr = put_Created(Created);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface _clsPDFCreator wrapper method implementations
+//
+
+inline _clsPDFCreatorErrorPtr _clsPDFCreator::GetcError ( ) {
+    struct _clsPDFCreatorError * _result = 0;
+    HRESULT _hr = get_cError(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _clsPDFCreatorErrorPtr(_result, false);
+}
+
+inline _variant_t _clsPDFCreator::GetcErrorDetail ( _bstr_t PropertyName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_cErrorDetail(PropertyName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT _clsPDFCreator::cErrorClear ( ) {
+    HRESULT _hr = raw_cErrorClear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t _clsPDFCreator::GetcOutputFilename ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_cOutputFilename(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t _clsPDFCreator::GetcPDFCreatorApplicationPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_cPDFCreatorApplicationPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL _clsPDFCreator::GetcIsLogfileDialogDisplayed ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_cIsLogfileDialogDisplayed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL _clsPDFCreator::GetcIsOptionsDialogDisplayed ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_cIsOptionsDialogDisplayed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t _clsPDFCreator::GetcProgramRelease ( VARIANT_BOOL WithBeta ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_cProgramRelease(WithBeta, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL _clsPDFCreator::GetcProgramIsRunning ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_cProgramIsRunning(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t _clsPDFCreator::GetcWindowsVersion ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_cWindowsVersion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL _clsPDFCreator::GetcVisible ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_cVisible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreator::PutcVisible ( VARIANT_BOOL _arg1 ) {
+    HRESULT _hr = put_cVisible(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _clsPDFCreator::GetcInstalledAsServer ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_cInstalledAsServer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL _clsPDFCreator::GetcPrinterStop ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_cPrinterStop(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreator::PutcPrinterStop ( VARIANT_BOOL _arg1 ) {
+    HRESULT _hr = put_cPrinterStop(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _CollectionPtr _clsPDFCreator::GetcOptionsNames ( ) {
+    struct _Collection * _result = 0;
+    HRESULT _hr = get_cOptionsNames(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _CollectionPtr(_result, false);
+}
+
+inline _variant_t _clsPDFCreator::GetcOption ( _bstr_t PropertyName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_cOption(PropertyName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void _clsPDFCreator::PutcOption ( _bstr_t PropertyName, const _variant_t & _arg2 ) {
+    HRESULT _hr = put_cOption(PropertyName, _arg2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _clsPDFCreatorOptionsPtr _clsPDFCreator::GetcOptions ( ) {
+    struct _clsPDFCreatorOptions * _result = 0;
+    HRESULT _hr = get_cOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _clsPDFCreatorOptionsPtr(_result, false);
+}
+
+inline void _clsPDFCreator::PutRefcOptions ( struct _clsPDFCreatorOptions * _arg1 ) {
+    HRESULT _hr = putref_cOptions(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t _clsPDFCreator::GetcStandardOption ( _bstr_t PropertyName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_cStandardOption(PropertyName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _clsPDFCreatorOptionsPtr _clsPDFCreator::GetcStandardOptions ( ) {
+    struct _clsPDFCreatorOptions * _result = 0;
+    HRESULT _hr = get_cStandardOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _clsPDFCreatorOptionsPtr(_result, false);
+}
+
+inline _clsPDFCreatorInfoSpoolFilePtr _clsPDFCreator::GetcPrintjobInfos ( _bstr_t PrintjobFilename ) {
+    struct _clsPDFCreatorInfoSpoolFile * _result = 0;
+    HRESULT _hr = get_cPrintjobInfos(PrintjobFilename, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _clsPDFCreatorInfoSpoolFilePtr(_result, false);
+}
+
+inline _bstr_t _clsPDFCreator::GetcPrintjobInfo ( _bstr_t PrintjobFilename, _bstr_t PropertyName ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_cPrintjobInfo(PrintjobFilename, PropertyName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long _clsPDFCreator::GetcCountOfPrintjobs ( ) {
+    long _result = 0;
+    HRESULT _hr = get_cCountOfPrintjobs(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t _clsPDFCreator::GetcPrintjobFilename ( long JobNumber ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_cPrintjobFilename(JobNumber, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t _clsPDFCreator::GetcDefaultPrinter ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_cDefaultPrinter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsPDFCreator::PutcDefaultPrinter ( _bstr_t _arg1 ) {
+    HRESULT _hr = put_cDefaultPrinter(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsPDFCreator::GetcWindowState ( ) {
+    long _result = 0;
+    HRESULT _hr = get_cWindowState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreator::PutcWindowState ( long _arg1 ) {
+    HRESULT _hr = put_cWindowState(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _clsPDFCreator::GetcIsConverted ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_cIsConverted(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsPDFCreator::PutcIsConverted ( VARIANT_BOOL _arg1 ) {
+    HRESULT _hr = put_cIsConverted(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _clsPDFCreator::cDeletePrintjob ( long JobNumber ) {
+    HRESULT _hr = raw_cDeletePrintjob(JobNumber);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cMovePrintjobBottom ( long JobNumber ) {
+    HRESULT _hr = raw_cMovePrintjobBottom(JobNumber);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cMovePrintjobTop ( long JobNumber ) {
+    HRESULT _hr = raw_cMovePrintjobTop(JobNumber);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cMovePrintjobUp ( long JobNumber ) {
+    HRESULT _hr = raw_cMovePrintjobUp(JobNumber);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cMovePrintjobDown ( long JobNumber ) {
+    HRESULT _hr = raw_cMovePrintjobDown(JobNumber);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL _clsPDFCreator::cClose ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_cClose(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL _clsPDFCreator::cCloseRunningSession ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_cCloseRunningSession(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL _clsPDFCreator::cStart ( _bstr_t Params, VARIANT_BOOL ForceInitialize ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_cStart(Params, ForceInitialize, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT _clsPDFCreator::cClearCache ( ) {
+    HRESULT _hr = raw_cClearCache();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cClearLogfile ( ) {
+    HRESULT _hr = raw_cClearLogfile();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cConvertPostscriptfile ( _bstr_t InputFilename, _bstr_t OutputFilename ) {
+    HRESULT _hr = raw_cConvertPostscriptfile(InputFilename, OutputFilename);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cTestEvent ( _bstr_t EventName ) {
+    HRESULT _hr = raw_cTestEvent(EventName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cShowLogfileDialog ( VARIANT_BOOL Value ) {
+    HRESULT _hr = raw_cShowLogfileDialog(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cShowOptionsDialog ( VARIANT_BOOL Value ) {
+    HRESULT _hr = raw_cShowOptionsDialog(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cSendMail ( _bstr_t OutputFilename, _bstr_t Recipients ) {
+    HRESULT _hr = raw_cSendMail(OutputFilename, Recipients);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL _clsPDFCreator::cIsPrintable ( _bstr_t Filename ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_cIsPrintable(Filename, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT _clsPDFCreator::cCombineAll ( ) {
+    HRESULT _hr = raw_cCombineAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _CollectionPtr _clsPDFCreator::cGetPDFCreatorPrinters ( ) {
+    struct _Collection * _result = 0;
+    HRESULT _hr = raw_cGetPDFCreatorPrinters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _CollectionPtr(_result, false);
+}
+
+inline _bstr_t _clsPDFCreator::cGetLogfile ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_cGetLogfile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT _clsPDFCreator::cWriteToLogfile ( _bstr_t LogStr ) {
+    HRESULT _hr = raw_cWriteToLogfile(LogStr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cPrintFile ( _bstr_t Filename ) {
+    HRESULT _hr = raw_cPrintFile(Filename);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cPrintPDFCreatorTestpage ( ) {
+    HRESULT _hr = raw_cPrintPDFCreatorTestpage();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsPDFCreator::cPrintPrinterTestpage ( _bstr_t Printername ) {
+    HRESULT _hr = raw_cPrintPrinterTestpage(Printername);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _clsPDFCreatorOptionsPtr _clsPDFCreator::cReadOptions ( ) {
+    struct _clsPDFCreatorOptions * _result = 0;
+    HRESULT _hr = raw_cReadOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _clsPDFCreatorOptionsPtr(_result, false);
+}
+
+inline HRESULT _clsPDFCreator::cSaveOptions ( const _variant_t & Options1 ) {
+    HRESULT _hr = raw_cSaveOptions(Options1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _clsPDFCreatorOptionsPtr _clsPDFCreator::cReadOptionsFromFile ( _bstr_t INIFilename ) {
+    struct _clsPDFCreatorOptions * _result = 0;
+    HRESULT _hr = raw_cReadOptionsFromFile(INIFilename, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _clsPDFCreatorOptionsPtr(_result, false);
+}
+
+inline HRESULT _clsPDFCreator::cSaveOptionsToFile ( _bstr_t INIFilename, const _variant_t & Options1 ) {
+    HRESULT _hr = raw_cSaveOptionsToFile(INIFilename, Options1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t _clsPDFCreator::GetcPostscriptInfo ( _bstr_t PostscriptFilename, _bstr_t PropertyName ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_cPostscriptInfo(PostscriptFilename, PropertyName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT _clsPDFCreator::cAddPrintjob ( _bstr_t PostscriptFilename ) {
+    HRESULT _hr = raw_cAddPrintjob(PostscriptFilename);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface __clsPDFCreator wrapper method implementations
+//
+
+inline HRESULT __clsPDFCreator::eReady ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT __clsPDFCreator::eError ( ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
